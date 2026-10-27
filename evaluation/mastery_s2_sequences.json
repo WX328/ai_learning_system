@@ -1,0 +1,26 @@
+{
+  "description": "固定首次答题与复习序列；1=正确，0=错误；同一字符串内每位首次答案对应一道不同题目。",
+  "cases": [
+    {"id":"new_topic", "name":"新知识点", "answers":"", "difficulty":2},
+    {"id":"one_easy_correct", "name":"仅一道简单题答对", "answers":"1", "difficulty":1},
+    {"id":"one_correct", "name":"仅一道难度2题答对", "answers":"1", "difficulty":2},
+    {"id":"one_wrong", "name":"仅一道难度2题答错", "answers":"0", "difficulty":2},
+    {"id":"three_correct", "name":"三道不同题目答对", "answers":"111", "difficulty":2},
+    {"id":"five_correct", "name":"五道不同题目答对", "answers":"11111", "difficulty":2},
+    {"id":"easy_mixed", "name":"简单题正确率60%", "answers":"10101", "difficulty":1},
+    {"id":"hard_mixed", "name":"难题正确率60%", "answers":"10101", "difficulty":5},
+    {"id":"improving", "name":"先错五题、最近五题全对", "answers":"0000011111", "difficulty":2},
+    {"id":"declining", "name":"先对五题、最近五题全错", "answers":"1111100000", "difficulty":2},
+    {"id":"review_once", "name":"一题答错、复习答对一次", "answers":"0", "difficulty":2, "reviews":[{"question":1,"answers":"1"}]},
+    {"id":"review_repeat", "name":"同一道错题复习答对20次", "answers":"0", "difficulty":2, "reviews":[{"question":1,"answers":"11111111111111111111"}]},
+    {"id":"review_relapse", "name":"复习答对后再次答错", "answers":"0", "difficulty":2, "reviews":[{"question":1,"answers":"10"}]},
+    {"id":"mixed_levels", "name":"四题混合难度、两题答对", "answers":"1010", "difficulty":[1,2,4,5]},
+    {"id":"many_wrong", "name":"十道不同题目全错", "answers":"0000000000", "difficulty":2}
+  ],
+  "selection_cases": [
+    {"name":"一次答对与未练习知识点", "topics":["one_correct","new_topic"]},
+    {"name":"熟悉错题复习成功与未练习知识点", "topics":["review_repeat","new_topic"]},
+    {"name":"总体正确率相同但近期趋势相反", "topics":["improving","declining"]},
+    {"name":"已有多题稳定表现后探索新知识点", "topics":["five_correct","new_topic"]}
+  ]
+}

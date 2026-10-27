@@ -1,0 +1,177 @@
+{
+  "protocol": "learning_experiment_v1",
+  "source": "synthetic_experiment",
+  "plan_sha256": "f6cec7d518fd199a0f1925d9814245b8c39259248ec31eb129a4684a1abdad01",
+  "records_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "participants": [
+    {
+      "participant_id": "DEMO-P01",
+      "arm": "adaptive",
+      "pre_form": "B",
+      "post_form": "A",
+      "complete": false,
+      "counts": {
+        "pre": 0,
+        "learning": 0,
+        "post": 0
+      },
+      "pre_score": null,
+      "post_score": null,
+      "gain": null,
+      "bank_deviations": 0,
+      "duration_recorded_n": 0
+    },
+    {
+      "participant_id": "DEMO-P02",
+      "arm": "adaptive",
+      "pre_form": "B",
+      "post_form": "A",
+      "complete": false,
+      "counts": {
+        "pre": 0,
+        "learning": 0,
+        "post": 0
+      },
+      "pre_score": null,
+      "post_score": null,
+      "gain": null,
+      "bank_deviations": 0,
+      "duration_recorded_n": 0
+    },
+    {
+      "participant_id": "DEMO-P03",
+      "arm": "fixed",
+      "pre_form": "A",
+      "post_form": "B",
+      "complete": false,
+      "counts": {
+        "pre": 0,
+        "learning": 0,
+        "post": 0
+      },
+      "pre_score": null,
+      "post_score": null,
+      "gain": null,
+      "bank_deviations": 0,
+      "duration_recorded_n": 0
+    },
+    {
+      "participant_id": "DEMO-P04",
+      "arm": "adaptive",
+      "pre_form": "A",
+      "post_form": "B",
+      "complete": false,
+      "counts": {
+        "pre": 0,
+        "learning": 0,
+        "post": 0
+      },
+      "pre_score": null,
+      "post_score": null,
+      "gain": null,
+      "bank_deviations": 0,
+      "duration_recorded_n": 0
+    },
+    {
+      "participant_id": "DEMO-P05",
+      "arm": "fixed",
+      "pre_form": "B",
+      "post_form": "A",
+      "complete": false,
+      "counts": {
+        "pre": 0,
+        "learning": 0,
+        "post": 0
+      },
+      "pre_score": null,
+      "post_score": null,
+      "gain": null,
+      "bank_deviations": 0,
+      "duration_recorded_n": 0
+    },
+    {
+      "participant_id": "DEMO-P06",
+      "arm": "fixed",
+      "pre_form": "B",
+      "post_form": "A",
+      "complete": false,
+      "counts": {
+        "pre": 0,
+        "learning": 0,
+        "post": 0
+      },
+      "pre_score": null,
+      "post_score": null,
+      "gain": null,
+      "bank_deviations": 0,
+      "duration_recorded_n": 0
+    },
+    {
+      "participant_id": "DEMO-P07",
+      "arm": "fixed",
+      "pre_form": "A",
+      "post_form": "B",
+      "complete": false,
+      "counts": {
+        "pre": 0,
+        "learning": 0,
+        "post": 0
+      },
+      "pre_score": null,
+      "post_score": null,
+      "gain": null,
+      "bank_deviations": 0,
+      "duration_recorded_n": 0
+    },
+    {
+      "participant_id": "DEMO-P08",
+      "arm": "adaptive",
+      "pre_form": "A",
+      "post_form": "B",
+      "complete": false,
+      "counts": {
+        "pre": 0,
+        "learning": 0,
+        "post": 0
+      },
+      "pre_score": null,
+      "post_score": null,
+      "gain": null,
+      "bank_deviations": 0,
+      "duration_recorded_n": 0
+    }
+  ],
+  "groups": {
+    "fixed": {
+      "assigned": 4,
+      "started": 0,
+      "complete": 0,
+      "incomplete": 4,
+      "mean_pre": null,
+      "mean_post": null,
+      "mean_gain": null
+    },
+    "adaptive": {
+      "assigned": 4,
+      "started": 0,
+      "complete": 0,
+      "incomplete": 4,
+      "mean_pre": null,
+      "mean_post": null,
+      "mean_gain": null
+    }
+  },
+  "gain_difference": {
+    "value": null,
+    "status": "not_evaluable",
+    "minimum_complete_per_arm": 5,
+    "bootstrap_95_percentile": null,
+    "reason": "insufficient complete participants per arm"
+  },
+  "limitations": [
+    "Not a claim of improved learning; inspect baseline balance, attrition and form equivalence.",
+    "Correctness is facilitator-recorded; metadata/hash checks cannot verify human grading or form equivalence.",
+    "Synthetic experiment records never constitute real learner evidence.",
+    "Bootstrap interval is exploratory, participant-level, and unreliable with very small samples."
+  ]
+}

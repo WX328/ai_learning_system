@@ -1,0 +1,60 @@
+{
+  "created_at": "2026-10-26T02:08:18.164Z",
+  "source": "real_edge_browser_on_isolated_docker",
+  "models": "mocked_provider_http",
+  "real_participants": 0,
+  "learning_effect_evaluated": false,
+  "browser_version": "156.0.4314.42",
+  "image_editing": false,
+  "files": [
+    {
+      "path": "practice-desktop.png",
+      "source": "../../evaluation/reports/s6/browser/practice-desktop.png",
+      "sha256": "e5eac023fda11319a176a83b07a2d45a6cfbbe15c637697c9be4dd6af2d47dba",
+      "width": 1440,
+      "height": 1455
+    },
+    {
+      "path": "map-desktop.png",
+      "source": "../../evaluation/reports/s6/browser/map-desktop.png",
+      "sha256": "6ac46e14bc4b0ba18cb434d1237f4be05432a67f5047ddfc52cb239decfdef0e",
+      "width": 1440,
+      "height": 1024
+    },
+    {
+      "path": "map-mobile.png",
+      "source": "../../evaluation/reports/s6/browser/map-mobile.png",
+      "sha256": "f8aed850e82c2c3a7cd6fb6e5472be0e16314a0e9eef3506cb59105917e9c63e",
+      "width": 390,
+      "height": 1666
+    },
+    {
+      "path": "rag-desktop.png",
+      "source": "../../evaluation/reports/s6/browser/rag-desktop.png",
+      "sha256": "c708642289c30e64a5c88653c3480954aafcba6fca26f30e708d69eb653774f2",
+      "width": 1440,
+      "height": 1045
+    },
+    {
+      "path": "coach-desktop.png",
+      "source": "../../evaluation/reports/s6/browser/coach-desktop.png",
+      "sha256": "fbb5e904571bbb49a4782747b998b3008b9a97e173faac39fce6e2d8ab6e23f2",
+      "width": 1440,
+      "height": 1249
+    },
+    {
+      "path": "admin-desktop.png",
+      "source": "../../evaluation/reports/s6/browser/admin-desktop.png",
+      "sha256": "d96c46a3741f7f404f4d32059c793dd253c0087f0d821e7d0178beae97a599db",
+      "width": 1440,
+      "height": 1435
+    },
+    {
+      "path": "admin-mobile.png",
+      "source": "../../evaluation/reports/s6/browser/admin-mobile.png",
+      "sha256": "0a248de147cfcac15e0135510fb6e6cff4e7de5d0cd0c31fde63e8e11fbb98d6",
+      "width": 390,
+      "height": 1934
+    }
+  ]
+}

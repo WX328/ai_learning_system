@@ -1,0 +1,40 @@
+{
+  "created_at": "2026-10-26T01:20:40.485499+00:00",
+  "passed": true,
+  "source": "engineering_delivery_checks",
+  "backend_tests": 253,
+  "frontend_dom_scripts": 5,
+  "ruff_exit_code": 0,
+  "runtime_secret_in_public_source_or_reports": false,
+  "scanned_text_files": 58,
+  "source_manifest_files": 45,
+  "container_source_files_matched": 86,
+  "formal_db_sha256": "REDACTED_PRIVATE_DATABASE_SHA256",
+  "test_containers": [
+    {
+      "service": "app",
+      "state": "exited"
+    },
+    {
+      "service": "migrate",
+      "state": "exited"
+    },
+    {
+      "service": "model-stub",
+      "state": "exited"
+    },
+    {
+      "service": "proxy",
+      "state": "exited"
+    }
+  ],
+  "test_volumes_retained": true,
+  "local_python": "3.13.2",
+  "node": "v24.19.0",
+  "git_diff_check": {
+    "exit_code": 2,
+    "stderr": "warning: in the working copy of '.env.example', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/agents/prompts.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/agents/tools.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/core/dependencies.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/core/settings.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/main.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/models/__init__.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/models/question.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/routers/adaptive.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/routers/auth.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/routers/coach.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/routers/learning_material.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/routers/question.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/routers/rag.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/routers/study.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/schemas/question.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/schemas/rag.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/schemas/user.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/services/answer_feedback.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/services/answer_submission.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/services/chunker.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/services/question_generator.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/services/rag.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/services/reranker.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/services/retriever.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/services/topic_chunk.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/services/topic_extractor.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'evaluation/README.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'frontend/README.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'frontend/app.js', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'frontend/coach.js', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'frontend/core.js', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'migrations/env.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'requirements.txt', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/evaluate_rag.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tests/frontend_coach.mjs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tests/frontend_practice.mjs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tests/frontend_study.mjs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tests/test_embedding_index.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tests/test_question_answer_flow.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tests/test_question_generation.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tests/test_reranker.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tests/test_study_workspace.py', LF will be replaced by CRLF the next time Git touches it",
+    "note": "Not counted as passed if command fails; no Git configuration changed."
+  },
+  "documentation_links_valid": true
+}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+  <symbol id="home" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10H3Z"/><path d="M9 20v-7h6v7"/></symbol>
+  <symbol id="library" viewBox="0 0 24 24"><rect x="3" y="4" width="5" height="16" rx="1"/><path d="M11 4v16m4-15 4-1 4 15-4 1Z"/></symbol>
+  <symbol id="chat" viewBox="0 0 24 24"><path d="M5 4h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-6 3V6a2 2 0 0 1 2-2Z"/><path d="M7 9h10M7 13h6"/></symbol>
+  <symbol id="coach" viewBox="0 0 24 24"><path d="m3 8 9-4 9 4-9 4Z"/><path d="M6 10v6c3 3 9 3 12 0v-6m3-2v8"/></symbol>
+  <symbol id="practice" viewBox="0 0 24 24"><path d="M13 5H5v16h14v-9m-9 4 1-4L20 3l3 3-9 9Z"/></symbol>
+  <symbol id="mistakes" viewBox="0 0 24 24"><path d="M4 8a9 9 0 1 1-1 7m1-12v5h5m3 0v5l3 2"/></symbol>
+  <symbol id="records" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8m-8 4h8m-8 4h5"/></symbol>
+  <symbol id="map" viewBox="0 0 24 24"><circle cx="5" cy="12" r="3"/><circle cx="18" cy="5" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8 11 7-5m-7 7 7 5"/></symbol>
+  <symbol id="menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+  <symbol id="close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+  <symbol id="brand" viewBox="0 0 32 32"><path d="M16 8C12 5 7 5 3 6v20c4-1 9-1 13 2 4-3 9-3 13-2V6c-4-1-9-1-13 2Zm0 0v20"/><path d="m8 13 3 3 4-5m5 4h4m-4 5h4"/></symbol>
+</svg>

@@ -1,0 +1,9 @@
+﻿participant_id,arm,pre_form,post_form,complete,pre_score,post_score,gain,bank_deviations
+DEMO-P01,adaptive,B,A,False,,,,0
+DEMO-P02,adaptive,B,A,False,,,,0
+DEMO-P03,fixed,A,B,False,,,,0
+DEMO-P04,adaptive,A,B,False,,,,0
+DEMO-P05,fixed,B,A,False,,,,0
+DEMO-P06,fixed,B,A,False,,,,0
+DEMO-P07,fixed,A,B,False,,,,0
+DEMO-P08,adaptive,A,B,False,,,,0

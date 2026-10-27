@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800" role="img" aria-labelledby="title desc">
+  <title id="title">知行 AI 学习系统 V2 实际架构</title>
+  <desc id="desc">原生前端经本机 Nginx 访问 FastAPI，JWT 和 RBAC 在后端验证；业务服务共用掌握度与事务，SQLite 持久化，外部模型受限调用。研究 CLI 与生产库隔离。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#577a75"/></marker>
+    <style>
+      text{font-family:'Microsoft YaHei','PingFang SC',sans-serif;fill:#203b37;font-size:17px}
+      .heading{font-size:22px;font-weight:700}.small{font-size:15px;fill:#526963}
+      .box{fill:#fff;stroke:#b8ceca;stroke-width:1.5;rx:14}
+      .flow{fill:none;stroke:#577a75;stroke-width:2;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1280" height="800" fill="#f4f7f6"/>
+  <text x="48" y="57" font-size="29" font-weight="700">知行 · AI 学习系统 V2</text>
+  <text x="48" y="86" class="small">S6 作品集架构 · 对应现有实现 · 本地单进程部署 · 研究流程独立</text>
+  <rect x="40" y="120" width="1200" height="510" rx="18" fill="#e8f0ee"/>
+  <text x="62" y="153" class="small">本机 Docker Compose：迁移完成 → API 健康 → Nginx；数据与备份各自持久化</text>
+  <rect class="box" x="65" y="185" width="230" height="160"/>
+  <text class="heading" x="86" y="222">原生学习工作台</text>
+  <text x="86" y="255">JavaScript ES Modules</text>
+  <text x="86" y="285">资料 / 问答 / 练习 / 地图</text>
+  <text class="small" x="86" y="314">管理员界面 / 手机适配</text>
+  <rect class="box" x="335" y="185" width="210" height="160"/>
+  <text class="heading" x="356" y="222">Nginx → FastAPI</text>
+  <text x="356" y="255">JWT + 数据库账号状态</text>
+  <text x="356" y="285">RBAC / 用户资料归属</text>
+  <text class="small" x="356" y="314">仅本机端口 / 请求限流</text>
+  <rect class="box" x="590" y="185" width="270" height="160"/>
+  <text class="heading" x="611" y="222">共享业务服务</text>
+  <text x="611" y="255">解析 / 分块 / 检索 / 出题</text>
+  <text x="611" y="285">答题事务 / XP / 成就 / 复习</text>
+  <text class="small" x="611" y="314">统一 rules_v2 / 推荐解释</text>
+  <rect class="box" x="910" y="185" width="300" height="160"/>
+  <text class="heading" x="931" y="222">SQLite + SQLAlchemy</text>
+  <text x="931" y="255">用户 / 资料 / 片段 JSON 向量</text>
+  <text x="931" y="285">题目 / 首次及复习 / 会话 / 审计</text>
+  <text class="small" x="931" y="314">Alembic / WAL / 一致性备份</text>
+  <path class="flow" d="M295 267H333"/><path class="flow" d="M545 267H588"/><path class="flow" d="M860 267H908"/>
+  <rect class="box" x="335" y="395" width="525" height="195"/>
+  <text class="heading" x="356" y="433">单个学习教练 Agent</text>
+  <text x="356" y="467">五个允许工具：学情 / 薄弱点 / 检索 / 练习 / 错题</text>
+  <text x="356" y="501">请求回执 / 会话版本 / 租约 / 待答题恢复</text>
+  <text class="small" x="356" y="535">有限模型与工具循环；权限与判分由服务端执行</text>
+  <text class="small" x="356" y="561">复用业务服务与 rules_v2，不执行任意 SQL 或系统命令</text>
+  <path class="flow" d="M440 345V393"/><path class="flow" d="M725 395V347"/>
+  <rect class="box" x="910" y="395" width="300" height="195"/>
+  <text class="heading" x="931" y="433">外部模型供应商</text>
+  <text x="931" y="467">DeepSeek：生成 / 工具调用</text>
+  <text x="931" y="501">百炼：Embedding / 可选重排</text>
+  <text class="small" x="931" y="535">环境变量密钥 / 超时 / 调用边界</text>
+  <text class="small" x="931" y="561">隔离验收可显式使用本地替身</text>
+  <path class="flow" d="M860 490H908"/>
+  <path class="flow" d="M785 345V368H1060V393"/>
+  <rect class="box" x="40" y="660" width="1200" height="102"/>
+  <text class="heading" x="62" y="699">独立研究 CLI（S3 / S4）</text>
+  <text x="62" y="732">人工审题 → 固定/自适应前后测 → 私有文件 → 脱敏分析与图表；不写生产答题、XP 或成就</text>
+</svg>

@@ -1,0 +1,16 @@
+{
+  "source": "synthetic_production_config_boot",
+  "created_at": "2026-10-26T01:17:40.950275+00:00",
+  "models": "not_called",
+  "real_participants": 0,
+  "project": "zhixing-s5-production-20261026",
+  "checks": [
+    "production Compose healthy using runtime HTTPS provider configuration",
+    "readiness and frontend HTTP 200",
+    "anonymous admin denied 401",
+    "real registration/login/current user",
+    "ordinary user admin denied 403",
+    "fresh DB has no learning attempts"
+  ],
+  "passed": true
+}

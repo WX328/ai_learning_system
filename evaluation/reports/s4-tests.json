@@ -1,0 +1,70 @@
+{
+  "stage": "S4",
+  "executed_at": "2026-10-23T09:33:21.531410+00:00",
+  "database": {
+    "access": "hash verification only; no writes",
+    "sha256_before": "REDACTED_PRIVATE_DATABASE_SHA256",
+    "sha256_after": "REDACTED_PRIVATE_DATABASE_SHA256",
+    "unchanged": true
+  },
+  "backend": {
+    "command": ".venv/Scripts/python.exe -m unittest discover -s tests",
+    "tests_run": 239,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "seconds": 87.104,
+    "passed": true
+  },
+  "frontend": [
+    {
+      "script": "tests/frontend_admin.mjs",
+      "exit_code": 0,
+      "passed": true,
+      "output": "PASS: server identity navigation, stats, safe rendering, search/filter/pagination, empty/errors/retry, details, self protection, confirmation/cancel, save lock, audit refresh, 403 cleanup, logout race\n(node:72348) ExperimentalWarning: VM Modules is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+    },
+    {
+      "script": "tests/frontend_coach.mjs",
+      "exit_code": 0,
+      "passed": true,
+      "output": "PASS: app boot, scoped chat suggestions and request, topic source labels, coach resume, idempotent retry, escaped output, logout race\n(node:71548) ExperimentalWarning: VM Modules is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n(node:71548) MaxListenersExceededWarning: Possible EventTarget memory leak detected. 11 reset listeners added to EventTarget. MaxListeners is 10. Use events.setMaxListeners() to increase limit\n"
+    },
+    {
+      "script": "tests/frontend_practice.mjs",
+      "exit_code": 0,
+      "passed": true,
+      "output": "PASS: wrong-answer retry, hidden solution, cancel, repeated errors, idempotent save/reload, first-score preservation, no repeat XP, next question, last question, legacy state, account switch, async feedback\n(node:57908) ExperimentalWarning: VM Modules is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+    },
+    {
+      "script": "tests/frontend_recommendation.mjs",
+      "exit_code": 0,
+      "passed": true,
+      "output": "PASS: recommendation loading, new user, rates/stars, escaping, errors/retry, malformed response, no topics, read deduplication, existing adaptive start, double click, answer refresh, material/account isolation, in-flight invalidation\n(node:68492) ExperimentalWarning: VM Modules is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+    },
+    {
+      "script": "tests/frontend_study.mjs",
+      "exit_code": 0,
+      "passed": true,
+      "output": "PASS: module imports, progress, filtering/pagination, escaping, review retry, errors, dates, map navigation, logout race.\n(node:63772) ExperimentalWarning: VM Modules is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+    }
+  ],
+  "e2e": {
+    "source": "demo_experiment",
+    "purpose": "software_e2e_verification_only",
+    "real_human_participants": 0,
+    "scripted_research_codes": 4,
+    "scripted_answers": 48,
+    "question_items": 28,
+    "model_calls": 0,
+    "production_database_access": false,
+    "checks": {
+      "pre_post_feedback_hidden": true,
+      "learning_feedback_present": true,
+      "s3_roundtrip_identical": true,
+      "all_phases_complete": true,
+      "both_arms_present": true
+    },
+    "inference_status": "not_evaluable",
+    "limitations": "Scripted A/B/C/D input and artificial clock. Neither real experimental scores nor evidence of learning improvement."
+  }
+}

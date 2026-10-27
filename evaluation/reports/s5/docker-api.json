@@ -1,0 +1,518 @@
+{
+  "created_at": "2026-10-26T01:15:54.561660+00:00",
+  "source": "synthetic_engineering_acceptance",
+  "transport": "real HTTP, JWT, SQLite",
+  "models": "mocked_provider_http",
+  "real_participants": 0,
+  "learning_effect_evaluated": false,
+  "passed": true,
+  "failure": null,
+  "steps": [
+    {
+      "name": "readiness",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 0.034
+    },
+    {
+      "name": "anonymous denied /auth/me",
+      "status": 401,
+      "expected": 401,
+      "passed": true,
+      "seconds": 0.025
+    },
+    {
+      "name": "anonymous denied /admin/users",
+      "status": 401,
+      "expected": 401,
+      "passed": true,
+      "seconds": 0.014
+    },
+    {
+      "name": "anonymous denied /admin/stats",
+      "status": 401,
+      "expected": 401,
+      "passed": true,
+      "seconds": 0.037
+    },
+    {
+      "name": "anonymous denied /admin/audit-logs",
+      "status": 401,
+      "expected": 401,
+      "passed": true,
+      "seconds": 0.014
+    },
+    {
+      "name": "register learner",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 0.168
+    },
+    {
+      "name": "login learner",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 0.165
+    },
+    {
+      "name": "register other",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 0.085
+    },
+    {
+      "name": "login other",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 0.142
+    },
+    {
+      "name": "registration cannot set role",
+      "status": 422,
+      "expected": 422,
+      "passed": true,
+      "seconds": 0.013
+    },
+    {
+      "name": "learner admin denied",
+      "status": 403,
+      "expected": 403,
+      "passed": true,
+      "seconds": 0.015
+    },
+    {
+      "name": "admin login",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 0.231
+    },
+    {
+      "name": "admin identity",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 0.021
+    },
+    {
+      "name": "learner identity",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 0.034
+    },
+    {
+      "name": "DB role is user",
+      "passed": true,
+      "kind": "assertion"
+    },
+    {
+      "name": "upload TXT",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 0.061
+    },
+    {
+      "name": "vector index",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 0.952
+    },
+    {
+      "name": "extract topics",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 0.065
+    },
+    {
+      "name": "topics saved",
+      "passed": true,
+      "kind": "assertion"
+    },
+    {
+      "name": "topics idempotent",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 0.037
+    },
+    {
+      "name": "topic IDs stable",
+      "passed": true,
+      "kind": "assertion"
+    },
+    {
+      "name": "new topic recommendation",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 0.045
+    },
+    {
+      "name": "no history is unknown",
+      "passed": true,
+      "kind": "assertion"
+    },
+    {
+      "name": "RAG ask",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 0.077
+    },
+    {
+      "name": "RAG answered with evidence",
+      "passed": true,
+      "kind": "assertion"
+    },
+    {
+      "name": "generate topic question",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 0.057
+    },
+    {
+      "name": "question hides answer",
+      "passed": true,
+      "kind": "assertion"
+    },
+    {
+      "name": "submit answer and local feedback",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 0.061
+    },
+    {
+      "name": "local feedback durable",
+      "passed": true,
+      "kind": "assertion"
+    },
+    {
+      "name": "duplicate first answer denied",
+      "status": 400,
+      "expected": 400,
+      "passed": true,
+      "seconds": 0.019
+    },
+    {
+      "name": "optional model feedback",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 0.068
+    },
+    {
+      "name": "cached feedback",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 0.016
+    },
+    {
+      "name": "XP and achievements",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 0.017
+    },
+    {
+      "name": "answer count and seeded achievement XP",
+      "passed": true,
+      "kind": "assertion"
+    },
+    {
+      "name": "mistake list",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 0.042
+    },
+    {
+      "name": "correct mistake review",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 0.076
+    },
+    {
+      "name": "review idempotent",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 0.053
+    },
+    {
+      "name": "review XP stays zero",
+      "passed": true,
+      "kind": "assertion"
+    },
+    {
+      "name": "XP after review",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 0.019
+    },
+    {
+      "name": "review does not farm XP",
+      "passed": true,
+      "kind": "assertion"
+    },
+    {
+      "name": "knowledge map",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 0.031
+    },
+    {
+      "name": "rules_v2 mastery updated",
+      "passed": true,
+      "kind": "assertion"
+    },
+    {
+      "name": "recommendation refresh",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 0.326
+    },
+    {
+      "name": "map and recommendation agree",
+      "passed": true,
+      "kind": "assertion"
+    },
+    {
+      "name": "adaptive next question",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 0.095
+    },
+    {
+      "name": "reuse pending adaptive question",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 0.033
+    },
+    {
+      "name": "pending question reused",
+      "passed": true,
+      "kind": "assertion"
+    },
+    {
+      "name": "adaptive answer",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 0.054
+    },
+    {
+      "name": "coach plan",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 0.068
+    },
+    {
+      "name": "coach message",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 0.158
+    },
+    {
+      "name": "coach explanation not degraded",
+      "passed": true,
+      "kind": "assertion"
+    },
+    {
+      "name": "coach message",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 0.085
+    },
+    {
+      "name": "coach practice question exists",
+      "passed": true,
+      "kind": "assertion"
+    },
+    {
+      "name": "coach answer",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 0.05
+    },
+    {
+      "name": "coach finish",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 0.073
+    },
+    {
+      "name": "coach finished",
+      "passed": true,
+      "kind": "assertion"
+    },
+    {
+      "name": "learning records",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 0.045
+    },
+    {
+      "name": "records include answer and chat",
+      "passed": true,
+      "kind": "assertion"
+    },
+    {
+      "name": "cross-user denied /learning-materials/7/topics",
+      "status": 404,
+      "expected": 404,
+      "passed": true,
+      "seconds": 0.031
+    },
+    {
+      "name": "cross-user denied /adaptive/recommendation?material_id=7",
+      "status": 404,
+      "expected": 404,
+      "passed": true,
+      "seconds": 0.05
+    },
+    {
+      "name": "cross-user denied /rag/ask",
+      "status": 404,
+      "expected": 404,
+      "passed": true,
+      "seconds": 0.017
+    },
+    {
+      "name": "cross-user denied /questions/10/answer",
+      "status": 403,
+      "expected": 403,
+      "passed": true,
+      "seconds": 0.036
+    },
+    {
+      "name": "cross-user denied /coach/sessions/3ad3fd71-03b9-48eb-bb83-fcb8bd6faaf2",
+      "status": 404,
+      "expected": 404,
+      "passed": true,
+      "seconds": 0.015
+    },
+    {
+      "name": "admin pagination search",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 0.023
+    },
+    {
+      "name": "user filter",
+      "passed": true,
+      "kind": "assertion"
+    },
+    {
+      "name": "admin minimal user detail",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 0.03
+    },
+    {
+      "name": "private content excluded",
+      "passed": true,
+      "kind": "assertion"
+    },
+    {
+      "name": "admin stats",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 0.027
+    },
+    {
+      "name": "self or last admin disable denied",
+      "status": 409,
+      "expected": 409,
+      "passed": true,
+      "seconds": 0.049
+    },
+    {
+      "name": "disable learner",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 0.051
+    },
+    {
+      "name": "old JWT disabled",
+      "status": 401,
+      "expected": 401,
+      "passed": true,
+      "seconds": 0.014
+    },
+    {
+      "name": "disabled login denied",
+      "status": 401,
+      "expected": 401,
+      "passed": true,
+      "seconds": 0.157
+    },
+    {
+      "name": "enable learner",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 0.025
+    },
+    {
+      "name": "old JWT still revoked",
+      "status": 401,
+      "expected": 401,
+      "passed": true,
+      "seconds": 0.013
+    },
+    {
+      "name": "fresh login after enable",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 0.141
+    },
+    {
+      "name": "data retained",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 0.015
+    },
+    {
+      "name": "admin audit",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 0.039
+    },
+    {
+      "name": "changes audited",
+      "passed": true,
+      "kind": "assertion"
+    }
+  ]
+}

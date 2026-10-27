@@ -1,0 +1,153 @@
+{
+  "source": "synthetic_docker_engineering_acceptance",
+  "created_at": "2026-10-26T02:22:02.130868+00:00",
+  "project": "zhixing-s6-20261026",
+  "models": "mocked_provider_http",
+  "checks": [
+    {
+      "name": "nonempty synthetic deployment",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "non-root image excludes private files and supports Chinese",
+      "passed": true,
+      "details": {
+        "uid": 10001,
+        "keys_in_code": false,
+        "database_in_image": false,
+        "research_in_image": false,
+        "chinese_tokens": 5
+      }
+    },
+    {
+      "name": "containers read-only and capabilities dropped",
+      "passed": true,
+      "details": [
+        {
+          "service": "app",
+          "user": "10001:10001",
+          "read_only": true,
+          "cap_drop": [
+            "ALL"
+          ],
+          "ports": {},
+          "image_id": "sha256:5a9dca1af149e78cd76cb66661cb7087f03b8e3dcb672fd44434e02f8f09afea"
+        },
+        {
+          "service": "proxy",
+          "user": "101",
+          "read_only": true,
+          "cap_drop": [
+            "ALL"
+          ],
+          "ports": {
+            "8080/tcp": [
+              {
+                "HostIp": "127.0.0.1",
+                "HostPort": "18086"
+              }
+            ]
+          },
+          "image_id": "sha256:7377697a821c131a924a7105fafbe7414db4e9fcc77a6f08f776f33f141ec3f8"
+        }
+      ]
+    },
+    {
+      "name": "backend has no host port",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "proxy bound only to loopback",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "nginx syntax",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "live WAL backup restores all rows",
+      "passed": true,
+      "details": {
+        "counts": {
+          "users": 6,
+          "learning_materials": 3,
+          "topics": 9,
+          "questions": 7,
+          "question_attempts": 7,
+          "review_attempts": 3,
+          "qa_histories": 3,
+          "coach_sessions": 3,
+          "admin_audit_logs": 8
+        },
+        "integrity": "ok",
+        "nonempty_refused": true,
+        "heads": [
+          "0005"
+        ],
+        "backup_name": "s5-restore-proof-0a4010e6"
+      }
+    },
+    {
+      "name": "restore refuses overwriting data",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "update creates pre-migration backup",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "restart preserves users and learning rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "alembic schema matches ORM",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "restore overlay boots real application",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "passed": true,
+  "counts_before_restart": {
+    "users": 6,
+    "learning_materials": 3,
+    "topics": 9,
+    "questions": 7,
+    "question_attempts": 7,
+    "review_attempts": 3,
+    "qa_histories": 3,
+    "coach_sessions": 3,
+    "admin_audit_logs": 8
+  },
+  "counts_after_restart": {
+    "users": 6,
+    "learning_materials": 3,
+    "topics": 9,
+    "questions": 7,
+    "question_attempts": 7,
+    "review_attempts": 3,
+    "qa_histories": 3,
+    "coach_sessions": 3,
+    "admin_audit_logs": 8
+  },
+  "restored_volume": "zhixing-s6-20261026-restore-96d951e5",
+  "environment": {
+    "docker_server": "29.8.0",
+    "compose": "5.5.1",
+    "runtime": {
+      "python": "3.13.17",
+      "system": "Linux",
+      "machine": "x86_64"
+    }
+  }
+}

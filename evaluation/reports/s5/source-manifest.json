@@ -1,0 +1,232 @@
+{
+  "created_at": "2026-10-26T01:20:33.731664+00:00",
+  "basis": "S5 edit baseline, not a Git diff",
+  "note": "Only files modified/added by S5; earlier user changes retained. Excludes secrets and databases.",
+  "files": [
+    {
+      "path": ".dockerignore",
+      "change": "new",
+      "sha256": "cdae7ab1eab982d9b7070cb55fd481d42c3acd5f378fba8ea4170e6e68b2d0f1"
+    },
+    {
+      "path": ".env.docker.example",
+      "change": "new",
+      "sha256": "4e0ec3f962ad43903cb5c0e323fe64c89aaaa84a88fb9ebf904f0efb5179a491"
+    },
+    {
+      "path": ".env.example",
+      "change": "modified",
+      "sha256": "07da140ad38d734370a27a0d66fbe156063d80006db135b708c74e1564cdd0a4"
+    },
+    {
+      "path": ".gitignore",
+      "change": "modified",
+      "sha256": "2215213034c91c9010a1bc87e84b6bd457bb6f40a32ef8ff569a0bf8827dfc12"
+    },
+    {
+      "path": "DEPLOYMENT.md",
+      "change": "new",
+      "sha256": "a9654291528b4cefcbe3d7aa9222677dfa218dc890c3051ba513c19c6863dc8c"
+    },
+    {
+      "path": "Dockerfile",
+      "change": "new",
+      "sha256": "a42ddc0ec7c72867a710de142f0ba67bfc7c23a697fcd8d1e2e0ea6d819ea964"
+    },
+    {
+      "path": "README.md",
+      "change": "modified",
+      "sha256": "b91fd60ec7cac0872c7541401982257a6ecc396abc386bb090afaf2f05668379"
+    },
+    {
+      "path": "S5_FINAL_DELIVERY.md",
+      "change": "new",
+      "sha256": "21f9ff6d1f9771ea20235ee7e6684b63cfc777278e768c147645ca466fd48171"
+    },
+    {
+      "path": "app/core/resource_limits.py",
+      "change": "new",
+      "sha256": "1aff9ea6ec4d97eb72bca6d9e198105b5c68c40009cf2f3a4c03686e96375615"
+    },
+    {
+      "path": "app/core/settings.py",
+      "change": "modified",
+      "sha256": "25318fc0a5464214cf82d552864f3c12c08107f98cea962e6b823a9a8845f163"
+    },
+    {
+      "path": "app/database.py",
+      "change": "modified",
+      "sha256": "076d535c4e51b6a33cac454133681ae0266cad66b43689a53edcd8a21e259cfb"
+    },
+    {
+      "path": "app/main.py",
+      "change": "modified",
+      "sha256": "337ad91ccb9636c297e936ca76a8856f044583751925b9fb5824873c8f485cc8"
+    },
+    {
+      "path": "app/routers/adaptive.py",
+      "change": "modified",
+      "sha256": "01d97da26898123bb24da4c13eae6405e393b0d209b5a4282bcdb4ec35c64700"
+    },
+    {
+      "path": "app/routers/learning_material.py",
+      "change": "modified",
+      "sha256": "139a63e8ff22ad2e1fc828370f8436e1d8c879a013488ced18cda4e1034307e9"
+    },
+    {
+      "path": "app/routers/learning_record.py",
+      "change": "modified",
+      "sha256": "152ad89610c13fbf03c9fa03e51bdfee3ec0d9503d47a5a5b2245bfd8afaab64"
+    },
+    {
+      "path": "app/routers/question.py",
+      "change": "modified",
+      "sha256": "18a8129fbe77842ba39ddcd0ae06cf49e473f3587fc421ac078be7bc7407e832"
+    },
+    {
+      "path": "app/routers/rag.py",
+      "change": "modified",
+      "sha256": "f3de32da7f9aef8095b5dcd213c1020f7bf721636e31f31d6118d92e01bf173a"
+    },
+    {
+      "path": "app/routers/user.py",
+      "change": "modified",
+      "sha256": "1f905df3e48b61604568b271cd8903192aa1597896efa0315ad33e97d72bcdd8"
+    },
+    {
+      "path": "app/schemas/learning_material.py",
+      "change": "modified",
+      "sha256": "bcb29cfbedfd0e7e959bb9e14c454eb0e86f3c16610e9631caf7bd2cfada5f9b"
+    },
+    {
+      "path": "app/services/answer_feedback.py",
+      "change": "modified",
+      "sha256": "2604b7334baaf76a4a68d878202c7dbf42663362cfd3bee5e723bb914d598b06"
+    },
+    {
+      "path": "app/services/answer_submission.py",
+      "change": "modified",
+      "sha256": "8fc9adc502ad258b5ea7735f70c70026fc000563de6f2241bb2ac5da3d36f987"
+    },
+    {
+      "path": "app/services/question_generator.py",
+      "change": "modified",
+      "sha256": "a46934621b6cd92e0b14a41541402654fe4420984abef7af2c09d73387158d46"
+    },
+    {
+      "path": "app/services/rag.py",
+      "change": "modified",
+      "sha256": "d9b4d866fbe261860ab0882bfd81f948dfd21ec4998448d6876ad5f3d9149928"
+    },
+    {
+      "path": "app/services/topic_chunk.py",
+      "change": "modified",
+      "sha256": "d12827ea82e066fb6abf1f9637fc3efd3c0aa486f44b40ed9003a71b14aab202"
+    },
+    {
+      "path": "app/services/topic_extractor.py",
+      "change": "modified",
+      "sha256": "b2f278751065c03bf0dc4c1ccd7b930ebb3f4bfa5ad1be7763f64918fe6c5fdd"
+    },
+    {
+      "path": "compose.yaml",
+      "change": "new",
+      "sha256": "081bcdb8abb39514d6aa0acec6770a730bc044099883ac0648506d053d34291d"
+    },
+    {
+      "path": "deploy/Dockerfile.stub",
+      "change": "new",
+      "sha256": "01871811591646020915c29d557abfa2a8be1ca8c4b436de8ab81dfde78e23f9"
+    },
+    {
+      "path": "deploy/compose.acceptance.yaml",
+      "change": "new",
+      "sha256": "e9abd1a3f319e6c850ebdd6828a72892f634b89bff765c48a7525702840348be"
+    },
+    {
+      "path": "deploy/compose.restore.yaml",
+      "change": "new",
+      "sha256": "de5a5ccdb0c9eb462a21e958b6bf84f390c2c10b6122660c2b8b6729fafe127d"
+    },
+    {
+      "path": "deploy/nginx.conf",
+      "change": "new",
+      "sha256": "e7a9810f9cb23a040af41706d73c23d6f45339ad8f89e1c7c068ef478b75a4ba"
+    },
+    {
+      "path": "requirements.lock",
+      "change": "modified",
+      "sha256": "c69040785d77d9566f371a9886b34c42d3275ae09526449ee246b3c5e39a7f73"
+    },
+    {
+      "path": "scripts/container_start.py",
+      "change": "new",
+      "sha256": "b0a9e6dc27316dffd16acfedee37c27aaa5a69cd97fa09dfdc6bc6017d78a423"
+    },
+    {
+      "path": "scripts/data_backup.py",
+      "change": "new",
+      "sha256": "8b81e07641bb33fae435fad6500f771153f28af0de4f107d560f0a3fee121c3e"
+    },
+    {
+      "path": "scripts/run_s5_tests.py",
+      "change": "new",
+      "sha256": "ab309e35cac70d588319b7f6ee6ef4ffd20be7b4fa6554b315f452206bc46558"
+    },
+    {
+      "path": "scripts/s5_acceptance.py",
+      "change": "new",
+      "sha256": "394215f5940a8fe629974b3ac5fed1496f3032c6b15f22faa8617df593ae42dc"
+    },
+    {
+      "path": "scripts/s5_online_check.py",
+      "change": "new",
+      "sha256": "68836e55ca792031e7bb78e86ada6ffee8e944c0c4b6ee4e3bbd47b9320be080"
+    },
+    {
+      "path": "scripts/seed_achievements.py",
+      "change": "new",
+      "sha256": "48c5fc1dce0db11f1c47b98c3587bb09188831f694743cd93fa1ae7c24dbed6b"
+    },
+    {
+      "path": "tests/s5_bootstrap_fixture.py",
+      "change": "new",
+      "sha256": "1a16f3990796c5dbdd3afba701013ee26108b7e6903acb00c8f1cc6f26490054"
+    },
+    {
+      "path": "tests/s5_browser.mjs",
+      "change": "new",
+      "sha256": "da1a9f6f14ba380d923ce045475c84c4f9d146e05a5a0059798e189b79712fd1"
+    },
+    {
+      "path": "tests/s5_docker_verify.py",
+      "change": "new",
+      "sha256": "eda45b6d283eb42d317a16edc9ae6139d4d502fbf4b352e5fa9618b87f1c8316"
+    },
+    {
+      "path": "tests/s5_model_stub.py",
+      "change": "new",
+      "sha256": "898e2267d3d513ccc1b383170cb205059995277023ef696d5f6df505b8b985e8"
+    },
+    {
+      "path": "tests/s5_prepare.py",
+      "change": "new",
+      "sha256": "307bb2fbb30f24992c4b3fb6a13c231640ee7aa8a635c1fbc3cf630986ee382a"
+    },
+    {
+      "path": "tests/s5_production_boot.py",
+      "change": "new",
+      "sha256": "4650bf756573f0793140adf02ce4d41fdb3c692917a738b0ac524134ebeffe9c"
+    },
+    {
+      "path": "tests/test_experiment_s4.py",
+      "change": "modified",
+      "sha256": "354619b8a857a63efda7e1cebc5b97ea3ddb2073e6a813e81b9c6b8d3191d61c"
+    },
+    {
+      "path": "tests/test_s5_delivery.py",
+      "change": "new",
+      "sha256": "c7565195bd554a71fbce72941449fede3917686e2ebe94141b09005bc3b06c88"
+    }
+  ]
+}

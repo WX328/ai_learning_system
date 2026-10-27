@@ -1,0 +1,52 @@
+{
+  "source": "synthetic",
+  "dataset_sha256": "9a4aae1808dd88015cd55341488b2163fb94b5ce44703dda359076f19c2901da",
+  "evaluation_version": "adaptive_eval_v1",
+  "implementation_sha256": {
+    "replay": "6c59ed0776a3dbe21830f6b3f19a2fbfa5c908faea55eb13ff74485df091990f",
+    "mastery": "ea6c8b868c0137593fc1ea96cc521ff10030838881acfd05a6a71f3effc1d9f6",
+    "adaptive": "97177becf4b486df5231fd797bc526e1d21711acc05597e9b3c425ff96cb876e"
+  },
+  "decisions_csv_sha256": "0f43ab372d08140745cf45a7ab610c4e21df0174bac322287a56f0d97c26f9a7",
+  "algorithms": [
+    "raw_accuracy_v1",
+    "recent5_accuracy_v1",
+    "rules_v2"
+  ],
+  "matplotlib": "3.11.2",
+  "config": {
+    "min_predictions": 20,
+    "min_learners": 2,
+    "min_history": 3,
+    "ranking_horizon": 10,
+    "min_future_per_topic": 2,
+    "same_timestamp": "all decisions before all outcomes"
+  },
+  "trajectory_topic_decisions": 20,
+  "artifacts": [
+    "mastery.svg",
+    "mastery.pdf",
+    "mastery.png",
+    "difficulty.svg",
+    "difficulty.pdf",
+    "difficulty.png",
+    "comparison.svg",
+    "comparison.pdf",
+    "comparison.png",
+    "sample_counts.svg",
+    "sample_counts.pdf",
+    "sample_counts.png",
+    "experiment_samples.svg",
+    "experiment_samples.pdf",
+    "experiment_samples.png"
+  ],
+  "limits": [
+    "Fixed logged actions: counterfactual learning gains are not identifiable.",
+    "rules_v2 score/100 is an uncalibrated score proxy, not an estimated ability probability.",
+    "Overlapping checkpoints and answers within a learner are correlated.",
+    "Future failure rates are observed proxies affected by item difficulty and selection.",
+    "No historical pending-question/recommendation logs; evaluate fresh decisions only.",
+    "Synthetic results validate rules only; real_history is observational, not a randomized trial."
+  ],
+  "format": "vector PDF/SVG and 300dpi PNG"
+}

@@ -1,0 +1,21 @@
+# Isolated acceptance only; never deploy this overlay with real user data.
+services:
+  app:
+    environment:
+      APP_ENV: test
+      DEEPSEEK_BASE_URL: http://model-stub:9000/v1
+      DASHSCOPE_EMBEDDING_BASE_URL: http://model-stub:9000/v1
+    depends_on:
+      model-stub:
+        condition: service_started
+  model-stub:
+    image: zhixing-s5-model-stub:local
+    build:
+      context: .
+      dockerfile: deploy/Dockerfile.stub
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    pids_limit: 32
+    mem_limit: 128m
+    # Deliberately no host port.

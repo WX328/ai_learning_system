@@ -1,0 +1,626 @@
+{
+  "model": "rules_v2",
+  "synthetic_only": true,
+  "cases": [
+    {
+      "id": "new_topic",
+      "name": "新知识点",
+      "input": {
+        "id": "new_topic",
+        "name": "新知识点",
+        "answers": "",
+        "difficulty": 2
+      },
+      "old_mastery_score": null,
+      "old_recommended_difficulty": 2,
+      "new_recommended_difficulty": 2,
+      "difficulty_reason": "该知识点暂无答题记录，先从难度 2/5 开始。",
+      "assessment": {
+        "mastery_model": "rules_v2",
+        "mastery_score": null,
+        "mastery_status": "unseen",
+        "attempt_count": 0,
+        "historical_correct_rate": null,
+        "recent_correct_rate": null,
+        "recent_attempt_count": 0,
+        "average_difficulty": null,
+        "sample_limited": true,
+        "reviewed_question_count": 0,
+        "review_correct_count": 0,
+        "mastery_components": {
+          "historical": null,
+          "recent": null,
+          "historical_weight": 0.7,
+          "recent_weight": 0.3,
+          "review_weight": 0.3,
+          "smoothing_success": 1,
+          "smoothing_failure": 1
+        },
+        "mastery_reason": "该知识点暂无答题记录，掌握情况未知，不能据此判断薄弱。"
+      }
+    },
+    {
+      "id": "one_easy_correct",
+      "name": "仅一道简单题答对",
+      "input": {
+        "id": "one_easy_correct",
+        "name": "仅一道简单题答对",
+        "answers": "1",
+        "difficulty": 1
+      },
+      "old_mastery_score": 100,
+      "old_recommended_difficulty": 2,
+      "new_recommended_difficulty": 1,
+      "difficulty_reason": "最近 1 道不同题目首次正确率 100%。升档至少需要 3 道不同题目的首次作答，当前保持难度 1/5。",
+      "assessment": {
+        "mastery_model": "rules_v2",
+        "mastery_score": 64,
+        "mastery_status": "weak",
+        "attempt_count": 1,
+        "historical_correct_rate": 1.0,
+        "recent_correct_rate": 1.0,
+        "recent_attempt_count": 1,
+        "average_difficulty": 1.0,
+        "sample_limited": true,
+        "reviewed_question_count": 0,
+        "review_correct_count": 0,
+        "mastery_components": {
+          "historical": 0.642857,
+          "recent": 0.642857,
+          "historical_weight": 0.7,
+          "recent_weight": 0.3,
+          "review_weight": 0.3,
+          "smoothing_success": 1,
+          "smoothing_failure": 1
+        },
+        "mastery_reason": "规则掌握度 64/100，低于巩固阈值 80，仍需巩固。依据 1 道不同题目：历史首次正确率 100%，最近 1 道首次正确率 100%，平均难度 1/5。历史证据占 70%，最近证据占 30%，难题答对权重更高、答错惩罚更轻，并用平滑项抑制小样本极端分数。不同题目少于 5 道，目前仅为初步评估。"
+      }
+    },
+    {
+      "id": "one_correct",
+      "name": "仅一道难度2题答对",
+      "input": {
+        "id": "one_correct",
+        "name": "仅一道难度2题答对",
+        "answers": "1",
+        "difficulty": 2
+      },
+      "old_mastery_score": 100,
+      "old_recommended_difficulty": 3,
+      "new_recommended_difficulty": 2,
+      "difficulty_reason": "最近 1 道不同题目首次正确率 100%。升档至少需要 3 道不同题目的首次作答，当前保持难度 2/5。",
+      "assessment": {
+        "mastery_model": "rules_v2",
+        "mastery_score": 67,
+        "mastery_status": "weak",
+        "attempt_count": 1,
+        "historical_correct_rate": 1.0,
+        "recent_correct_rate": 1.0,
+        "recent_attempt_count": 1,
+        "average_difficulty": 2.0,
+        "sample_limited": true,
+        "reviewed_question_count": 0,
+        "review_correct_count": 0,
+        "mastery_components": {
+          "historical": 0.666667,
+          "recent": 0.666667,
+          "historical_weight": 0.7,
+          "recent_weight": 0.3,
+          "review_weight": 0.3,
+          "smoothing_success": 1,
+          "smoothing_failure": 1
+        },
+        "mastery_reason": "规则掌握度 67/100，低于巩固阈值 80，仍需巩固。依据 1 道不同题目：历史首次正确率 100%，最近 1 道首次正确率 100%，平均难度 2/5。历史证据占 70%，最近证据占 30%，难题答对权重更高、答错惩罚更轻，并用平滑项抑制小样本极端分数。不同题目少于 5 道，目前仅为初步评估。"
+      }
+    },
+    {
+      "id": "one_wrong",
+      "name": "仅一道难度2题答错",
+      "input": {
+        "id": "one_wrong",
+        "name": "仅一道难度2题答错",
+        "answers": "0",
+        "difficulty": 2
+      },
+      "old_mastery_score": 0,
+      "old_recommended_difficulty": 1,
+      "new_recommended_difficulty": 1,
+      "difficulty_reason": "最近 1 道不同题目首次正确率 0%。低于 50%，降低一档以巩固基础（1/5）。复习可改善掌握度，升档仍需不同题目的首次作答验证。",
+      "assessment": {
+        "mastery_model": "rules_v2",
+        "mastery_score": 31,
+        "mastery_status": "weak",
+        "attempt_count": 1,
+        "historical_correct_rate": 0.0,
+        "recent_correct_rate": 0.0,
+        "recent_attempt_count": 1,
+        "average_difficulty": 2.0,
+        "sample_limited": true,
+        "reviewed_question_count": 0,
+        "review_correct_count": 0,
+        "mastery_components": {
+          "historical": 0.3125,
+          "recent": 0.3125,
+          "historical_weight": 0.7,
+          "recent_weight": 0.3,
+          "review_weight": 0.3,
+          "smoothing_success": 1,
+          "smoothing_failure": 1
+        },
+        "mastery_reason": "规则掌握度 31/100，低于巩固阈值 80，仍需巩固。依据 1 道不同题目：历史首次正确率 0%，最近 1 道首次正确率 0%，平均难度 2/5。历史证据占 70%，最近证据占 30%，难题答对权重更高、答错惩罚更轻，并用平滑项抑制小样本极端分数。不同题目少于 5 道，目前仅为初步评估。"
+      }
+    },
+    {
+      "id": "three_correct",
+      "name": "三道不同题目答对",
+      "input": {
+        "id": "three_correct",
+        "name": "三道不同题目答对",
+        "answers": "111",
+        "difficulty": 2
+      },
+      "old_mastery_score": 100,
+      "old_recommended_difficulty": 3,
+      "new_recommended_difficulty": 3,
+      "difficulty_reason": "最近 3 道不同题目首次正确率 100%。达到 80% 且样本足够，提高一档（3/5）。复习可改善掌握度，升档仍需不同题目的首次作答验证。",
+      "assessment": {
+        "mastery_model": "rules_v2",
+        "mastery_score": 80,
+        "mastery_status": "strong",
+        "attempt_count": 3,
+        "historical_correct_rate": 1.0,
+        "recent_correct_rate": 1.0,
+        "recent_attempt_count": 3,
+        "average_difficulty": 2.0,
+        "sample_limited": true,
+        "reviewed_question_count": 0,
+        "review_correct_count": 0,
+        "mastery_components": {
+          "historical": 0.8,
+          "recent": 0.8,
+          "historical_weight": 0.7,
+          "recent_weight": 0.3,
+          "review_weight": 0.3,
+          "smoothing_success": 1,
+          "smoothing_failure": 1
+        },
+        "mastery_reason": "规则掌握度 80/100，达到规则阈值 80，可继续巩固或探索。依据 3 道不同题目：历史首次正确率 100%，最近 3 道首次正确率 100%，平均难度 2/5。历史证据占 70%，最近证据占 30%，难题答对权重更高、答错惩罚更轻，并用平滑项抑制小样本极端分数。不同题目少于 5 道，目前仅为初步评估。"
+      }
+    },
+    {
+      "id": "five_correct",
+      "name": "五道不同题目答对",
+      "input": {
+        "id": "five_correct",
+        "name": "五道不同题目答对",
+        "answers": "11111",
+        "difficulty": 2
+      },
+      "old_mastery_score": 100,
+      "old_recommended_difficulty": 3,
+      "new_recommended_difficulty": 3,
+      "difficulty_reason": "最近 5 道不同题目首次正确率 100%。达到 80% 且样本足够，提高一档（3/5）。复习可改善掌握度，升档仍需不同题目的首次作答验证。",
+      "assessment": {
+        "mastery_model": "rules_v2",
+        "mastery_score": 86,
+        "mastery_status": "strong",
+        "attempt_count": 5,
+        "historical_correct_rate": 1.0,
+        "recent_correct_rate": 1.0,
+        "recent_attempt_count": 5,
+        "average_difficulty": 2.0,
+        "sample_limited": false,
+        "reviewed_question_count": 0,
+        "review_correct_count": 0,
+        "mastery_components": {
+          "historical": 0.857143,
+          "recent": 0.857143,
+          "historical_weight": 0.7,
+          "recent_weight": 0.3,
+          "review_weight": 0.3,
+          "smoothing_success": 1,
+          "smoothing_failure": 1
+        },
+        "mastery_reason": "规则掌握度 86/100，达到规则阈值 80，可继续巩固或探索。依据 5 道不同题目：历史首次正确率 100%，最近 5 道首次正确率 100%，平均难度 2/5。历史证据占 70%，最近证据占 30%，难题答对权重更高、答错惩罚更轻，并用平滑项抑制小样本极端分数。"
+      }
+    },
+    {
+      "id": "easy_mixed",
+      "name": "简单题正确率60%",
+      "input": {
+        "id": "easy_mixed",
+        "name": "简单题正确率60%",
+        "answers": "10101",
+        "difficulty": 1
+      },
+      "old_mastery_score": 60,
+      "old_recommended_difficulty": 1,
+      "new_recommended_difficulty": 1,
+      "difficulty_reason": "最近 5 道不同题目首次正确率 60%。处于 50%～80% 区间，保持（1/5）。复习可改善掌握度，升档仍需不同题目的首次作答验证。",
+      "assessment": {
+        "mastery_model": "rules_v2",
+        "mastery_score": 47,
+        "mastery_status": "weak",
+        "attempt_count": 5,
+        "historical_correct_rate": 0.6,
+        "recent_correct_rate": 0.6,
+        "recent_attempt_count": 5,
+        "average_difficulty": 1.0,
+        "sample_limited": false,
+        "reviewed_question_count": 0,
+        "review_correct_count": 0,
+        "mastery_components": {
+          "historical": 0.472222,
+          "recent": 0.472222,
+          "historical_weight": 0.7,
+          "recent_weight": 0.3,
+          "review_weight": 0.3,
+          "smoothing_success": 1,
+          "smoothing_failure": 1
+        },
+        "mastery_reason": "规则掌握度 47/100，低于巩固阈值 80，仍需巩固。依据 5 道不同题目：历史首次正确率 60%，最近 5 道首次正确率 60%，平均难度 1/5。历史证据占 70%，最近证据占 30%，难题答对权重更高、答错惩罚更轻，并用平滑项抑制小样本极端分数。"
+      }
+    },
+    {
+      "id": "hard_mixed",
+      "name": "难题正确率60%",
+      "input": {
+        "id": "hard_mixed",
+        "name": "难题正确率60%",
+        "answers": "10101",
+        "difficulty": 5
+      },
+      "old_mastery_score": 60,
+      "old_recommended_difficulty": 5,
+      "new_recommended_difficulty": 5,
+      "difficulty_reason": "最近 5 道不同题目首次正确率 60%。处于 50%～80% 区间，保持（5/5）。复习可改善掌握度，升档仍需不同题目的首次作答验证。",
+      "assessment": {
+        "mastery_model": "rules_v2",
+        "mastery_score": 73,
+        "mastery_status": "weak",
+        "attempt_count": 5,
+        "historical_correct_rate": 0.6,
+        "recent_correct_rate": 0.6,
+        "recent_attempt_count": 5,
+        "average_difficulty": 5.0,
+        "sample_limited": false,
+        "reviewed_question_count": 0,
+        "review_correct_count": 0,
+        "mastery_components": {
+          "historical": 0.725,
+          "recent": 0.725,
+          "historical_weight": 0.7,
+          "recent_weight": 0.3,
+          "review_weight": 0.3,
+          "smoothing_success": 1,
+          "smoothing_failure": 1
+        },
+        "mastery_reason": "规则掌握度 73/100，低于巩固阈值 80，仍需巩固。依据 5 道不同题目：历史首次正确率 60%，最近 5 道首次正确率 60%，平均难度 5/5。历史证据占 70%，最近证据占 30%，难题答对权重更高、答错惩罚更轻，并用平滑项抑制小样本极端分数。"
+      }
+    },
+    {
+      "id": "improving",
+      "name": "先错五题、最近五题全对",
+      "input": {
+        "id": "improving",
+        "name": "先错五题、最近五题全对",
+        "answers": "0000011111",
+        "difficulty": 2
+      },
+      "old_mastery_score": 50,
+      "old_recommended_difficulty": 3,
+      "new_recommended_difficulty": 3,
+      "difficulty_reason": "最近 5 道不同题目首次正确率 100%。达到 80% 且样本足够，提高一档（3/5）。复习可改善掌握度，升档仍需不同题目的首次作答验证。",
+      "assessment": {
+        "mastery_model": "rules_v2",
+        "mastery_score": 58,
+        "mastery_status": "weak",
+        "attempt_count": 10,
+        "historical_correct_rate": 0.5,
+        "recent_correct_rate": 1.0,
+        "recent_attempt_count": 5,
+        "average_difficulty": 2.0,
+        "sample_limited": false,
+        "reviewed_question_count": 0,
+        "review_correct_count": 0,
+        "mastery_components": {
+          "historical": 0.461538,
+          "recent": 0.857143,
+          "historical_weight": 0.7,
+          "recent_weight": 0.3,
+          "review_weight": 0.3,
+          "smoothing_success": 1,
+          "smoothing_failure": 1
+        },
+        "mastery_reason": "规则掌握度 58/100，低于巩固阈值 80，仍需巩固。依据 10 道不同题目：历史首次正确率 50%，最近 5 道首次正确率 100%，平均难度 2/5。历史证据占 70%，最近证据占 30%，难题答对权重更高、答错惩罚更轻，并用平滑项抑制小样本极端分数。"
+      }
+    },
+    {
+      "id": "declining",
+      "name": "先对五题、最近五题全错",
+      "input": {
+        "id": "declining",
+        "name": "先对五题、最近五题全错",
+        "answers": "1111100000",
+        "difficulty": 2
+      },
+      "old_mastery_score": 50,
+      "old_recommended_difficulty": 1,
+      "new_recommended_difficulty": 1,
+      "difficulty_reason": "最近 5 道不同题目首次正确率 0%。低于 50%，降低一档以巩固基础（1/5）。复习可改善掌握度，升档仍需不同题目的首次作答验证。",
+      "assessment": {
+        "mastery_model": "rules_v2",
+        "mastery_score": 36,
+        "mastery_status": "weak",
+        "attempt_count": 10,
+        "historical_correct_rate": 0.5,
+        "recent_correct_rate": 0.0,
+        "recent_attempt_count": 5,
+        "average_difficulty": 2.0,
+        "sample_limited": false,
+        "reviewed_question_count": 0,
+        "review_correct_count": 0,
+        "mastery_components": {
+          "historical": 0.461538,
+          "recent": 0.125,
+          "historical_weight": 0.7,
+          "recent_weight": 0.3,
+          "review_weight": 0.3,
+          "smoothing_success": 1,
+          "smoothing_failure": 1
+        },
+        "mastery_reason": "规则掌握度 36/100，低于巩固阈值 80，仍需巩固。依据 10 道不同题目：历史首次正确率 50%，最近 5 道首次正确率 0%，平均难度 2/5。历史证据占 70%，最近证据占 30%，难题答对权重更高、答错惩罚更轻，并用平滑项抑制小样本极端分数。"
+      }
+    },
+    {
+      "id": "review_once",
+      "name": "一题答错、复习答对一次",
+      "input": {
+        "id": "review_once",
+        "name": "一题答错、复习答对一次",
+        "answers": "0",
+        "difficulty": 2,
+        "reviews": [
+          {
+            "question": 1,
+            "answers": "1"
+          }
+        ]
+      },
+      "old_mastery_score": 100,
+      "old_recommended_difficulty": 1,
+      "new_recommended_difficulty": 1,
+      "difficulty_reason": "最近 1 道不同题目首次正确率 0%。低于 50%，降低一档以巩固基础（1/5）。复习可改善掌握度，升档仍需不同题目的首次作答验证。",
+      "assessment": {
+        "mastery_model": "rules_v2",
+        "mastery_score": 41,
+        "mastery_status": "weak",
+        "attempt_count": 1,
+        "historical_correct_rate": 0.0,
+        "recent_correct_rate": 0.0,
+        "recent_attempt_count": 1,
+        "average_difficulty": 2.0,
+        "sample_limited": true,
+        "reviewed_question_count": 1,
+        "review_correct_count": 1,
+        "mastery_components": {
+          "historical": 0.414013,
+          "recent": 0.414013,
+          "historical_weight": 0.7,
+          "recent_weight": 0.3,
+          "review_weight": 0.3,
+          "smoothing_success": 1,
+          "smoothing_failure": 1
+        },
+        "mastery_reason": "规则掌握度 41/100，低于巩固阈值 80，仍需巩固。依据 1 道不同题目：历史首次正确率 0%，最近 1 道首次正确率 0%，平均难度 2/5。历史证据占 70%，最近证据占 30%，难题答对权重更高、答错惩罚更轻，并用平滑项抑制小样本极端分数。已复习 1 道不同题目，其中最新复习答对 1 道；复习最多占该题证据的 30%，不覆盖首次结果、不增加样本。不同题目少于 5 道，目前仅为初步评估。"
+      }
+    },
+    {
+      "id": "review_repeat",
+      "name": "同一道错题复习答对20次",
+      "input": {
+        "id": "review_repeat",
+        "name": "同一道错题复习答对20次",
+        "answers": "0",
+        "difficulty": 2,
+        "reviews": [
+          {
+            "question": 1,
+            "answers": "11111111111111111111"
+          }
+        ]
+      },
+      "old_mastery_score": 100,
+      "old_recommended_difficulty": 1,
+      "new_recommended_difficulty": 1,
+      "difficulty_reason": "最近 1 道不同题目首次正确率 0%。低于 50%，降低一档以巩固基础（1/5）。复习可改善掌握度，升档仍需不同题目的首次作答验证。",
+      "assessment": {
+        "mastery_model": "rules_v2",
+        "mastery_score": 41,
+        "mastery_status": "weak",
+        "attempt_count": 1,
+        "historical_correct_rate": 0.0,
+        "recent_correct_rate": 0.0,
+        "recent_attempt_count": 1,
+        "average_difficulty": 2.0,
+        "sample_limited": true,
+        "reviewed_question_count": 1,
+        "review_correct_count": 1,
+        "mastery_components": {
+          "historical": 0.414013,
+          "recent": 0.414013,
+          "historical_weight": 0.7,
+          "recent_weight": 0.3,
+          "review_weight": 0.3,
+          "smoothing_success": 1,
+          "smoothing_failure": 1
+        },
+        "mastery_reason": "规则掌握度 41/100，低于巩固阈值 80，仍需巩固。依据 1 道不同题目：历史首次正确率 0%，最近 1 道首次正确率 0%，平均难度 2/5。历史证据占 70%，最近证据占 30%，难题答对权重更高、答错惩罚更轻，并用平滑项抑制小样本极端分数。已复习 1 道不同题目，其中最新复习答对 1 道；复习最多占该题证据的 30%，不覆盖首次结果、不增加样本。不同题目少于 5 道，目前仅为初步评估。"
+      }
+    },
+    {
+      "id": "review_relapse",
+      "name": "复习答对后再次答错",
+      "input": {
+        "id": "review_relapse",
+        "name": "复习答对后再次答错",
+        "answers": "0",
+        "difficulty": 2,
+        "reviews": [
+          {
+            "question": 1,
+            "answers": "10"
+          }
+        ]
+      },
+      "old_mastery_score": 0,
+      "old_recommended_difficulty": 1,
+      "new_recommended_difficulty": 1,
+      "difficulty_reason": "最近 1 道不同题目首次正确率 0%。低于 50%，降低一档以巩固基础（1/5）。复习可改善掌握度，升档仍需不同题目的首次作答验证。",
+      "assessment": {
+        "mastery_model": "rules_v2",
+        "mastery_score": 31,
+        "mastery_status": "weak",
+        "attempt_count": 1,
+        "historical_correct_rate": 0.0,
+        "recent_correct_rate": 0.0,
+        "recent_attempt_count": 1,
+        "average_difficulty": 2.0,
+        "sample_limited": true,
+        "reviewed_question_count": 1,
+        "review_correct_count": 0,
+        "mastery_components": {
+          "historical": 0.3125,
+          "recent": 0.3125,
+          "historical_weight": 0.7,
+          "recent_weight": 0.3,
+          "review_weight": 0.3,
+          "smoothing_success": 1,
+          "smoothing_failure": 1
+        },
+        "mastery_reason": "规则掌握度 31/100，低于巩固阈值 80，仍需巩固。依据 1 道不同题目：历史首次正确率 0%，最近 1 道首次正确率 0%，平均难度 2/5。历史证据占 70%，最近证据占 30%，难题答对权重更高、答错惩罚更轻，并用平滑项抑制小样本极端分数。已复习 1 道不同题目，其中最新复习答对 0 道；复习最多占该题证据的 30%，不覆盖首次结果、不增加样本。不同题目少于 5 道，目前仅为初步评估。"
+      }
+    },
+    {
+      "id": "mixed_levels",
+      "name": "四题混合难度、两题答对",
+      "input": {
+        "id": "mixed_levels",
+        "name": "四题混合难度、两题答对",
+        "answers": "1010",
+        "difficulty": [
+          1,
+          2,
+          4,
+          5
+        ]
+      },
+      "old_mastery_score": 50,
+      "old_recommended_difficulty": 5,
+      "new_recommended_difficulty": 5,
+      "difficulty_reason": "最近 4 道不同题目首次正确率 50%。处于 50%～80% 区间，保持（5/5）。复习可改善掌握度，升档仍需不同题目的首次作答验证。",
+      "assessment": {
+        "mastery_model": "rules_v2",
+        "mastery_score": 53,
+        "mastery_status": "weak",
+        "attempt_count": 4,
+        "historical_correct_rate": 0.5,
+        "recent_correct_rate": 0.5,
+        "recent_attempt_count": 4,
+        "average_difficulty": 3.0,
+        "sample_limited": true,
+        "reviewed_question_count": 0,
+        "review_correct_count": 0,
+        "mastery_components": {
+          "historical": 0.533333,
+          "recent": 0.533333,
+          "historical_weight": 0.7,
+          "recent_weight": 0.3,
+          "review_weight": 0.3,
+          "smoothing_success": 1,
+          "smoothing_failure": 1
+        },
+        "mastery_reason": "规则掌握度 53/100，低于巩固阈值 80，仍需巩固。依据 4 道不同题目：历史首次正确率 50%，最近 4 道首次正确率 50%，平均难度 3/5。历史证据占 70%，最近证据占 30%，难题答对权重更高、答错惩罚更轻，并用平滑项抑制小样本极端分数。不同题目少于 5 道，目前仅为初步评估。"
+      }
+    },
+    {
+      "id": "many_wrong",
+      "name": "十道不同题目全错",
+      "input": {
+        "id": "many_wrong",
+        "name": "十道不同题目全错",
+        "answers": "0000000000",
+        "difficulty": 2
+      },
+      "old_mastery_score": 0,
+      "old_recommended_difficulty": 1,
+      "new_recommended_difficulty": 1,
+      "difficulty_reason": "最近 5 道不同题目首次正确率 0%。低于 50%，降低一档以巩固基础（1/5）。复习可改善掌握度，升档仍需不同题目的首次作答验证。",
+      "assessment": {
+        "mastery_model": "rules_v2",
+        "mastery_score": 9,
+        "mastery_status": "weak",
+        "attempt_count": 10,
+        "historical_correct_rate": 0.0,
+        "recent_correct_rate": 0.0,
+        "recent_attempt_count": 5,
+        "average_difficulty": 2.0,
+        "sample_limited": false,
+        "reviewed_question_count": 0,
+        "review_correct_count": 0,
+        "mastery_components": {
+          "historical": 0.071429,
+          "recent": 0.125,
+          "historical_weight": 0.7,
+          "recent_weight": 0.3,
+          "review_weight": 0.3,
+          "smoothing_success": 1,
+          "smoothing_failure": 1
+        },
+        "mastery_reason": "规则掌握度 9/100，低于巩固阈值 80，仍需巩固。依据 10 道不同题目：历史首次正确率 0%，最近 5 道首次正确率 0%，平均难度 2/5。历史证据占 70%，最近证据占 30%，难题答对权重更高、答错惩罚更轻，并用平滑项抑制小样本极端分数。"
+      }
+    }
+  ],
+  "topic_selections": [
+    {
+      "name": "一次答对与未练习知识点",
+      "topics": [
+        "one_correct",
+        "new_topic"
+      ],
+      "old_selected": "new_topic",
+      "new_selected": "one_correct",
+      "new_difficulty": 2
+    },
+    {
+      "name": "熟悉错题复习成功与未练习知识点",
+      "topics": [
+        "review_repeat",
+        "new_topic"
+      ],
+      "old_selected": "new_topic",
+      "new_selected": "review_repeat",
+      "new_difficulty": 1
+    },
+    {
+      "name": "总体正确率相同但近期趋势相反",
+      "topics": [
+        "improving",
+        "declining"
+      ],
+      "old_selected": "improving",
+      "new_selected": "declining",
+      "new_difficulty": 1
+    },
+    {
+      "name": "已有多题稳定表现后探索新知识点",
+      "topics": [
+        "five_correct",
+        "new_topic"
+      ],
+      "old_selected": "new_topic",
+      "new_selected": "new_topic",
+      "new_difficulty": 2
+    }
+  ]
+}

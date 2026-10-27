@@ -1,0 +1,17 @@
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.pdf binary
+*.ttf binary
+*.woff binary
+*.woff2 binary
+*.ico binary
+
+# Generated CSV is fingerprinted; preserve exact line endings.
+*.csv -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Machine-generated layout and verbatim license notices retain their original bytes.
+evaluation/reports/**/figures/*.svg -whitespace
+frontend/fonts/OFL.txt -whitespace
+docs/licenses/DEJAVU-LICENSE.txt -whitespace

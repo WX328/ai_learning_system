@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f0f3f3">
+  <title>知行 · AI 学习工作台</title>
+  <link rel="stylesheet" href="/frontend/styles.css">
+  <link rel="stylesheet" href="/frontend/coach.css">
+  <link rel="stylesheet" href="/frontend/workspace.css">
+  <link rel="stylesheet" href="/frontend/admin.css">
+</head>
+<body>
+  <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+  <section id="auth-view" class="auth-view">
+    <div class="auth-copy">
+      <div class="brand" aria-label="知行学习"><svg class="icon" aria-hidden="true"><use href="/frontend/icons.svg#brand"></use></svg></div>
+      <h1>让每一份资料，<br>成为<span>你的知识。</span></h1>
+      <p class="lead">从一个问题开始，把读过的内容，变成真正掌握的能力。</p>
+      <div class="flow"><span>收集资料</span><i>→</i><span>理解知识</span><i>→</i><span>练习巩固</span></div>
+    </div>
+    <form id="login-form" class="surface auth-card">
+      <h2 id="auth-title">欢迎回来</h2>
+      <p id="auth-description" class="muted">登录，继续你的学习旅程。</p>
+      <label>用户名<input id="username" autocomplete="username" maxlength="50" required placeholder="输入用户名"></label>
+      <label>密码<input id="password" type="password" autocomplete="current-password" required placeholder="输入密码"></label>
+      <label id="confirm-label" class="hidden">确认密码<input id="confirm-password" type="password" autocomplete="new-password" placeholder="再次输入密码"></label>
+      <p id="auth-error" class="error" role="alert"></p>
+      <button id="auth-submit" class="primary" type="submit">登录 →</button>
+      <button id="register-button" class="link-button" type="button">还没有账号？创建账号</button>
+    </form>
+  </section>
+  <section id="workspace-view" class="workspace hidden">
+    <aside class="sidebar" id="workspace-navigation" aria-label="学习空间导航">
+      <div class="brand-row"><div class="brand small"><svg class="icon" aria-hidden="true"><use href="/frontend/icons.svg#brand"></use></svg></div><div><b>知行学习</b><small>个人学习工作台</small></div></div>
+      <button id="navigation-close" class="quiet navigation-close" aria-label="关闭导航"><svg class="icon" aria-hidden="true"><use href="/frontend/icons.svg#close"></use></svg></button>
+      <p class="nav-label">我的学习空间</p>
+      <nav aria-label="主导航">
+        <button class="nav-item active" data-page="home" aria-current="page"><svg class="icon" aria-hidden="true"><use href="/frontend/icons.svg#home"></use></svg>学习首页</button>
+        <button class="nav-item" data-page="library"><svg class="icon" aria-hidden="true"><use href="/frontend/icons.svg#library"></use></svg>资料库<small id="nav-count">0</small></button>
+        <button class="nav-item" data-page="chat"><svg class="icon" aria-hidden="true"><use href="/frontend/icons.svg#chat"></use></svg>AI 问答</button>
+        <button class="nav-item" data-page="coach"><svg class="icon" aria-hidden="true"><use href="/frontend/icons.svg#coach"></use></svg>学习教练</button>
+        <button class="nav-item" data-page="practice"><svg class="icon" aria-hidden="true"><use href="/frontend/icons.svg#practice"></use></svg>练习中心</button>
+        <button class="nav-item" data-page="mistakes"><svg class="icon" aria-hidden="true"><use href="/frontend/icons.svg#mistakes"></use></svg>错题本<small id="mistake-nav-count"></small></button>
+        <button class="nav-item" data-page="records"><svg class="icon" aria-hidden="true"><use href="/frontend/icons.svg#records"></use></svg>学习记录</button>
+        <button class="nav-item" data-page="map"><svg class="icon" aria-hidden="true"><use href="/frontend/icons.svg#map"></use></svg>知识地图</button>
+        <button id="admin-nav" class="nav-item hidden" data-page="admin"><svg class="icon" aria-hidden="true"><use href="/frontend/icons.svg#records"></use></svg>管理后台</button>
+      </nav>
+      <div class="sidebar-note"><b>每天，懂多一点。</b><p>从资料到理解，<br>让每次学习都有所积累。</p></div>
+      <div class="sidebar-footer"><span id="api-status" role="status">○ 尚未检查连接</span><button id="check-connection" class="link-button">检查连接</button></div>
+    </aside>
+    <button id="navigation-backdrop" class="navigation-backdrop" aria-label="收起导航" tabindex="-1"></button>
+    <div class="workspace-body" id="workspace-content">
+      <header class="topbar"><div><button id="navigation-toggle" class="quiet navigation-toggle" aria-label="打开导航" aria-controls="workspace-navigation" aria-expanded="false"><svg class="icon" aria-hidden="true"><use href="/frontend/icons.svg#menu"></use></svg></button><span class="muted">我的学习空间</span><span class="crumb">/</span><b id="page-label">学习首页</b></div><div class="user-menu"><button id="account-level" class="level-chip hidden" data-page="home" aria-label="查看等级与经验值"></button><span id="current-user"></span><button id="logout-button" class="quiet">退出登录</button></div></header>
+      <main>
+        <section id="home-panel" class="panel">
+          <div class="heading"><div><h1 id="home-greeting">今天，继续积累知识</h1><p class="muted">不用从头开始，从上次停下的地方继续。</p></div><button class="secondary" data-import>＋ 导入资料</button></div>
+          <section id="growth-card" class="surface growth-card" aria-label="等级与账户学习统计" aria-live="polite"></section>
+          <div id="home-stats" class="home-stats" aria-label="学习概览"></div>
+          <div class="home-columns"><div class="home-main"><section id="home-continue" class="surface continue-card" aria-label="继续学习"></section><section class="surface padded"><div class="section-title"><h2>待完成的练习</h2><button class="link-button" data-page="practice">练习中心 →</button></div><div id="home-sessions"></div></section></div><section class="surface padded"><div class="section-title"><h2>最近问过的问题</h2><button id="home-refresh" class="link-button">刷新</button></div><p id="home-history-status" class="muted" role="status"></p><div id="home-history"></div></section></div>
+          <div class="local-storage-note"><p id="storage-status" role="status">练习自动保存在当前浏览器，按账号区分；不跨设备同步。</p><button id="clear-local-progress" class="link-button">清除本账号的本地练习</button></div>
+        </section>
+        <section id="library-panel" class="panel hidden">
+          <div class="heading"><div><h1>资料库</h1><p class="muted">收好每一份好内容，随时回来，接着学习。</p></div><button id="open-import" class="primary">＋ 导入资料</button></div>
+          <div class="library-stats"><div><b id="material-count">0</b><span>份学习资料</span></div><div><b id="topic-count">—</b><span>当前资料知识点</span></div><div class="current-summary"><span>正在学习</span><strong id="current-material-summary">选一份资料，开始吧</strong></div></div>
+          <div class="toolbar"><label class="search"><span aria-hidden="true">⌕</span><input id="material-search" type="search" aria-label="搜索资料标题" placeholder="搜索资料标题…"></label><label class="sr-only" for="material-filter">资料类型</label><select id="material-filter"><option value="">全部类型</option><option value="document">文档</option><option value="text">文本</option><option value="note">笔记</option><option value="article">文章</option></select><button id="refresh-materials" class="quiet">刷新</button></div>
+          <p id="library-status" class="muted" role="status"></p><div id="material-list" class="material-grid"></div>
+        </section>
+        <section id="chat-panel" class="panel hidden">
+          <div class="heading"><div><h1>AI 问答</h1><p class="muted">围绕当前资料提问，逐个理解知识点。</p></div></div>
+          <div class="material-bar"><label for="chat-material">当前资料</label><select id="chat-material" class="material-select"><option value="">请先导入资料</option></select><button class="quiet" data-page="library">浏览资料库 ↗</button></div>
+          <div class="chat-layout">
+            <aside class="surface context"><h3>聚焦知识点</h3><p class="muted">选择一个知识点，缩小提问范围。</p><div id="topic-list"></div><button id="topic-practice" class="secondary">练习当前知识点 →</button></aside>
+            <div class="surface chat">
+              <div class="chat-header"><div><b>AI 学习助手</b><small id="chat-scope">基于整份资料</small></div><button id="reload-history" class="quiet">加载历史</button></div>
+              <p id="history-status" class="inline-status" role="status"></p>
+              <div id="messages" role="log" aria-label="问答消息" aria-live="polite"></div>
+              <div class="suggestions"><button data-suggestion-kind="summary" data-suggestion="请总结这份资料的核心知识点。">总结核心内容</button><button data-suggestion-kind="example" data-suggestion="请用一个生活中的例子解释当前知识点。">举一个例子</button></div>
+              <form id="chat-form"><label class="sr-only" for="chat-input">输入问题</label><textarea id="chat-input" rows="2" required placeholder="哪里还不太理解？在这里问一问…"></textarea><button class="primary" id="send-question" type="submit">发送 ↑</button></form>
+              <p class="composer-note">Ctrl / ⌘ + Enter 发送 · 历史用于回顾，当前接口按单次问题回答</p>
+            </div>
+          </div>
+        </section>
+        <section id="coach-panel" class="panel hidden">
+          <div class="heading"><div><h1>学习教练</h1><p class="muted">设定一个目标，从理解到练习，一步步完成。</p></div><button id="coach-refresh" class="quiet">刷新会话</button></div>
+          <div class="coach-layout">
+            <aside>
+              <form id="coach-create" class="surface padded"><h3>安排本次学习</h3><fieldset id="coach-create-fields">
+                <label>学习资料<select id="coach-material" required><option value="">请选择资料</option></select></label>
+                <label>学习目标<textarea id="coach-goal" rows="3" maxlength="500" required placeholder="例如：复习薄弱知识点，能独立完成基础题"></textarea></label>
+                <label>计划时长<select id="coach-minutes"><option value="10">10 分钟</option><option value="20" selected>20 分钟</option><option value="30">30 分钟</option><option value="45">45 分钟</option><option value="60">60 分钟</option></select></label>
+                <button class="primary" type="submit">创建学习计划</button>
+              </fieldset><p class="muted">目标、相关资料片段和学习表现会发送给 DeepSeek，用于提供辅导。</p></form>
+              <div class="surface padded coach-history-card"><label>继续之前的学习<select id="coach-history"><option value="">选择历史会话</option></select></label><p class="muted">学习进度保存在服务端，重新登录后可继续。</p></div>
+            </aside>
+            <div>
+              <p id="coach-status" class="muted" role="status" aria-live="polite"></p>
+              <button id="coach-retry-request" class="secondary hidden">重试上次请求</button>
+              <section class="surface coach-start" aria-label="开始一次学习">
+                <h2>准备一次有目标的学习</h2>
+                <p class="muted">选好资料与目标，创建计划后开始辅导。</p>
+                <dl>
+                  <div><dt>理解知识</dt><dd>围绕资料讲解，也可以追问或要求举例。</dd></div>
+                  <div><dt>练习检验</dt><dd>每次一道题，作答后继续巩固薄弱点。</dd></div>
+                  <div><dt>回顾收获</dt><dd>结束时生成总结，下次从历史会话继续。</dd></div>
+                </dl>
+              </section>
+              <section id="coach-session" class="surface padded hidden">
+                <h2 id="coach-session-title"></h2><p id="coach-session-meta" class="muted"></p>
+                <details open><summary>本次安排 · 建议时间</summary><ol id="coach-plan"></ol><div id="coach-topics" class="muted"></div></details>
+                <div id="coach-messages" role="log" aria-label="学习教练对话" aria-live="polite"></div>
+                <div id="coach-question"></div><div id="coach-result"></div>
+                <p id="coach-wait-note" class="muted" role="status"></p>
+                <form id="coach-form"><fieldset id="coach-message-fields"><label for="coach-input">告诉教练哪里还不理解</label><textarea id="coach-input" rows="2" maxlength="2000" required placeholder="换个例子解释，或者给我一道练习题…"></textarea><button class="primary" type="submit">发送</button></fieldset></form>
+                <div class="summary-actions"><button id="coach-continue" class="secondary">开始 / 继续辅导</button><button id="coach-retry-model" class="secondary hidden">重新生成回复</button><button id="coach-finish" class="quiet">结束并总结</button></div>
+              </section>
+            </div>
+          </div>
+        </section>
+        <section id="practice-panel" class="panel hidden">
+          <div class="heading"><div><h1>练习中心</h1><p class="muted">练几道题，找到还需要理解的地方。</p></div></div>
+          <div class="material-bar"><label for="practice-material">当前资料</label><select id="practice-material" class="material-select"><option value="">请先导入资料</option></select><button class="quiet" data-page="library">浏览资料库 ↗</button></div>
+          <div id="practice-focus-toolbar" class="focus-toolbar hidden"><span>专注完成这一题</span><button id="toggle-practice-focus" class="quiet" aria-pressed="true">展开设置</button></div>
+          <p id="practice-save-status" class="muted save-status" role="status">练习自动保存在当前浏览器，按账号区分；不跨设备同步。</p>
+          <div class="practice-layout">
+            <div class="practice-settings">
+              <section class="adaptive-card" aria-labelledby="recommendation-title">
+                <div class="recommendation-heading"><h3 id="recommendation-title">AI 自适应学习推荐</h3><button id="recommendation-refresh" class="quiet" type="button">刷新</button></div>
+                <div id="recommendation-content" aria-live="polite"><p class="muted">选择资料后查看学习建议。</p></div>
+                <button id="adaptive-button" class="secondary" type="button" disabled>开始练习 →</button>
+                <p id="adaptive-status" role="status"></p>
+              </section>
+              <form id="quiz-form" class="surface padded"><h3>定制一组练习</h3><label>关联知识点<select id="quiz-topic-select"><option value="">请选择已提取的知识点</option></select></label><label>出题主题<input id="quiz-topic" required readonly placeholder="先从学习工作台提取知识点，再选择"></label><label>题目数量 <output id="count-output">3 道</output><input id="quiz-count" type="range" min="1" max="3" value="3"></label><label>难度 <output id="difficulty-output">基础</output><input id="quiz-difficulty" type="range" min="1" max="5" value="2"></label><p id="practice-replace-note" class="muted hidden">新练习会替换右侧题组，请先完成当前练习。</p><button id="generate-button" class="primary" type="submit">生成练习</button></form>
+            </div>
+            <div id="practice-content" aria-live="polite"></div>
+          </div>
+        </section>
+        <section id="mistakes-panel" class="panel study-panel hidden">
+          <div class="heading"><div><h1>错题本</h1><p class="muted">回看第一次答错的题，再练一次，确认自己是否理解。</p></div><button class="quiet" data-study-refresh="mistakes">刷新</button></div>
+          <div id="mistake-stats" class="study-stats"></div>
+          <div class="surface study-filters"><label>搜索题目<input id="mistake-search" type="search" placeholder="题目或知识点关键词…"></label><label>学习资料<select id="mistake-material"><option value="">全部资料</option></select></label><label>复习状态<select id="mistake-status"><option value="pending">待巩固</option><option value="resolved">重练答对</option><option value="all">全部错题</option></select></label></div>
+          <p id="mistakes-status" class="muted" role="status"></p><div id="mistake-list" class="mistake-list"></div><div id="mistake-pagination" class="study-pagination"></div>
+        </section>
+        <section id="records-panel" class="panel study-panel hidden">
+          <div class="heading"><div><h1>学习记录</h1><p class="muted">查看已保存的问答、首次答题和错题复习记录。</p></div><button class="quiet" data-study-refresh="records">刷新</button></div>
+          <div class="surface study-filters records-filters"><label>搜索记录<input id="record-search" type="search" placeholder="问题或资料名称…"></label><label>活动类型<select id="record-type"><option value="">全部活动</option><option value="answer">首次答题</option><option value="review">错题复习</option><option value="chat">AI 问答</option><option value="study">其他学习</option></select></label><label>开始日期<input id="record-from" type="date"></label><label>结束日期<input id="record-to" type="date"></label></div>
+          <p id="records-status" class="muted" role="status"></p><div id="record-list" class="surface record-list"></div><div id="record-pagination" class="study-pagination"></div>
+        </section>
+        <section id="map-panel" class="panel study-panel hidden">
+          <div class="heading"><div><h1>知识地图</h1><p class="muted">从资料到知识点，找到下一步要理解的内容。</p></div><button class="quiet" data-study-refresh="map">刷新</button></div>
+          <div class="surface study-filters map-filters"><label>学习资料<select id="map-material"><option value="">请选择资料</option></select></label><label>掌握状态<select id="map-filter"><option value="all">全部知识点</option><option value="unseen">未练习</option><option value="weak">待巩固 · 低于 80 分</option><option value="strong">规则达标 · 80 分及以上</option></select></label></div>
+          <p id="map-status" class="muted" role="status"></p><div id="map-content"></div>
+          <p class="muted map-note">连线表示资料包含知识点。规则掌握度综合不同题目的首次作答、最近 5 道、难度与复习结果；重复复习不增加样本，未练习表示未知。</p>
+        </section>
+        <section id="admin-panel" class="panel hidden" aria-labelledby="admin-heading">
+          <div class="heading"><div><h1 id="admin-heading">用户管理</h1><p class="muted">查看平台使用情况，管理账号访问权限。</p></div><button id="admin-refresh" class="quiet" type="button">刷新全部</button></div>
+          <p id="admin-stats-status" class="muted" role="status"></p><div id="admin-stats" class="admin-stats"></div>
+          <section aria-labelledby="admin-users-heading">
+            <div class="section-title"><h2 id="admin-users-heading">用户账号</h2></div>
+            <form id="admin-filter-form" class="surface admin-filters">
+              <label>用户名<input id="admin-search" type="search" maxlength="50" placeholder="搜索用户名"></label>
+              <label>角色<select id="admin-role"><option value="">全部角色</option><option value="user">普通用户</option><option value="admin">管理员</option></select></label>
+              <label>账号状态<select id="admin-active"><option value="">全部状态</option><option value="true">已启用</option><option value="false">已停用</option></select></label>
+              <button class="secondary" type="submit">查询</button>
+            </form>
+            <p id="admin-users-status" class="muted" role="status"></p><div id="admin-users" class="surface admin-users"></div><div id="admin-users-pagination" class="study-pagination"></div>
+          </section>
+          <section class="admin-audit-section" aria-labelledby="admin-audit-heading">
+            <div class="section-title"><h2 id="admin-audit-heading">管理操作日志</h2><button id="admin-audit-refresh" class="quiet" type="button">刷新日志</button></div>
+            <p id="admin-audit-status" class="muted" role="status"></p><div id="admin-audit" class="surface"></div><div id="admin-audit-pagination" class="study-pagination"></div>
+          </section>
+        </section>
+      </main>
+      <footer class="page-footer">知行 · 学一点，懂一点。<span>让知识慢慢长成自己的样子</span></footer>
+    </div>
+  </section>
+  <dialog id="admin-detail-dialog" aria-labelledby="admin-detail-title">
+    <div class="dialog-heading"><h2 id="admin-detail-title">用户详情</h2><button id="admin-detail-close" class="quiet" type="button" aria-label="关闭用户详情">关闭</button></div>
+    <div id="admin-detail" aria-live="polite"></div>
+  </dialog>
+  <dialog id="admin-confirm-dialog" aria-labelledby="admin-confirm-title">
+    <h2 id="admin-confirm-title">确认变更账号状态</h2><p id="admin-confirm-text"></p>
+    <p id="admin-confirm-error" role="alert"></p>
+    <form id="admin-confirm-form"><div class="summary-actions"><button id="admin-confirm-submit" class="primary" type="submit">确认变更</button><button id="admin-confirm-cancel" class="secondary" type="button">取消</button></div></form>
+  </dialog>
+  <dialog id="import-dialog" aria-labelledby="import-title">
+    <div class="dialog-heading"><div><h2 id="import-title">导入学习资料</h2></div><button class="quiet" data-close="import-dialog" aria-label="关闭导入窗口"><svg class="icon" aria-hidden="true"><use href="/frontend/icons.svg#close"></use></svg></button></div>
+    <div class="input-mode" role="group" aria-label="导入方式"><button class="mode active" data-mode="upload" aria-pressed="true">上传文档</button><button class="mode" data-mode="paste" aria-pressed="false">粘贴文本</button></div>
+    <form id="material-form">
+      <fieldset id="import-fields">
+        <div id="upload-fields"><label class="dropzone" id="dropzone"><span class="upload-symbol" aria-hidden="true">↑</span><b>拖拽文件到这里，或选择文件</b><small>TXT、Markdown、DOCX、PDF、CSV、JSON · 支持多选</small><input id="material-file" type="file" multiple accept=".txt,.md,.markdown,.csv,.json,.docx,.pdf"><span id="file-name">尚未选择文件</span></label><label>资料标题前缀（可选）<input id="upload-title" maxlength="150" placeholder="默认使用文件名"></label></div>
+        <div id="paste-fields" class="hidden"><label>资料标题<input id="material-title" maxlength="200" placeholder="例如：FastAPI 学习笔记"></label><label>资料内容<textarea id="material-content" rows="8" placeholder="粘贴你想学习的内容…"></textarea></label></div>
+        <label>资料类型<select id="material-type"><option value="document">文档</option><option value="text">文本</option><option value="note">笔记</option><option value="article">文章</option></select></label>
+        <button id="import-submit" class="primary" type="submit">导入并整理知识点 →</button>
+      </fieldset>
+    </form><div id="upload-progress" aria-live="polite"></div>
+  </dialog>
+  <dialog id="preview-dialog" aria-labelledby="preview-title"><div class="dialog-heading"><h2 id="preview-title">资料预览</h2><button class="quiet" data-close="preview-dialog" aria-label="关闭预览"><svg class="icon" aria-hidden="true"><use href="/frontend/icons.svg#close"></use></svg></button></div><pre id="preview-content" class="document-preview"></pre></dialog>
+  <dialog id="reindex-dialog" aria-labelledby="reindex-title"><div class="dialog-heading"><div><h2 id="reindex-title">重新建立向量索引</h2></div><button class="quiet" data-close="reindex-dialog" aria-label="取消"><svg class="icon" aria-hidden="true"><use href="/frontend/icons.svg#close"></use></svg></button></div><p id="reindex-description" class="muted"></p><div class="summary-actions"><button class="secondary" data-close="reindex-dialog">取消</button><button id="confirm-reindex" class="primary">开始重建</button></div></dialog>
+  <dialog id="delete-material-dialog" aria-labelledby="delete-material-title"><div class="dialog-heading"><div><h2 id="delete-material-title">删除这份资料？</h2></div><button class="quiet" data-close="delete-material-dialog" aria-label="取消删除"><svg class="icon" aria-hidden="true"><use href="/frontend/icons.svg#close"></use></svg></button></div><p id="delete-material-description" class="muted"></p><div class="summary-actions"><button class="secondary" data-close="delete-material-dialog">取消</button><button id="confirm-delete-material" class="danger-button">永久删除</button></div></dialog>
+  <dialog id="clear-progress-dialog" aria-labelledby="clear-progress-title"><div class="dialog-heading"><h2 id="clear-progress-title">清除本地练习记录？</h2><button class="quiet" data-close="clear-progress-dialog" aria-label="取消清除"><svg class="icon" aria-hidden="true"><use href="/frontend/icons.svg#close"></use></svg></button></div><p class="muted">本账号在这个浏览器保存的题组、选项和本地总结将被清除，不能撤销。服务端的答题记录和经验值不受影响。</p><div class="summary-actions"><button class="secondary" data-close="clear-progress-dialog">保留记录</button><button id="confirm-clear-progress" class="primary">清除本地记录</button></div></dialog>
+  <dialog id="review-dialog" class="review-dialog" aria-labelledby="review-title"><div class="dialog-heading"><div><h2 id="review-title">错题复习</h2></div><button class="quiet" data-close="review-dialog" aria-label="关闭复习"><svg class="icon" aria-hidden="true"><use href="/frontend/icons.svg#close"></use></svg></button></div><p class="muted">复习结果会保存，重复作答不增加 XP。</p><div id="review-body"></div></dialog>
+  <script type="module" src="/frontend/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,3544 @@
+{
+  "baseline_files": 349,
+  "original_manifest_sha256": "85e37f4f7f1d2675bdc2a68cadfa1f2144c697f6d34fc800ed2b7450d90b4913",
+  "decisions": [
+    {
+      "path": ".dockerignore",
+      "sha256": "544abcfe231918c45e686d04b6ec58336bab87ed7d7915e337973743c273098c",
+      "bytes": 332,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "544abcfe231918c45e686d04b6ec58336bab87ed7d7915e337973743c273098c",
+      "publication_bytes": 332,
+      "publication_transforms": []
+    },
+    {
+      "path": ".env.docker.example",
+      "sha256": "4e0ec3f962ad43903cb5c0e323fe64c89aaaa84a88fb9ebf904f0efb5179a491",
+      "bytes": 536,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "4e0ec3f962ad43903cb5c0e323fe64c89aaaa84a88fb9ebf904f0efb5179a491",
+      "publication_bytes": 536,
+      "publication_transforms": []
+    },
+    {
+      "path": ".env.example",
+      "sha256": "07da140ad38d734370a27a0d66fbe156063d80006db135b708c74e1564cdd0a4",
+      "bytes": 1462,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "07da140ad38d734370a27a0d66fbe156063d80006db135b708c74e1564cdd0a4",
+      "publication_bytes": 1462,
+      "publication_transforms": []
+    },
+    {
+      "path": ".gitattributes",
+      "sha256": "387dbe0933748b4dbc4e2aa8d3ff9dc3297401f382ad6487acb3e22efb888901",
+      "bytes": 127,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "5f47fbf8fc7f1256d798fe67834ff437e5a1330b17da0028907e9f737a6191eb",
+      "publication_bytes": 481,
+      "publication_transforms": [
+        "preserve_fingerprinted_csv_in_git",
+        "2026-10-27_publish_whitespace_only_or_scoped_git_whitespace_attributes"
+      ]
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "2835c1fb730ba25ace7efb380d8bf83df4f8a1e6e2601f4b829c24443d2fb60c",
+      "bytes": 493,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "2835c1fb730ba25ace7efb380d8bf83df4f8a1e6e2601f4b829c24443d2fb60c",
+      "publication_bytes": 493,
+      "publication_transforms": []
+    },
+    {
+      "path": "ADAPTIVE_RECOMMENDATION.md",
+      "sha256": "40aad0561726d618d187d7a6a99df4db02edfb6d324047905f5a8de5e522bb63",
+      "bytes": 8775,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "8fa5b45878d5396dbc32f839e6ae277cfb3a0281951270d681201255196239de",
+      "publication_bytes": 8745,
+      "publication_transforms": [
+        "redact_local_profile_and_project_paths"
+      ]
+    },
+    {
+      "path": "ADMIN_RBAC.md",
+      "sha256": "abbf33e25e8e51869477139392d24373c5cc9e646df435b78d67a888a4b0fb78",
+      "bytes": 10146,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "d6efa9788e7fe32c6c2276b53076b007a1b06bb43cd19781a73390096e208e7d",
+      "publication_bytes": 10116,
+      "publication_transforms": [
+        "redact_local_profile_and_project_paths"
+      ]
+    },
+    {
+      "path": "DEPLOYMENT.md",
+      "sha256": "a9654291528b4cefcbe3d7aa9222677dfa218dc890c3051ba513c19c6863dc8c",
+      "bytes": 11290,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "a9654291528b4cefcbe3d7aa9222677dfa218dc890c3051ba513c19c6863dc8c",
+      "publication_bytes": 11290,
+      "publication_transforms": []
+    },
+    {
+      "path": "Dockerfile",
+      "sha256": "a42ddc0ec7c72867a710de142f0ba67bfc7c23a697fcd8d1e2e0ea6d819ea964",
+      "bytes": 918,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "a42ddc0ec7c72867a710de142f0ba67bfc7c23a697fcd8d1e2e0ea6d819ea964",
+      "publication_bytes": 918,
+      "publication_transforms": []
+    },
+    {
+      "path": "PORTFOLIO_DEMO.md",
+      "sha256": "5e3c082b927478036ec30ca6764399d9a6034055f6affe3fd8fa86d2707386a2",
+      "bytes": 6996,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "5e3c082b927478036ec30ca6764399d9a6034055f6affe3fd8fa86d2707386a2",
+      "publication_bytes": 6996,
+      "publication_transforms": []
+    },
+    {
+      "path": "PORTFOLIO_INTERVIEW.md",
+      "sha256": "553f654d9705046ab83e00e20ae6a38107bf62141e939a8f36c2c048e7dcab28",
+      "bytes": 10774,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "05005201345059102320e6921c31113e31e6158aaf7e96af150c5601774f3184",
+      "publication_bytes": 10779,
+      "publication_transforms": [
+        "repair_private_or_withheld_documentation_link"
+      ]
+    },
+    {
+      "path": "README.md",
+      "sha256": "e8d5be04824a15e0740c47bc898495a1eb05d276b0a7eeebadd97483490e4222",
+      "bytes": 13119,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "74c292bff11993e3475768dd557255bc9af8dfa41914eff80dae140255094bd7",
+      "publication_bytes": 13788,
+      "publication_transforms": [
+        "link_current_review_and_explain_withheld_rag_dataset"
+      ]
+    },
+    {
+      "path": "S2_TOPIC_MASTERY.md",
+      "sha256": "722f0411c469252d9a4de531f57f20aba3164f0e6affae481896faad0913b2e1",
+      "bytes": 11923,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "722f0411c469252d9a4de531f57f20aba3164f0e6affae481896faad0913b2e1",
+      "publication_bytes": 11923,
+      "publication_transforms": []
+    },
+    {
+      "path": "S3_ADAPTIVE_EVALUATION.md",
+      "sha256": "280af81f214425eaa137e6804e0a1d2467f6ca08d0052a9093018e0c23d67d82",
+      "bytes": 19075,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "280af81f214425eaa137e6804e0a1d2467f6ca08d0052a9093018e0c23d67d82",
+      "publication_bytes": 19075,
+      "publication_transforms": []
+    },
+    {
+      "path": "S4_EXPERIMENT_PREPARATION.md",
+      "sha256": "3d1792bc7b4ff420d702b791db8967943bb6905bdce488044dfd5ec0ad511408",
+      "bytes": 16539,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "ea63521d059b148aac83fdb1c1f1f689cd5607891436adea6b9158fbc689aac4",
+      "publication_bytes": 16477,
+      "publication_transforms": [
+        "redact_local_profile_and_project_paths",
+        "redact_private_database_fingerprint"
+      ]
+    },
+    {
+      "path": "S5_FINAL_DELIVERY.md",
+      "sha256": "21f9ff6d1f9771ea20235ee7e6684b63cfc777278e768c147645ca466fd48171",
+      "bytes": 15248,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "4dbcf043ad70d98b819287a52e44f4628a4fe89de45e434cd174fb2120b88bf3",
+      "publication_bytes": 15303,
+      "publication_transforms": [
+        "redact_private_database_fingerprint",
+        "point_to_current_screenshots_without_changing_s5_results"
+      ]
+    },
+    {
+      "path": "S6_PORTFOLIO_RELEASE.md",
+      "sha256": "2943ddce5de87786b0a28f2bfe4c7a2f12393b67082450ba7e20815c145532c7",
+      "bytes": 12529,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "2943ddce5de87786b0a28f2bfe4c7a2f12393b67082450ba7e20815c145532c7",
+      "publication_bytes": 12529,
+      "publication_transforms": []
+    },
+    {
+      "path": "alembic.ini",
+      "sha256": "0f2ce09203f8b1dbc1f02965d85339ad455c22f267e79d79c169e3ec412eb9dc",
+      "bytes": 5011,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "0f2ce09203f8b1dbc1f02965d85339ad455c22f267e79d79c169e3ec412eb9dc",
+      "publication_bytes": 5011,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/agents/__init__.py",
+      "sha256": "7b3f406f9d2663983cff9b506e9822a1700494ca570fd2d7b0978e0320e6846e",
+      "bytes": 28,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "7b3f406f9d2663983cff9b506e9822a1700494ca570fd2d7b0978e0320e6846e",
+      "publication_bytes": 28,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/agents/coach.py",
+      "sha256": "4a68ae73e5db1a36ca63225673cd471451f9d5d99a64ea25efde2d24b73f37e7",
+      "bytes": 3816,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "4a68ae73e5db1a36ca63225673cd471451f9d5d99a64ea25efde2d24b73f37e7",
+      "publication_bytes": 3816,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/agents/prompts.py",
+      "sha256": "df57fe0fe4be0404c8723f0d517933357e906e030dbb6015b871146ad98246f7",
+      "bytes": 1269,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "df57fe0fe4be0404c8723f0d517933357e906e030dbb6015b871146ad98246f7",
+      "publication_bytes": 1269,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/agents/tools.py",
+      "sha256": "cded9ba3bf2bad9d67324523ace1f548a8a2d280a1e91b297b429512337cb2cc",
+      "bytes": 5544,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "cded9ba3bf2bad9d67324523ace1f548a8a2d280a1e91b297b429512337cb2cc",
+      "publication_bytes": 5544,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/core/dependencies.py",
+      "sha256": "6eaefb39e6c45a5501206c69d87bcb9e3f76941cbaf3be987e52df4f5c76fbeb",
+      "bytes": 1893,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "6eaefb39e6c45a5501206c69d87bcb9e3f76941cbaf3be987e52df4f5c76fbeb",
+      "publication_bytes": 1893,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/core/jwt.py",
+      "sha256": "9d3ab8a37c7d79ebdebe7db8bcb62d2d8ff0b871282fefb30b83ef89992092a8",
+      "bytes": 577,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "9d3ab8a37c7d79ebdebe7db8bcb62d2d8ff0b871282fefb30b83ef89992092a8",
+      "publication_bytes": 577,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/core/login_throttle.py",
+      "sha256": "d2378f9a7807f98585fbaf8e56051442add2e1a9440b20aaf6fbfcdac4ef1e45",
+      "bytes": 2146,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "d2378f9a7807f98585fbaf8e56051442add2e1a9440b20aaf6fbfcdac4ef1e45",
+      "publication_bytes": 2146,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/core/resource_limits.py",
+      "sha256": "1aff9ea6ec4d97eb72bca6d9e198105b5c68c40009cf2f3a4c03686e96375615",
+      "bytes": 2863,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "1aff9ea6ec4d97eb72bca6d9e198105b5c68c40009cf2f3a4c03686e96375615",
+      "publication_bytes": 2863,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/core/security.py",
+      "sha256": "5a594908307ff4189a26549e2bfaa2b338c4e0a4ab4a4d98b3f299e22d0e46f0",
+      "bytes": 275,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "5a594908307ff4189a26549e2bfaa2b338c4e0a4ab4a4d98b3f299e22d0e46f0",
+      "publication_bytes": 275,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/core/settings.py",
+      "sha256": "25318fc0a5464214cf82d552864f3c12c08107f98cea962e6b823a9a8845f163",
+      "bytes": 2443,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "25318fc0a5464214cf82d552864f3c12c08107f98cea962e6b823a9a8845f163",
+      "publication_bytes": 2443,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/database.py",
+      "sha256": "f70bc2c042b949264e95b2987dbf6ece0695a8a69b6550a2cf5b5d2f7345b7e8",
+      "bytes": 1154,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "f70bc2c042b949264e95b2987dbf6ece0695a8a69b6550a2cf5b5d2f7345b7e8",
+      "publication_bytes": 1154,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/main.py",
+      "sha256": "beea0104324477ef2c13a6256defdfba770eb8ba4d975bbc5d7acb5ff71d2b6e",
+      "bytes": 3484,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "beea0104324477ef2c13a6256defdfba770eb8ba4d975bbc5d7acb5ff71d2b6e",
+      "publication_bytes": 3484,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/models/__init__.py",
+      "sha256": "ad13097502d8b0ae9a5e669c53b879035a8b7bd812e5e9d7e0ea339d63b88794",
+      "bytes": 948,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "ad13097502d8b0ae9a5e669c53b879035a8b7bd812e5e9d7e0ea339d63b88794",
+      "publication_bytes": 948,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/models/achievement.py",
+      "sha256": "6e372682e6e44b589cef4cfae0a34759bd2aaef4e99563384c30604b6aa30f53",
+      "bytes": 751,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "6e372682e6e44b589cef4cfae0a34759bd2aaef4e99563384c30604b6aa30f53",
+      "publication_bytes": 751,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/models/admin_audit_log.py",
+      "sha256": "d176eadc9f58786c5d172f7d8f180ec73d859f79eb1885dbdc2703bc3541432b",
+      "bytes": 901,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "d176eadc9f58786c5d172f7d8f180ec73d859f79eb1885dbdc2703bc3541432b",
+      "publication_bytes": 901,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/models/coach_session.py",
+      "sha256": "8cb5086a4b20b1ad4474aafb48c36e3ce4323fe04408b52a2869877c5ec3d3e9",
+      "bytes": 1363,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "8cb5086a4b20b1ad4474aafb48c36e3ce4323fe04408b52a2869877c5ec3d3e9",
+      "publication_bytes": 1363,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/models/learning_chunk.py",
+      "sha256": "0c866d9df523522b608b0e50e7b0ad41519fa970663535bdfa4aa49a5b03ed27",
+      "bytes": 794,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "0c866d9df523522b608b0e50e7b0ad41519fa970663535bdfa4aa49a5b03ed27",
+      "publication_bytes": 794,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/models/learning_material.py",
+      "sha256": "363f83450a7e7debe54f5f08c38d82d22ad3c904c6e5f8fd1fb5ee15c8f4f8ff",
+      "bytes": 869,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "363f83450a7e7debe54f5f08c38d82d22ad3c904c6e5f8fd1fb5ee15c8f4f8ff",
+      "publication_bytes": 869,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/models/learning_record.py",
+      "sha256": "c2f900fa732ba1a25bea2f51d5134ed28e1958efdccdaa349f0d80ba1a3483e7",
+      "bytes": 930,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "c2f900fa732ba1a25bea2f51d5134ed28e1958efdccdaa349f0d80ba1a3483e7",
+      "publication_bytes": 930,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/models/qa_history.py",
+      "sha256": "52b708c720e8c5e8c3b4fd8450357fb3e9a941b0edbfa1f35b050011c974ae3b",
+      "bytes": 869,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "52b708c720e8c5e8c3b4fd8450357fb3e9a941b0edbfa1f35b050011c974ae3b",
+      "publication_bytes": 869,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/models/question.py",
+      "sha256": "3a7ee390275d39bd5307809146a7722b0ec4d8b6d29c6bdd5a1a4595ecdf0686",
+      "bytes": 1659,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "3a7ee390275d39bd5307809146a7722b0ec4d8b6d29c6bdd5a1a4595ecdf0686",
+      "publication_bytes": 1659,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/models/question_attempt.py",
+      "sha256": "137c81cae16118530999ac70dcd7e2bec2d2cd5f5f7f2ed4c1289f0f7268e275",
+      "bytes": 1045,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "137c81cae16118530999ac70dcd7e2bec2d2cd5f5f7f2ed4c1289f0f7268e275",
+      "publication_bytes": 1045,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/models/review_attempt.py",
+      "sha256": "03ad9ed7905fae1f0f36f3ee1a00885cf2dce744e06f9c6f561a91feeca3ab51",
+      "bytes": 861,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "03ad9ed7905fae1f0f36f3ee1a00885cf2dce744e06f9c6f561a91feeca3ab51",
+      "publication_bytes": 861,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/models/topic.py",
+      "sha256": "b822e7f5a69d2f0bcd772e1f9e53cb9d0b0ae5b2a86105905760eebd2255adb6",
+      "bytes": 752,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "b822e7f5a69d2f0bcd772e1f9e53cb9d0b0ae5b2a86105905760eebd2255adb6",
+      "publication_bytes": 752,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/models/topic_mastery.py",
+      "sha256": "c0d5751bb9820414f0db3773ff56b20e699417a160fc35f31eb8787dbfa5ffa4",
+      "bytes": 1365,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "c0d5751bb9820414f0db3773ff56b20e699417a160fc35f31eb8787dbfa5ffa4",
+      "publication_bytes": 1365,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/models/user.py",
+      "sha256": "e699d23419caff98373178c77e2f32ca667705075bc6bbbc840b2077758628b9",
+      "bytes": 1356,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "e699d23419caff98373178c77e2f32ca667705075bc6bbbc840b2077758628b9",
+      "publication_bytes": 1356,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/models/user_achievement.py",
+      "sha256": "7ee0aaa0832663512c5e19f29c0fe7cafe4506f1c84f059f863fb6de356e2c4d",
+      "bytes": 868,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "7ee0aaa0832663512c5e19f29c0fe7cafe4506f1c84f059f863fb6de356e2c4d",
+      "publication_bytes": 868,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/routers/adaptive.py",
+      "sha256": "fba2ee5759bb3a8d813a1b7218b9230469875444ca2396f9b100abdee7ac7ca4",
+      "bytes": 4406,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "fba2ee5759bb3a8d813a1b7218b9230469875444ca2396f9b100abdee7ac7ca4",
+      "publication_bytes": 4406,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/routers/admin.py",
+      "sha256": "e2ee4ab96c0f36df59c8183a29e4e03286ab48ce0658b5bfc3ae8ffe3a887b61",
+      "bytes": 5400,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "e2ee4ab96c0f36df59c8183a29e4e03286ab48ce0658b5bfc3ae8ffe3a887b61",
+      "publication_bytes": 5400,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/routers/auth.py",
+      "sha256": "2d3a9f285b049df5ee1b814f43b406e24898051d874196435f24cca2b8fc3a65",
+      "bytes": 1983,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "2d3a9f285b049df5ee1b814f43b406e24898051d874196435f24cca2b8fc3a65",
+      "publication_bytes": 1983,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/routers/coach.py",
+      "sha256": "8d9dab3d309c663cd93d1db5f21cd8bff1ce5a63acba376e7bd0bd32d5299473",
+      "bytes": 10376,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "8d9dab3d309c663cd93d1db5f21cd8bff1ce5a63acba376e7bd0bd32d5299473",
+      "publication_bytes": 10376,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/routers/learning_material.py",
+      "sha256": "139a63e8ff22ad2e1fc828370f8436e1d8c879a013488ced18cda4e1034307e9",
+      "bytes": 13711,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "139a63e8ff22ad2e1fc828370f8436e1d8c879a013488ced18cda4e1034307e9",
+      "publication_bytes": 13711,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/routers/learning_record.py",
+      "sha256": "546b93efa790c1d337cf7336c432f4b0b3b605789d2f91f7bff149ec7c0f82f0",
+      "bytes": 2042,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "546b93efa790c1d337cf7336c432f4b0b3b605789d2f91f7bff149ec7c0f82f0",
+      "publication_bytes": 2042,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/routers/question.py",
+      "sha256": "18a8129fbe77842ba39ddcd0ae06cf49e473f3587fc421ac078be7bc7407e832",
+      "bytes": 5014,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "18a8129fbe77842ba39ddcd0ae06cf49e473f3587fc421ac078be7bc7407e832",
+      "publication_bytes": 5014,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/routers/rag.py",
+      "sha256": "c398943b8bd45ca3c8346bee0a87a8beec62596cb84e031868d97014ef4a6722",
+      "bytes": 2688,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "c398943b8bd45ca3c8346bee0a87a8beec62596cb84e031868d97014ef4a6722",
+      "publication_bytes": 2688,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/routers/study.py",
+      "sha256": "f5d14fad0c476c509684fcff797aae1ab33272b659c178b8074d0792ccd855c0",
+      "bytes": 9880,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "f5d14fad0c476c509684fcff797aae1ab33272b659c178b8074d0792ccd855c0",
+      "publication_bytes": 9880,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/routers/user.py",
+      "sha256": "c4e102ee37dc9597ea08bd052d1a553044412c32157f6f54fac3f68cc0537f3f",
+      "bytes": 1087,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "c4e102ee37dc9597ea08bd052d1a553044412c32157f6f54fac3f68cc0537f3f",
+      "publication_bytes": 1087,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/schemas/admin.py",
+      "sha256": "65e1f2baaab630bfe47dccbb41507c10adcc5e02913124d8b1464ac4e306dc49",
+      "bytes": 462,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "65e1f2baaab630bfe47dccbb41507c10adcc5e02913124d8b1464ac4e306dc49",
+      "publication_bytes": 462,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/schemas/coach.py",
+      "sha256": "550194ef4e589cdc66de45212145ed45404ee2509f76f24bdbba9d1949f527d3",
+      "bytes": 1135,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "550194ef4e589cdc66de45212145ed45404ee2509f76f24bdbba9d1949f527d3",
+      "publication_bytes": 1135,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/schemas/learning_material.py",
+      "sha256": "26644730684d663773fa53e0454a6271e61bdaf9219a12b12ccb5f4418a58305",
+      "bytes": 738,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "26644730684d663773fa53e0454a6271e61bdaf9219a12b12ccb5f4418a58305",
+      "publication_bytes": 738,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/schemas/learning_record.py",
+      "sha256": "075660ebdbd9afcea1eb41ab43f44f1bdb4c22033b5d7feda9a33662d66134bb",
+      "bytes": 278,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "075660ebdbd9afcea1eb41ab43f44f1bdb4c22033b5d7feda9a33662d66134bb",
+      "publication_bytes": 278,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/schemas/question.py",
+      "sha256": "b0ee08201071d77d053a1dcefa78a85ce3d6310306765a7fd84a7e54061523ef",
+      "bytes": 1858,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "faae5694d3ed8f705506d6b4e308eb113ff1ae916a880e0d48d8ccb7aa190410",
+      "publication_bytes": 1853,
+      "publication_transforms": [
+        "2026-10-27_publish_whitespace_only_or_scoped_git_whitespace_attributes"
+      ]
+    },
+    {
+      "path": "app/schemas/rag.py",
+      "sha256": "1618b5dd5873620d71a070027ece412e0aa31f5cd39d1b3aee77ef55f5a4bae2",
+      "bytes": 1686,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "1618b5dd5873620d71a070027ece412e0aa31f5cd39d1b3aee77ef55f5a4bae2",
+      "publication_bytes": 1686,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/schemas/user.py",
+      "sha256": "4efdee5851c9f4e1330e51e4101bcab929960850c6d8907c235eec7ef7b5728b",
+      "bytes": 920,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "4efdee5851c9f4e1330e51e4101bcab929960850c6d8907c235eec7ef7b5728b",
+      "publication_bytes": 920,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/services/achievement.py",
+      "sha256": "72380601492b36e4a86bc2919768974a923a88ddd1731a15fa62f378b9fe8f4a",
+      "bytes": 1311,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "72380601492b36e4a86bc2919768974a923a88ddd1731a15fa62f378b9fe8f4a",
+      "publication_bytes": 1311,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/services/adaptive.py",
+      "sha256": "03f6d44f971a9497b3038a0769ad7fc260f8c2a9ca5d50a207825137a6099692",
+      "bytes": 9950,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "03f6d44f971a9497b3038a0769ad7fc260f8c2a9ca5d50a207825137a6099692",
+      "publication_bytes": 9950,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/services/admin.py",
+      "sha256": "b40f48ba988d2fb414607f26ca8756c26bb259e9ade24cea0de4d3d59c331458",
+      "bytes": 3642,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "b40f48ba988d2fb414607f26ca8756c26bb259e9ade24cea0de4d3d59c331458",
+      "publication_bytes": 3642,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/services/answer_feedback.py",
+      "sha256": "2c9dde56ac9f8d50a3cb63f7baf3eb72c6e987bf41f29111c92ac0aab79eafd8",
+      "bytes": 2087,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "2c9dde56ac9f8d50a3cb63f7baf3eb72c6e987bf41f29111c92ac0aab79eafd8",
+      "publication_bytes": 2087,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/services/answer_submission.py",
+      "sha256": "8fc9adc502ad258b5ea7735f70c70026fc000563de6f2241bb2ac5da3d36f987",
+      "bytes": 4579,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "8fc9adc502ad258b5ea7735f70c70026fc000563de6f2241bb2ac5da3d36f987",
+      "publication_bytes": 4579,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/services/chunker.py",
+      "sha256": "eec7bf52f7a191c34fd52c87e7f2a1cab8d186952745b57cc20e22691a6bf04f",
+      "bytes": 2911,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "eec7bf52f7a191c34fd52c87e7f2a1cab8d186952745b57cc20e22691a6bf04f",
+      "publication_bytes": 2911,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/services/embedding.py",
+      "sha256": "37f91733298ff331207be9cb7bb06281264c80a4819ff90d4bd9c97002e59187",
+      "bytes": 3394,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "37f91733298ff331207be9cb7bb06281264c80a4819ff90d4bd9c97002e59187",
+      "publication_bytes": 3394,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/services/lexical_retriever.py",
+      "sha256": "50a7b0a8f0679ec3696a93041214f7fd328eeaae49efe4f4673b933c5485e7d3",
+      "bytes": 3369,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "50a7b0a8f0679ec3696a93041214f7fd328eeaae49efe4f4673b933c5485e7d3",
+      "publication_bytes": 3369,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/services/material_dedup.py",
+      "sha256": "73f5fdc1709bc20ff570cf6d396b1c6d835389e3b9ad959cd1a339e69eb626d5",
+      "bytes": 4912,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "73f5fdc1709bc20ff570cf6d396b1c6d835389e3b9ad959cd1a339e69eb626d5",
+      "publication_bytes": 4912,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/services/question_generator.py",
+      "sha256": "02688909135805f132d28a2af9c52cadbfd8c696bd020835bd6b9d69debf50ea",
+      "bytes": 5166,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "02688909135805f132d28a2af9c52cadbfd8c696bd020835bd6b9d69debf50ea",
+      "publication_bytes": 5166,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/services/rag.py",
+      "sha256": "d9b4d866fbe261860ab0882bfd81f948dfd21ec4998448d6876ad5f3d9149928",
+      "bytes": 10759,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "d9b4d866fbe261860ab0882bfd81f948dfd21ec4998448d6876ad5f3d9149928",
+      "publication_bytes": 10759,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/services/rag_evaluation.py",
+      "sha256": "b164ab16641ab8c3701584a7d59af4a297360d01c5ea7119f632ff3093d70147",
+      "bytes": 7356,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "b164ab16641ab8c3701584a7d59af4a297360d01c5ea7119f632ff3093d70147",
+      "publication_bytes": 7356,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/services/reranker.py",
+      "sha256": "8073f2798015cf601ba0fbfce3276661c29321671e53e0443d97716ad3b2ef2b",
+      "bytes": 4099,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "8073f2798015cf601ba0fbfce3276661c29321671e53e0443d97716ad3b2ef2b",
+      "publication_bytes": 4099,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/services/retriever.py",
+      "sha256": "cc4441848480475f3469f5222ccec136ab4579ca86801df1e203390e91efb7f1",
+      "bytes": 8530,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "cc4441848480475f3469f5222ccec136ab4579ca86801df1e203390e91efb7f1",
+      "publication_bytes": 8530,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/services/topic_chunk.py",
+      "sha256": "29cdc961206dd2bc6211c921cb6fb17f63397509a9702a9929ed1e0607c59910",
+      "bytes": 2762,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "29cdc961206dd2bc6211c921cb6fb17f63397509a9702a9929ed1e0607c59910",
+      "publication_bytes": 2762,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/services/topic_extractor.py",
+      "sha256": "c360c7222393b2563040b808ce2fec58feec5a16442796a8edc598e06cab15f4",
+      "bytes": 3386,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "c360c7222393b2563040b808ce2fec58feec5a16442796a8edc598e06cab15f4",
+      "publication_bytes": 3386,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/services/topic_mastery.py",
+      "sha256": "9b1339ef0e6b3f25beb2eacbb180affcdd40f896073bb2c2b063d31244684109",
+      "bytes": 7893,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "9b1339ef0e6b3f25beb2eacbb180affcdd40f896073bb2c2b063d31244684109",
+      "publication_bytes": 7893,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/services/topic_scope.py",
+      "sha256": "a57af89a7accc832c462c8b36c3bb82d0ab6180e04ab03f41dd9e059bf435f45",
+      "bytes": 2541,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "a57af89a7accc832c462c8b36c3bb82d0ab6180e04ab03f41dd9e059bf435f45",
+      "publication_bytes": 2541,
+      "publication_transforms": []
+    },
+    {
+      "path": "app/services/xp.py",
+      "sha256": "76dfdb2d4c70a54df78059fdafd6bef2435acb18d6041a03979f95ebe0687992",
+      "bytes": 304,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "76dfdb2d4c70a54df78059fdafd6bef2435acb18d6041a03979f95ebe0687992",
+      "publication_bytes": 304,
+      "publication_transforms": []
+    },
+    {
+      "path": "compose.yaml",
+      "sha256": "081bcdb8abb39514d6aa0acec6770a730bc044099883ac0648506d053d34291d",
+      "bytes": 1836,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "081bcdb8abb39514d6aa0acec6770a730bc044099883ac0648506d053d34291d",
+      "publication_bytes": 1836,
+      "publication_transforms": []
+    },
+    {
+      "path": "deploy/Dockerfile.stub",
+      "sha256": "01871811591646020915c29d557abfa2a8be1ca8c4b436de8ab81dfde78e23f9",
+      "bytes": 272,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "01871811591646020915c29d557abfa2a8be1ca8c4b436de8ab81dfde78e23f9",
+      "publication_bytes": 272,
+      "publication_transforms": []
+    },
+    {
+      "path": "deploy/compose.acceptance.yaml",
+      "sha256": "e9abd1a3f319e6c850ebdd6828a72892f634b89bff765c48a7525702840348be",
+      "bytes": 588,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "e9abd1a3f319e6c850ebdd6828a72892f634b89bff765c48a7525702840348be",
+      "publication_bytes": 588,
+      "publication_transforms": []
+    },
+    {
+      "path": "deploy/compose.restore.yaml",
+      "sha256": "de5a5ccdb0c9eb462a21e958b6bf84f390c2c10b6122660c2b8b6729fafe127d",
+      "bytes": 410,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "de5a5ccdb0c9eb462a21e958b6bf84f390c2c10b6122660c2b8b6729fafe127d",
+      "publication_bytes": 410,
+      "publication_transforms": []
+    },
+    {
+      "path": "deploy/nginx.conf",
+      "sha256": "e7a9810f9cb23a040af41706d73c23d6f45339ad8f89e1c7c068ef478b75a4ba",
+      "bytes": 1548,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "e7a9810f9cb23a040af41706d73c23d6f45339ad8f89e1c7c068ef478b75a4ba",
+      "publication_bytes": 1548,
+      "publication_transforms": []
+    },
+    {
+      "path": "docs/portfolio/README.md",
+      "sha256": "dc90b2414f7dc9d43a51755cbb1e2298e2e0de4af33773a6f9ca90fb18a003f7",
+      "bytes": 1908,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "ea9caa08b8560e7fa87434d1c23293fd4ef871e47d93e7f6c627b8480370c96b",
+      "publication_bytes": 1964,
+      "publication_transforms": [
+        "normalize_text_to_lf",
+        "document_canonical_screenshot_location"
+      ]
+    },
+    {
+      "path": "docs/portfolio/admin-desktop.png",
+      "sha256": "d96c46a3741f7f404f4d32059c793dd253c0087f0d821e7d0178beae97a599db",
+      "bytes": 130437,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "d96c46a3741f7f404f4d32059c793dd253c0087f0d821e7d0178beae97a599db",
+      "publication_bytes": 130437,
+      "publication_transforms": []
+    },
+    {
+      "path": "docs/portfolio/admin-mobile.png",
+      "sha256": "0a248de147cfcac15e0135510fb6e6cff4e7de5d0cd0c31fde63e8e11fbb98d6",
+      "bytes": 97142,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "0a248de147cfcac15e0135510fb6e6cff4e7de5d0cd0c31fde63e8e11fbb98d6",
+      "publication_bytes": 97142,
+      "publication_transforms": []
+    },
+    {
+      "path": "docs/portfolio/architecture.svg",
+      "sha256": "dffcef6d8f7c04a9ddf9008ba0e46ca0353995c5f5d9c07c0cf91be1f5559269",
+      "bytes": 4314,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "dffcef6d8f7c04a9ddf9008ba0e46ca0353995c5f5d9c07c0cf91be1f5559269",
+      "publication_bytes": 4314,
+      "publication_transforms": []
+    },
+    {
+      "path": "docs/portfolio/coach-desktop.png",
+      "sha256": "fbb5e904571bbb49a4782747b998b3008b9a97e173faac39fce6e2d8ab6e23f2",
+      "bytes": 128043,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "fbb5e904571bbb49a4782747b998b3008b9a97e173faac39fce6e2d8ab6e23f2",
+      "publication_bytes": 128043,
+      "publication_transforms": []
+    },
+    {
+      "path": "docs/portfolio/demo-notes.txt",
+      "sha256": "b08848d39910260697065bac9212c819aa2d30bf50f8fe3dbe9fda456f4b9c93",
+      "bytes": 829,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "b08848d39910260697065bac9212c819aa2d30bf50f8fe3dbe9fda456f4b9c93",
+      "publication_bytes": 829,
+      "publication_transforms": []
+    },
+    {
+      "path": "docs/portfolio/map-desktop.png",
+      "sha256": "6ac46e14bc4b0ba18cb434d1237f4be05432a67f5047ddfc52cb239decfdef0e",
+      "bytes": 94728,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "6ac46e14bc4b0ba18cb434d1237f4be05432a67f5047ddfc52cb239decfdef0e",
+      "publication_bytes": 94728,
+      "publication_transforms": []
+    },
+    {
+      "path": "docs/portfolio/map-mobile.png",
+      "sha256": "f8aed850e82c2c3a7cd6fb6e5472be0e16314a0e9eef3506cb59105917e9c63e",
+      "bytes": 62075,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "f8aed850e82c2c3a7cd6fb6e5472be0e16314a0e9eef3506cb59105917e9c63e",
+      "publication_bytes": 62075,
+      "publication_transforms": []
+    },
+    {
+      "path": "docs/portfolio/practice-desktop.png",
+      "sha256": "e5eac023fda11319a176a83b07a2d45a6cfbbe15c637697c9be4dd6af2d47dba",
+      "bytes": 129001,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "e5eac023fda11319a176a83b07a2d45a6cfbbe15c637697c9be4dd6af2d47dba",
+      "publication_bytes": 129001,
+      "publication_transforms": []
+    },
+    {
+      "path": "docs/portfolio/rag-desktop.png",
+      "sha256": "c708642289c30e64a5c88653c3480954aafcba6fca26f30e708d69eb653774f2",
+      "bytes": 95311,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "c708642289c30e64a5c88653c3480954aafcba6fca26f30e708d69eb653774f2",
+      "publication_bytes": 95311,
+      "publication_transforms": []
+    },
+    {
+      "path": "docs/portfolio/screenshots.json",
+      "sha256": "c33a98c46224889ef4d4a7c2484b9fa223eb9d265fa2e5a4ee879e5f008270f2",
+      "bytes": 2057,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "c7b19f890ecdbc04dcb83e06a76688f91c34d98cfc4a353dba275ccc0cb9be95",
+      "publication_bytes": 1997,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/README.md",
+      "sha256": "1e25a984ef31812eda30e90eb5b49c9a157644241e9aef4949c31cbe9e5df0dd",
+      "bytes": 14161,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "c31c9476c21b24b4a37ed1c9d215bfda6a86dd52f0c6ce81d3967de940fd1a33",
+      "publication_bytes": 14516,
+      "publication_transforms": [
+        "redact_local_profile_and_project_paths",
+        "explain_historical_rag_commands_require_authorized_dataset",
+        "repair_private_or_withheld_documentation_link"
+      ]
+    },
+    {
+      "path": "evaluation/adaptive_replay.py",
+      "sha256": "6c59ed0776a3dbe21830f6b3f19a2fbfa5c908faea55eb13ff74485df091990f",
+      "bytes": 16302,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "6c59ed0776a3dbe21830f6b3f19a2fbfa5c908faea55eb13ff74485df091990f",
+      "publication_bytes": 16302,
+      "publication_transforms": []
+    },
+    {
+      "path": "evaluation/adaptive_s3_synthetic.json",
+      "sha256": "83e36101196b60198b752b7c0d16487e2ff982f42cc9387506595bec5855f46d",
+      "bytes": 169228,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "83e36101196b60198b752b7c0d16487e2ff982f42cc9387506595bec5855f46d",
+      "publication_bytes": 169228,
+      "publication_transforms": []
+    },
+    {
+      "path": "evaluation/examples/review-bank-s4/bank.json",
+      "sha256": "b6aa4a134d8b7c39b1c2219e368e1a981772faaac8d5d26cc02e22dbbc89e00a",
+      "bytes": 22293,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "b6aa4a134d8b7c39b1c2219e368e1a981772faaac8d5d26cc02e22dbbc89e00a",
+      "publication_bytes": 22293,
+      "publication_transforms": []
+    },
+    {
+      "path": "evaluation/examples/review-bank-s4/participants-demo.json",
+      "sha256": "0ca23c4942337170401ce1716263a158ba7e64346c7e0789c311e4018fe0552f",
+      "bytes": 45,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "0ca23c4942337170401ce1716263a158ba7e64346c7e0789c311e4018fe0552f",
+      "publication_bytes": 45,
+      "publication_transforms": []
+    },
+    {
+      "path": "evaluation/examples/review-bank-s4/review-packet.md",
+      "sha256": "d17abd69c2f5b4ead0dab61b10b837f9577b8bab73ecb9ba737424a8f93bae41",
+      "bytes": 14266,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "d17abd69c2f5b4ead0dab61b10b837f9577b8bab73ecb9ba737424a8f93bae41",
+      "publication_bytes": 14266,
+      "publication_transforms": []
+    },
+    {
+      "path": "evaluation/examples/s3-experiment/bank.json",
+      "sha256": "def4ce7ea4fd010b2cf4556750ab413f4558009f1f9af64e605df62355f61f63",
+      "bytes": 19641,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "def4ce7ea4fd010b2cf4556750ab413f4558009f1f9af64e605df62355f61f63",
+      "publication_bytes": 19641,
+      "publication_transforms": []
+    },
+    {
+      "path": "evaluation/examples/s3-experiment/participants.json",
+      "sha256": "120df57cbf5bb1228c04e76af819052699efadad527b5488bd16fb592e4fc6b5",
+      "bytes": 115,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "120df57cbf5bb1228c04e76af819052699efadad527b5488bd16fb592e4fc6b5",
+      "publication_bytes": 115,
+      "publication_transforms": []
+    },
+    {
+      "path": "evaluation/examples/s3-experiment/plan.json",
+      "sha256": "f5a0afe29e07ccf8a8ae45ca7fff7d74780db36edeeb8e645daaee6a9d4e57fa",
+      "bytes": 22174,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "f5a0afe29e07ccf8a8ae45ca7fff7d74780db36edeeb8e645daaee6a9d4e57fa",
+      "publication_bytes": 22174,
+      "publication_transforms": []
+    },
+    {
+      "path": "evaluation/examples/s3-experiment/records.csv",
+      "sha256": "bbe4fd9cee03896c3eb6eb14d2af252c1323c47576317ae8fae36661760555ef",
+      "bytes": 118,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "bbe4fd9cee03896c3eb6eb14d2af252c1323c47576317ae8fae36661760555ef",
+      "publication_bytes": 118,
+      "publication_transforms": []
+    },
+    {
+      "path": "evaluation/examples/s3-experiment/report/experiment.json",
+      "sha256": "3e45dbad355210783530c062342cee9cc900b4147f3a28d4a79e29d8c3521b18",
+      "bytes": 4163,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "3e45dbad355210783530c062342cee9cc900b4147f3a28d4a79e29d8c3521b18",
+      "publication_bytes": 4163,
+      "publication_transforms": []
+    },
+    {
+      "path": "evaluation/examples/s3-experiment/report/experiment.md",
+      "sha256": "52c73208e94e9f75175b8e03b82cbce5080d9be15add583a31173e715294bd44",
+      "bytes": 1100,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "52c73208e94e9f75175b8e03b82cbce5080d9be15add583a31173e715294bd44",
+      "publication_bytes": 1100,
+      "publication_transforms": []
+    },
+    {
+      "path": "evaluation/examples/s3-experiment/report/participants.csv",
+      "sha256": "c77e240d7042d6719974dadf73ddb41a1accc54ac75bbce8c2592eefdbcb5327",
+      "bytes": 344,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "c77e240d7042d6719974dadf73ddb41a1accc54ac75bbce8c2592eefdbcb5327",
+      "publication_bytes": 344,
+      "publication_transforms": []
+    },
+    {
+      "path": "evaluation/experiment_bank.py",
+      "sha256": "cc72e46d531a2d20815d6275612b9fc2e6bbade5581d0203b0ba2a0dcd0a3262",
+      "bytes": 6885,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "cc72e46d531a2d20815d6275612b9fc2e6bbade5581d0203b0ba2a0dcd0a3262",
+      "publication_bytes": 6885,
+      "publication_transforms": []
+    },
+    {
+      "path": "evaluation/experiment_session.py",
+      "sha256": "56b5ccbff825fa2cd488c924a5163dd2fc1ec053a1d9cf0e0e4c65187f542127",
+      "bytes": 8698,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "56b5ccbff825fa2cd488c924a5163dd2fc1ec053a1d9cf0e0e4c65187f542127",
+      "publication_bytes": 8698,
+      "publication_transforms": []
+    },
+    {
+      "path": "evaluation/learning_experiment.py",
+      "sha256": "665ebb515b9367d2f8b5a030632c718602b4940e640a714dbe5ce9f61db6a5d9",
+      "bytes": 16208,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "665ebb515b9367d2f8b5a030632c718602b4940e640a714dbe5ce9f61db6a5d9",
+      "publication_bytes": 16208,
+      "publication_transforms": []
+    },
+    {
+      "path": "evaluation/mastery_s2_sequences.json",
+      "sha256": "31566c365e04e76c84fed1b48b80a1c17bf4fa6b136ec6555950f8ae1c6bb5df",
+      "bytes": 2183,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "31566c365e04e76c84fed1b48b80a1c17bf4fa6b136ec6555950f8ae1c6bb5df",
+      "publication_bytes": 2183,
+      "publication_transforms": []
+    },
+    {
+      "path": "evaluation/rag_eval.json",
+      "sha256": "a48545507787d588f45ce5dbbc1d50fc46dfc0150f5af912743e06ae8b03d77d",
+      "bytes": 2640,
+      "decision": "hold_rights",
+      "reason": "Corpus-derived questions/labels: source redistribution rights not documented"
+    },
+    {
+      "path": "evaluation/rag_eval_100.json",
+      "sha256": "d70f99e815c31d9d00eb509a7de125edd8550a2e735ecc74ccb0a62328d0bef8",
+      "bytes": 54996,
+      "decision": "hold_rights",
+      "reason": "Corpus-derived questions/labels: source redistribution rights not documented"
+    },
+    {
+      "path": "evaluation/rag_eval_extended.json",
+      "sha256": "2f3ebc7287a01983fc08997b81e11d384f8964aeb2354d71292ab400a63e742b",
+      "bytes": 22163,
+      "decision": "hold_rights",
+      "reason": "Corpus-derived questions/labels: source redistribution rights not documented"
+    },
+    {
+      "path": "evaluation/reports/adaptive-s3-real-history/environment.json",
+      "sha256": "40a00d1210c81df7f514346763da1df935db363042004743c579753f40b17e84",
+      "bytes": 254,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "a55801777fbf9cb43ba5c32b8c631c291a5c66731cae2242abeb716b5da81474",
+      "publication_bytes": 249,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/reports/adaptive-s3-real-history/figures/comparison.pdf",
+      "sha256": "61a069d9862a9fa9972c786e632bdcb63c82ac90bf666d0ce4f4389d234968a2",
+      "bytes": 15964,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "61a069d9862a9fa9972c786e632bdcb63c82ac90bf666d0ce4f4389d234968a2",
+      "publication_bytes": 15964,
+      "publication_transforms": []
+    },
+    {
+      "path": "evaluation/reports/adaptive-s3-real-history/figures/comparison.png",
+      "sha256": "ee437db6c1eadf5b2e3e277ecbdd8c2ccb09f41091bb5087d6e60154a7b5daef",
+      "bytes": 216286,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "ee437db6c1eadf5b2e3e277ecbdd8c2ccb09f41091bb5087d6e60154a7b5daef",
+      "publication_bytes": 216286,
+      "publication_transforms": []
+    },
+    {
+      "path": "evaluation/reports/adaptive-s3-real-history/figures/comparison.svg",
+      "sha256": "0051ce2a75ace8d427c732983f7591d76d9777a92ec9e76df32f33e8ba1f5f12",
+      "bytes": 28846,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "b6e9d7fd71350d7dc646812979ab96482f110506a5da5de829b5f5529a518727",
+      "publication_bytes": 28147,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/reports/adaptive-s3-real-history/figures/difficulty.pdf",
+      "sha256": "7806fcef2006c5734ff57e7619ad8fc5aaf963eb34ed09f9732836cb690e7257",
+      "bytes": 19847,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "7806fcef2006c5734ff57e7619ad8fc5aaf963eb34ed09f9732836cb690e7257",
+      "publication_bytes": 19847,
+      "publication_transforms": []
+    },
+    {
+      "path": "evaluation/reports/adaptive-s3-real-history/figures/difficulty.png",
+      "sha256": "57a49ea477ee030d875c3461518094cd0f96abe50a37015722cb8adc432d5cc5",
+      "bytes": 128228,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "57a49ea477ee030d875c3461518094cd0f96abe50a37015722cb8adc432d5cc5",
+      "publication_bytes": 128228,
+      "publication_transforms": []
+    },
+    {
+      "path": "evaluation/reports/adaptive-s3-real-history/figures/difficulty.svg",
+      "sha256": "8dcb31015456d95f600f016bb40fa0f7093fb87e70137dac78232de405d2ce16",
+      "bytes": 14169,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "1dba68a0a0eb93a26624c6e9ca9760cd39eecf8b7dfae06d2b5fbc6cf9b642ec",
+      "publication_bytes": 13838,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/reports/adaptive-s3-real-history/figures/figures.json",
+      "sha256": "517364a9c45c4df915b7063974144609ceeed08c8f53b425f372a68e49526d2a",
+      "bytes": 1828,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "8ba3bd9b6ccfe05bbdd0e26f2093c75c7d855c3adaf1608770a6be0901306812",
+      "publication_bytes": 1779,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/reports/adaptive-s3-real-history/figures/mastery.pdf",
+      "sha256": "90ba1b38bee1e1839168f94fa8ebffdeb128bade424712171a736515f6e7c4d1",
+      "bytes": 16526,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "90ba1b38bee1e1839168f94fa8ebffdeb128bade424712171a736515f6e7c4d1",
+      "publication_bytes": 16526,
+      "publication_transforms": []
+    },
+    {
+      "path": "evaluation/reports/adaptive-s3-real-history/figures/mastery.png",
+      "sha256": "8c1c43b1d0a36c2b71e732f3e8b7a8bea7699eb88e04929299660bd61a8440cb",
+      "bytes": 134412,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "8c1c43b1d0a36c2b71e732f3e8b7a8bea7699eb88e04929299660bd61a8440cb",
+      "publication_bytes": 134412,
+      "publication_transforms": []
+    },
+    {
+      "path": "evaluation/reports/adaptive-s3-real-history/figures/mastery.svg",
+      "sha256": "76db0fbd0ce6f079d90e7f93846869c5370805a1cc7d57bcbe33cfeb82351e99",
+      "bytes": 14053,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "268e332bfce7e08409d943348456fa06180852e91276b866a263d7f4c13df1cc",
+      "publication_bytes": 13719,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/reports/adaptive-s3-real-history/figures/sample_counts.pdf",
+      "sha256": "e045a4ad52022581991da75cb8655fc5f7bbb1f33d981ecb3a64404c2ab1e120",
+      "bytes": 17959,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "e045a4ad52022581991da75cb8655fc5f7bbb1f33d981ecb3a64404c2ab1e120",
+      "publication_bytes": 17959,
+      "publication_transforms": []
+    },
+    {
+      "path": "evaluation/reports/adaptive-s3-real-history/figures/sample_counts.png",
+      "sha256": "44a4f3a8728ce85aa5a07575b42e98d1a1fa707bb97f2637918e7371d82e1ec8",
+      "bytes": 108145,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "44a4f3a8728ce85aa5a07575b42e98d1a1fa707bb97f2637918e7371d82e1ec8",
+      "publication_bytes": 108145,
+      "publication_transforms": []
+    },
+    {
+      "path": "evaluation/reports/adaptive-s3-real-history/figures/sample_counts.svg",
+      "sha256": "ca89aee9a24ba47a7d75f21e555aa4bf244e5434842dfe4df72161ddec561f7f",
+      "bytes": 18393,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "63920e25cd7d51c38e1f83e2a7028256503276d62eb8f2df0d1d9bce9c19c14c",
+      "publication_bytes": 17933,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/reports/adaptive-s3-real-history/report.json",
+      "sha256": "88ea69c15dd7de15eaf8085d65bec903b2134e75f12b56b81e4448f6f87bf407",
+      "bytes": 6521,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "f7a0d0162bb6b4f358ecdc081480f2068d685f225c582f1da2ad6bb58fe2cefe",
+      "publication_bytes": 6298,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/reports/adaptive-s3-real-history/report.md",
+      "sha256": "e6b48336ddbff528817b4b20f293d8dad4bba3c5c3cfc4f9f7fee2d63b3d2ae9",
+      "bytes": 3962,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "73d069759f6ef9383405136963c93ecbc4582072e15c1061acd5917195921191",
+      "publication_bytes": 3878,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/reports/adaptive-s3-synthetic/decisions.csv",
+      "sha256": "0f43ab372d08140745cf45a7ab610c4e21df0174bac322287a56f0d97c26f9a7",
+      "bytes": 261991,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "0f43ab372d08140745cf45a7ab610c4e21df0174bac322287a56f0d97c26f9a7",
+      "publication_bytes": 261991,
+      "publication_transforms": []
+    },
+    {
+      "path": "evaluation/reports/adaptive-s3-synthetic/environment.json",
+      "sha256": "40a00d1210c81df7f514346763da1df935db363042004743c579753f40b17e84",
+      "bytes": 254,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "a55801777fbf9cb43ba5c32b8c631c291a5c66731cae2242abeb716b5da81474",
+      "publication_bytes": 249,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/reports/adaptive-s3-synthetic/figures/comparison.pdf",
+      "sha256": "9b039fde64a0bb86ad950fb57256c213a1ae13262b60ad53ee23284ea1fb480d",
+      "bytes": 16953,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "9b039fde64a0bb86ad950fb57256c213a1ae13262b60ad53ee23284ea1fb480d",
+      "publication_bytes": 16953,
+      "publication_transforms": []
+    },
+    {
+      "path": "evaluation/reports/adaptive-s3-synthetic/figures/comparison.png",
+      "sha256": "dec4dd4f100abd7497983ff324d521311c15af597539f738ee64e81b743aca92",
+      "bytes": 235714,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "dec4dd4f100abd7497983ff324d521311c15af597539f738ee64e81b743aca92",
+      "publication_bytes": 235714,
+      "publication_transforms": []
+    },
+    {
+      "path": "evaluation/reports/adaptive-s3-synthetic/figures/comparison.svg",
+      "sha256": "8664b66b22381c741296efc36b3748ab98db25266c1893df9ea086b8c68881d7",
+      "bytes": 31222,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "65750d43adffec61e42f1361fc29be5464f7e330fecb9d0a428d6b134b220b1d",
+      "publication_bytes": 30427,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/reports/adaptive-s3-synthetic/figures/difficulty.pdf",
+      "sha256": "a8439e78ba872df0b56e8a80115adb033a9e978e452cf74f3361cbf9968f5713",
+      "bytes": 20858,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "a8439e78ba872df0b56e8a80115adb033a9e978e452cf74f3361cbf9968f5713",
+      "publication_bytes": 20858,
+      "publication_transforms": []
+    },
+    {
+      "path": "evaluation/reports/adaptive-s3-synthetic/figures/difficulty.png",
+      "sha256": "46f6bb05c632d57e9f58c4dd44f263a42da4124481d22e11cc75e0dd64ae3ddd",
+      "bytes": 142886,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "46f6bb05c632d57e9f58c4dd44f263a42da4124481d22e11cc75e0dd64ae3ddd",
+      "publication_bytes": 142886,
+      "publication_transforms": []
+    },
+    {
+      "path": "evaluation/reports/adaptive-s3-synthetic/figures/difficulty.svg",
+      "sha256": "1725e3d4d9ea04dfe7fd7ea713541317dcd7d8b40abb7baa2c7af869e1f851de",
+      "bytes": 22228,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "e7eef63ff1aa2d2b14ac2f55329d293496f4192e30ff5d7fa6031f17e7460ddd",
+      "publication_bytes": 21757,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/reports/adaptive-s3-synthetic/figures/experiment_samples.pdf",
+      "sha256": "2a36f6ad29c7cc24c2ece96bbe98c1d6323c7f4605078538272b039c50295b01",
+      "bytes": 18890,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "2a36f6ad29c7cc24c2ece96bbe98c1d6323c7f4605078538272b039c50295b01",
+      "publication_bytes": 18890,
+      "publication_transforms": []
+    },
+    {
+      "path": "evaluation/reports/adaptive-s3-synthetic/figures/experiment_samples.png",
+      "sha256": "b1aa5193f9018b57e6de377366763aa89ad93c26c7252ce9a3ebee0a66c70a01",
+      "bytes": 155767,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "b1aa5193f9018b57e6de377366763aa89ad93c26c7252ce9a3ebee0a66c70a01",
+      "publication_bytes": 155767,
+      "publication_transforms": []
+    },
+    {
+      "path": "evaluation/reports/adaptive-s3-synthetic/figures/experiment_samples.svg",
+      "sha256": "993b5396e118f1764abaa8d160f37d7c362edb4b19038b05ee3c5c8999e23513",
+      "bytes": 14023,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "b4b4e7fa420c59f4fd76237e5e919114f0a9bca5d664fbe5e956d8f50caf73ff",
+      "publication_bytes": 13679,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/reports/adaptive-s3-synthetic/figures/figures.json",
+      "sha256": "08a11b5933a4c9f10ae35214ca96ae3f3ee4f550e94892e98fdde199f6943bd0",
+      "bytes": 1919,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "2f94dbb0393bdec63b4aeac023df3e3923eff1b727c0a8b70820a3bf0525d2d7",
+      "publication_bytes": 1867,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/reports/adaptive-s3-synthetic/figures/mastery.pdf",
+      "sha256": "90842510f9e758aa7d25c132f1b4bfa01016f3841622d8390a6d97318cb6c0d1",
+      "bytes": 17371,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "90842510f9e758aa7d25c132f1b4bfa01016f3841622d8390a6d97318cb6c0d1",
+      "publication_bytes": 17371,
+      "publication_transforms": []
+    },
+    {
+      "path": "evaluation/reports/adaptive-s3-synthetic/figures/mastery.png",
+      "sha256": "e5329a144e3feb405fa80caf116fef73b008584505e5d5fdfdc47ad52080f554",
+      "bytes": 212220,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "e5329a144e3feb405fa80caf116fef73b008584505e5d5fdfdc47ad52080f554",
+      "publication_bytes": 212220,
+      "publication_transforms": []
+    },
+    {
+      "path": "evaluation/reports/adaptive-s3-synthetic/figures/mastery.svg",
+      "sha256": "72f9ed035ea2ed618d4dbf1528a2de65b3b01f80bfde008a4ef68f153ab80669",
+      "bytes": 22477,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "2038287a983ec7baff3b682f092e3a7196a439dbb51820bddc1ddf9db26cec48",
+      "publication_bytes": 21997,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/reports/adaptive-s3-synthetic/figures/sample_counts.pdf",
+      "sha256": "ba78ccdbce704330d6bf7ac8cbe637b653831edbd3c99ebf000f2448dc7c5222",
+      "bytes": 18164,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "ba78ccdbce704330d6bf7ac8cbe637b653831edbd3c99ebf000f2448dc7c5222",
+      "publication_bytes": 18164,
+      "publication_transforms": []
+    },
+    {
+      "path": "evaluation/reports/adaptive-s3-synthetic/figures/sample_counts.png",
+      "sha256": "4ed0eb806aa8a52afd289e36ad105d367234ef9b6bfb7ecb754a8da2c8eb1d1d",
+      "bytes": 119941,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "4ed0eb806aa8a52afd289e36ad105d367234ef9b6bfb7ecb754a8da2c8eb1d1d",
+      "publication_bytes": 119941,
+      "publication_transforms": []
+    },
+    {
+      "path": "evaluation/reports/adaptive-s3-synthetic/figures/sample_counts.svg",
+      "sha256": "65e8cc1c71fe2cc1ca261831fbf1e57c31380976968477d340a720b13956e373",
+      "bytes": 18358,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "17fd6de21f663be655f754584a3fd025131a410e85008d33c564f3a375daafb6",
+      "publication_bytes": 17898,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/reports/adaptive-s3-synthetic/report.json",
+      "sha256": "e99dcc0cb28869d5a013db3b79d182b4dd5a9d97b02d61b9083b3c5469ff59aa",
+      "bytes": 5911,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "91878ea7bf708fe2a30d0ae588116d15564f586ede6c4536c03d146fdbb62600",
+      "publication_bytes": 5700,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/reports/adaptive-s3-synthetic/report.md",
+      "sha256": "9f46053a8c89367eb8bf9c3986e1544c539bb5fa5c116fed3d2e80e0be08745d",
+      "bytes": 3134,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "00ccc682d4a823a1f3064132de2ceb4dcd7824cdffb1575bb9cb3a1a1cfc9785",
+      "publication_bytes": 3066,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/reports/adaptive-s3-verification.json",
+      "sha256": "c0c299c6819ab3c3a7af849a5562da381b6c311ab8b825963a4d32f10fdeb334",
+      "bytes": 1637,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "5b50d4a8925e4dcffaaafa21c2099b790d62d5f3c3de8b20b2499a7deb01a0b3",
+      "publication_bytes": 1572,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/reports/baseline.json",
+      "sha256": "5143361ae0f77bf795bfe42725a5f569f1f3ff847041a4c732f2999b8f229f9f",
+      "bytes": 20373,
+      "decision": "hold_rights",
+      "reason": "Detailed corpus-derived report; numerical public summary replaces it"
+    },
+    {
+      "path": "evaluation/reports/compare-20261013-143827.json",
+      "sha256": "be1aba1d06a8ecd7b8b14ecb6e72a2006d616ff0aa8ebeada07fe747743b7d04",
+      "bytes": 292875,
+      "decision": "hold_rights",
+      "reason": "Detailed corpus-derived report; numerical public summary replaces it"
+    },
+    {
+      "path": "evaluation/reports/data-quality-s4.json",
+      "sha256": "d392cb91c2e499884cdc17b05b22a2bc136c0600676416e94148b60763a46fe8",
+      "bytes": 890,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "dd0a3ba9c20ea089f3d776f3fe90310bd431918628d6a2cb0724ce0f0fff18c8",
+      "publication_bytes": 796,
+      "publication_transforms": [
+        "normalize_text_to_lf",
+        "redact_private_database_fingerprint"
+      ]
+    },
+    {
+      "path": "evaluation/reports/experiment-s4-verification.json",
+      "sha256": "f03988affbc9938cb5985c7ebfb68821b84fba0d4c31f39de1cf26d45888123a",
+      "bytes": 643,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "73907325ba5a7732832fdc92c45acce63bb4aca637bada5eebddac27428b43b0",
+      "publication_bytes": 624,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/reports/hybrid-comparison-extended-20261013.json",
+      "sha256": "2e88695fe010215788e59d2edf75c9bb2190b2bbf6fe827e41fcf03b3727ccaa",
+      "bytes": 1331523,
+      "decision": "hold_rights",
+      "reason": "Detailed corpus-derived report; numerical public summary replaces it"
+    },
+    {
+      "path": "evaluation/reports/hybrid-comparison-original-20261013.json",
+      "sha256": "e827d529a6c318a9f07feb74a7dff45a32d78d8392c3e1ff6dcc742491191afe",
+      "bytes": 292924,
+      "decision": "hold_rights",
+      "reason": "Detailed corpus-derived report; numerical public summary replaces it"
+    },
+    {
+      "path": "evaluation/reports/mastery-s2.json",
+      "sha256": "ad1942f4b3c99839f2a01c31f830d61b34a9bc668763291311193d7a086c7a78",
+      "bytes": 26052,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "a96f05fa414f89888e508ec19e84fc9838f047830bedc235e8cf2b930bc250b2",
+      "publication_bytes": 25426,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/reports/mastery-s2.md",
+      "sha256": "5f95c883abc7562fe990dfcd19159eb71740a1611a0b49660a63987c71132c53",
+      "bytes": 11025,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "3aae3180349b89268df75b111ba17a460a944f056cd94f7e90dd77d92f0b4b9f",
+      "publication_bytes": 10895,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/reports/recheck-20261012.json",
+      "sha256": "22302e6734b3a8e12c1c532047ab7e6d7eba21c2c99e60cc64f051157ee73854",
+      "bytes": 48758,
+      "decision": "hold_rights",
+      "reason": "Detailed corpus-derived report; numerical public summary replaces it"
+    },
+    {
+      "path": "evaluation/reports/rerank-20260915.json",
+      "sha256": "99053fb7e758e54d0795305f27175f3e98d2c2ea95e2c0c3b1acb4d3d846df02",
+      "bytes": 48773,
+      "decision": "hold_rights",
+      "reason": "Detailed corpus-derived report; numerical public summary replaces it"
+    },
+    {
+      "path": "evaluation/reports/retrieval-100-20261023.groups.json",
+      "sha256": "208bd9c86c30c4139155553e017730e0fddb9af707afe08870d69cf638c462b0",
+      "bytes": 59348,
+      "decision": "hold_rights",
+      "reason": "Detailed corpus-derived report; numerical public summary replaces it"
+    },
+    {
+      "path": "evaluation/reports/retrieval-100-20261023.json",
+      "sha256": "f3078d9aedf4b185ef0615f13c9777aba6414c8000f0eddc81f8d79729195dc4",
+      "bytes": 2676591,
+      "decision": "hold_rights",
+      "reason": "Detailed corpus-derived report; numerical public summary replaces it"
+    },
+    {
+      "path": "evaluation/reports/retrieval-100-20261023.log",
+      "sha256": "9c8ea4bf6519da45b28d8c46e682e01818ffa5c5a8271fb8259fbf57b1888154",
+      "bytes": 20171,
+      "decision": "hold_rights",
+      "reason": "Detailed corpus-derived report; numerical public summary replaces it"
+    },
+    {
+      "path": "evaluation/reports/retrieval-100-20261023.md",
+      "sha256": "d942c0ab175e3fcf07211fcfabb5eb45198c8ea18d2250850318ffa88a801967",
+      "bytes": 16757,
+      "decision": "hold_rights",
+      "reason": "Detailed corpus-derived report; numerical public summary replaces it"
+    },
+    {
+      "path": "evaluation/reports/s4-tests.json",
+      "sha256": "85c2f5cdd0c4166aabb37f91b9f3ed4273612ac56b35ee0606dc45029875b7b7",
+      "bytes": 3899,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "35d9010e4fae682ea831bae1ac972d0d3ab6973dacc85a57a4b12b9855f31431",
+      "publication_bytes": 3765,
+      "publication_transforms": [
+        "normalize_text_to_lf",
+        "redact_private_database_fingerprint"
+      ]
+    },
+    {
+      "path": "evaluation/reports/s5/backend.log",
+      "sha256": "3a2a3ffa8c648e328b69388a203a6cf6f4dee2d4d5fa39832a262e7017b93249",
+      "bytes": 3680,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "d9a0b31dab0784575c2ec1a884ed09d942ee45c6f090d7a6c5ef9982dcbc7fe6",
+      "publication_bytes": 3631,
+      "publication_transforms": [
+        "normalize_text_to_lf",
+        "redact_local_profile_and_project_paths"
+      ]
+    },
+    {
+      "path": "evaluation/reports/s5/browser/admin-desktop.png",
+      "sha256": "a2ada84f368b50307fb345fd1e74e478cde15181fdaf13c4e3ccc7f177dd646b",
+      "bytes": 145892,
+      "decision": "omit_old_screenshot",
+      "reason": "Older S5 screenshots; use the documented S6 screenshots"
+    },
+    {
+      "path": "evaluation/reports/s5/browser/admin-mobile.png",
+      "sha256": "3a3042ba77b80f4069a1a576d954bdb8489ee7b4ae7843b652e66d9daa6cda0d",
+      "bytes": 107337,
+      "decision": "omit_old_screenshot",
+      "reason": "Older S5 screenshots; use the documented S6 screenshots"
+    },
+    {
+      "path": "evaluation/reports/s5/browser/map-desktop.png",
+      "sha256": "4a9032714232b897181e39537ef242c7944f518231a4578444dfb515d70c0645",
+      "bytes": 63187,
+      "decision": "omit_old_screenshot",
+      "reason": "Older S5 screenshots; use the documented S6 screenshots"
+    },
+    {
+      "path": "evaluation/reports/s5/browser/map-mobile.png",
+      "sha256": "f2658b08a48fc3662ebb68a7dd89fed98ff122d73ce23601846df918fe8f06e0",
+      "bytes": 69048,
+      "decision": "omit_old_screenshot",
+      "reason": "Older S5 screenshots; use the documented S6 screenshots"
+    },
+    {
+      "path": "evaluation/reports/s5/browser/practice-desktop.png",
+      "sha256": "c84e8d1ca49953a6b152dda7af3287e2bbda80e1fe4a478330ae6fdd3f1dd9df",
+      "bytes": 135324,
+      "decision": "omit_old_screenshot",
+      "reason": "Older S5 screenshots; use the documented S6 screenshots"
+    },
+    {
+      "path": "evaluation/reports/s5/browser/report.json",
+      "sha256": "b009998da65037617a55d773171fd918c5331ac182259f4ece4389a48360a1ea",
+      "bytes": 1044,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "b009998da65037617a55d773171fd918c5331ac182259f4ece4389a48360a1ea",
+      "publication_bytes": 1044,
+      "publication_transforms": []
+    },
+    {
+      "path": "evaluation/reports/s5/docker-api.json",
+      "sha256": "6b942bf3dd80b259815da6b89665de6bd2c35c67b82e2473560819c256cf812b",
+      "bytes": 10999,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "ab035af827e1f6ca9cdf0bbab505fca1fac35529dcf4b28a40d7d342fe4fd86d",
+      "publication_bytes": 10481,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/reports/s5/docker-deployment.json",
+      "sha256": "41ea066c3ff1de4152152554199f6316aed6725a44173431a9b83cbfe1812289",
+      "bytes": 3755,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "ad824c70cf09d440eedf2103b1b36d242b3d0c91b7612b9e0766ec54310c649c",
+      "publication_bytes": 3602,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/reports/s5/final-checks.json",
+      "sha256": "527ec663c61848cce186df88862a9af188cd5b4a3db51ba6f3487a2d3b4402a7",
+      "bytes": 6253,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "01c5439809366edbcd88aa1cc170bc66d34b81d9b1eeea8adbc1a40b564fc18c",
+      "publication_bytes": 6181,
+      "publication_transforms": [
+        "normalize_text_to_lf",
+        "redact_private_database_fingerprint"
+      ]
+    },
+    {
+      "path": "evaluation/reports/s5/frontend_admin.log",
+      "sha256": "2735b877b34a039aef30364b178a5c2758c3b76759d46ae80e1e172e5b84baa9",
+      "bytes": 377,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "c864f35ca712113bc457cdc1273388c1c1273dbca761bddb0d6c51957f45e871",
+      "publication_bytes": 374,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/reports/s5/frontend_coach.log",
+      "sha256": "8dc84e1698be7c7b435127e0270d2da3bbd8ed03c79cbad8571b3ad48868d7b1",
+      "bytes": 504,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "87911e8a488484ef919cadc9ec37dcca78288eaedecb25bd75ac008e14e8b0e2",
+      "publication_bytes": 500,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/reports/s5/frontend_practice.log",
+      "sha256": "a74ec5702652191632712a06321074499e6661885698a930016a8c1c85a0c680",
+      "bytes": 383,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "169e23b19f46810f72dc8d1eb1536ba3a18c5ad2704ea0a07b06e7686a1eab94",
+      "publication_bytes": 380,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/reports/s5/frontend_recommendation.log",
+      "sha256": "f53dd844e8baed195c72e1a1b6cbad71ec962cb02c71108ea7373d0034542898",
+      "bytes": 410,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "5652908a1f53b70029856139cc4b394503c9f06d4b25b3e6ce0559df8796c292",
+      "publication_bytes": 407,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/reports/s5/frontend_study.log",
+      "sha256": "4ac43a6ff921c86379d51a16a99ea340aa26878584fd5c652a91d3b3b17aca01",
+      "bytes": 298,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "03347de171d7a4079fe733ea31a694f1cc2ce127064193f6cbe712200a042937",
+      "publication_bytes": 295,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/reports/s5/online.json",
+      "sha256": "413c91300fe806742096fea6f21b59b8cd7f3b4321564ad8a64660a817e77912",
+      "bytes": 11214,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "f9b75d77adb6d2d578d5686cb79fabde37aad3da87bc19035846b255e95d1bdd",
+      "publication_bytes": 10691,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/reports/s5/pip-check.log",
+      "sha256": "672aec65a45bed50e70229c70934a7eebf0462595c459b83023027645d57cccf",
+      "bytes": 31,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "9261363b733079a641c2e4cc9bc46ffa1d8336945a87f807b6cf68847dbc9b09",
+      "publication_bytes": 30,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/reports/s5/production-boot.json",
+      "sha256": "322b6388e575832c1796121162ad0bffe0054d31a9f423eb9d4f8157cdc24b66",
+      "bytes": 527,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "08e2071345d53f9085a0ab4b7d2b9d7d3066013788c3be00780f482c6fb22550",
+      "publication_bytes": 511,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/reports/s5/regression.json",
+      "sha256": "e7b64a86ff45b3dd83c6ba57940e30f7b539646bc45977c4b563d98464e55718",
+      "bytes": 2378,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "ec6273302b67952828f8f1036ec4ae512707a542f7b60d5f8e1319b5c1eea357",
+      "publication_bytes": 2055,
+      "publication_transforms": [
+        "normalize_text_to_lf",
+        "redact_local_profile_and_project_paths",
+        "redact_private_database_fingerprint"
+      ]
+    },
+    {
+      "path": "evaluation/reports/s5/ruff.log",
+      "sha256": "a4443afdcfb6d7363adb285762515ccf7cf50473b1a05c20c1a50f6bed4d26b0",
+      "bytes": 20,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18",
+      "publication_bytes": 19,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/reports/s5/source-manifest.json",
+      "sha256": "fcdcb687c6addad59f3b466eaed24abc7125dd25b97cf5b003c58429d0be5b06",
+      "bytes": 7729,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "ed2beccbe7900161538a250cd0f408c0d9c067a55d84f9ff858ff5c6a5560d5e",
+      "publication_bytes": 7497,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/reports/s6/browser/admin-desktop.png",
+      "sha256": "d96c46a3741f7f404f4d32059c793dd253c0087f0d821e7d0178beae97a599db",
+      "bytes": 130437,
+      "decision": "omit_duplicate",
+      "reason": "Exact duplicate; canonical image retained in docs/portfolio/"
+    },
+    {
+      "path": "evaluation/reports/s6/browser/admin-mobile.png",
+      "sha256": "0a248de147cfcac15e0135510fb6e6cff4e7de5d0cd0c31fde63e8e11fbb98d6",
+      "bytes": 97142,
+      "decision": "omit_duplicate",
+      "reason": "Exact duplicate; canonical image retained in docs/portfolio/"
+    },
+    {
+      "path": "evaluation/reports/s6/browser/coach-desktop.png",
+      "sha256": "fbb5e904571bbb49a4782747b998b3008b9a97e173faac39fce6e2d8ab6e23f2",
+      "bytes": 128043,
+      "decision": "omit_duplicate",
+      "reason": "Exact duplicate; canonical image retained in docs/portfolio/"
+    },
+    {
+      "path": "evaluation/reports/s6/browser/map-desktop.png",
+      "sha256": "6ac46e14bc4b0ba18cb434d1237f4be05432a67f5047ddfc52cb239decfdef0e",
+      "bytes": 94728,
+      "decision": "omit_duplicate",
+      "reason": "Exact duplicate; canonical image retained in docs/portfolio/"
+    },
+    {
+      "path": "evaluation/reports/s6/browser/map-mobile.png",
+      "sha256": "f8aed850e82c2c3a7cd6fb6e5472be0e16314a0e9eef3506cb59105917e9c63e",
+      "bytes": 62075,
+      "decision": "omit_duplicate",
+      "reason": "Exact duplicate; canonical image retained in docs/portfolio/"
+    },
+    {
+      "path": "evaluation/reports/s6/browser/practice-desktop.png",
+      "sha256": "e5eac023fda11319a176a83b07a2d45a6cfbbe15c637697c9be4dd6af2d47dba",
+      "bytes": 129001,
+      "decision": "omit_duplicate",
+      "reason": "Exact duplicate; canonical image retained in docs/portfolio/"
+    },
+    {
+      "path": "evaluation/reports/s6/browser/rag-desktop.png",
+      "sha256": "c708642289c30e64a5c88653c3480954aafcba6fca26f30e708d69eb653774f2",
+      "bytes": 95311,
+      "decision": "omit_duplicate",
+      "reason": "Exact duplicate; canonical image retained in docs/portfolio/"
+    },
+    {
+      "path": "evaluation/reports/s6/browser/report.json",
+      "sha256": "560709fdaaf44812553cfdb2e312ae072d7e181e1b35f2b53a644b76a4bc77f2",
+      "bytes": 1044,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "560709fdaaf44812553cfdb2e312ae072d7e181e1b35f2b53a644b76a4bc77f2",
+      "publication_bytes": 1044,
+      "publication_transforms": []
+    },
+    {
+      "path": "evaluation/reports/s6/docker-api-final.json",
+      "sha256": "b5fd5da30901f27d42c9098e45f5b86ad0523821615a850f417bf33a35341ce9",
+      "bytes": 10994,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "bfe998f448b248c5ed9981b386799248db99a16105b159b7e162a1c802f2bbb6",
+      "publication_bytes": 10476,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/reports/s6/docker-api.json",
+      "sha256": "8987991a3ec52515e02f367c897e99b05f1f4b5d3a26fa3eff8af865e0a12037",
+      "bytes": 10996,
+      "decision": "omit_intermediate",
+      "reason": "Final counterpart retained; S6 narrative still discloses earlier failures"
+    },
+    {
+      "path": "evaluation/reports/s6/docker-deployment-final.json",
+      "sha256": "617bca58ea8136d57b3de7a5ab39ef0782e5a7a3b1332f947203556a4c425dec",
+      "bytes": 3743,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "662227bed9a52485db1be70ab83e9d8988f4e752cfb51f7b8d7ac06912aaa946",
+      "publication_bytes": 3590,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/reports/s6/docker-deployment.json",
+      "sha256": "9fee3b679b210f1d47c3aff0f1d0ddd2a18f405d35153e332cf3ec804c6567f9",
+      "bytes": 3743,
+      "decision": "omit_intermediate",
+      "reason": "Final counterpart retained; S6 narrative still discloses earlier failures"
+    },
+    {
+      "path": "evaluation/reports/s6/documentation-check.json",
+      "sha256": "a62ddb3694e9d61b049000b3c6018fd85417441b39b7ce92c93f9a72fd3bac12",
+      "bytes": 69,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "02b5b6c84389d0f273550d0e2eb97b7d10bc53a75bbc6a106a7b0a330247c116",
+      "publication_bytes": 64,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/reports/s6/final-checks.json",
+      "sha256": "bf7a7b4458b6c902d74ea4924f735cb415805aef10abab221d84abf807f68ef8",
+      "bytes": 1834,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "e61865d9313fa4ae0f263a49dbe6d604296ca0a476fc812c21d5e5af32ad6977",
+      "publication_bytes": 1706,
+      "publication_transforms": [
+        "normalize_text_to_lf",
+        "redact_private_database_fingerprint"
+      ]
+    },
+    {
+      "path": "evaluation/reports/s6/line-endings.json",
+      "sha256": "87d64f5f84dd264a6aee5c642dcbff04c53a90d5da58a0c144ac39dee77efa7a",
+      "bytes": 2838,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "d0a26f3dec68a176e2754d257e92bb0b34eafd3f0bf1b7bd4759b19d630e71a4",
+      "publication_bytes": 2760,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/reports/s6/public-files.txt",
+      "sha256": "14bfd5bbba843cb184d273257adb0d88a0221b9d201f2fc6c9ce1649987dc6cd",
+      "bytes": 12921,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "fb953efc56fac712b535d280f3a36eaae361001af6d341fc93e2b707db7a2f14",
+      "publication_bytes": 12572,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/reports/s6/regression-final/backend.log",
+      "sha256": "531cd44c4008c0bd05a515349a38537709112281e894b00fd6cea2c9f978e761",
+      "bytes": 3680,
+      "decision": "omit_intermediate",
+      "reason": "Retain final regression-release evidence; original preserved locally"
+    },
+    {
+      "path": "evaluation/reports/s6/regression-final/frontend_admin.log",
+      "sha256": "10db483e36df259253437f3b26c5156a1ec6bd46e9d2168c428f2be171c4471c",
+      "bytes": 377,
+      "decision": "omit_intermediate",
+      "reason": "Retain final regression-release evidence; original preserved locally"
+    },
+    {
+      "path": "evaluation/reports/s6/regression-final/frontend_coach.log",
+      "sha256": "a53c1be2dc81cd4de98cba6db75486242e6c3104bd9a1deeb7a4e2baeba9147e",
+      "bytes": 504,
+      "decision": "omit_intermediate",
+      "reason": "Retain final regression-release evidence; original preserved locally"
+    },
+    {
+      "path": "evaluation/reports/s6/regression-final/frontend_practice.log",
+      "sha256": "c8015dd9b2e3fdee35ec0756b0469b00f9c15838c49fa9becba27bdc93838fa7",
+      "bytes": 383,
+      "decision": "omit_intermediate",
+      "reason": "Retain final regression-release evidence; original preserved locally"
+    },
+    {
+      "path": "evaluation/reports/s6/regression-final/frontend_recommendation.log",
+      "sha256": "2dd93e0ee36029ee9b7879fbb4ab54eda3bcc57232ec17b068aab29a7be26bf8",
+      "bytes": 410,
+      "decision": "omit_intermediate",
+      "reason": "Retain final regression-release evidence; original preserved locally"
+    },
+    {
+      "path": "evaluation/reports/s6/regression-final/frontend_study.log",
+      "sha256": "8095c04ac017f6250e2b6cc8d3eed66f23f16f97eb7f3acc97c5cae1e868f420",
+      "bytes": 298,
+      "decision": "omit_intermediate",
+      "reason": "Retain final regression-release evidence; original preserved locally"
+    },
+    {
+      "path": "evaluation/reports/s6/regression-final/pip-check.log",
+      "sha256": "672aec65a45bed50e70229c70934a7eebf0462595c459b83023027645d57cccf",
+      "bytes": 31,
+      "decision": "omit_intermediate",
+      "reason": "Retain final regression-release evidence; original preserved locally"
+    },
+    {
+      "path": "evaluation/reports/s6/regression-final/regression.json",
+      "sha256": "76e04c1d63a59cbf39bc9d315ae9f971484b8fe2da301a4eb755d7cd41722b6b",
+      "bytes": 2375,
+      "decision": "omit_intermediate",
+      "reason": "Retain final regression-release evidence; original preserved locally"
+    },
+    {
+      "path": "evaluation/reports/s6/regression-release/backend.log",
+      "sha256": "2a36a8304d4e7c4daccdba2babfb5088309bdfe945f4d5c0ee91bc3839e0b390",
+      "bytes": 3681,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "2320368312cf3432f7cbdbef2864e05ab58e4c5514477174998cb22dc536a70e",
+      "publication_bytes": 3632,
+      "publication_transforms": [
+        "normalize_text_to_lf",
+        "redact_local_profile_and_project_paths"
+      ]
+    },
+    {
+      "path": "evaluation/reports/s6/regression-release/frontend_admin.log",
+      "sha256": "f22a953d3f5d9cc357116194ddd7d9146225a9027756e5d9c90a5bbe1647ae36",
+      "bytes": 377,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "a70ecdbe5978edeb77a28c7e9f64aa0c8f23b08f95929924d7a18a43ecdb58db",
+      "publication_bytes": 374,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/reports/s6/regression-release/frontend_coach.log",
+      "sha256": "03163a3cc6adc8afc0e3d7f7d1483f245d43e8cd86bad9ba5bcba8b4487baba0",
+      "bytes": 504,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "25f340bf615d0876daa0fb2d70c628392d04ded1df30d98e2c01cb41c9e89a2a",
+      "publication_bytes": 500,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/reports/s6/regression-release/frontend_practice.log",
+      "sha256": "8a6bef6e0be5f8b05f19ee50e0bc7039c6e7f5464c4b17171ac1288a62bc9ee2",
+      "bytes": 383,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "5395d8b827b833301bea6e54175f008894ec775590c09bbd95672a2bfdc20afd",
+      "publication_bytes": 380,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/reports/s6/regression-release/frontend_recommendation.log",
+      "sha256": "4e30984ff335c251e9b5459d23276b28f2cdf323c7e6846e96755ffeacee26c4",
+      "bytes": 410,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "2a73b3b49329d69f6ebea6091f08ac4eb7004ef81efed8ce2b7ca91c15513b59",
+      "publication_bytes": 407,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/reports/s6/regression-release/frontend_study.log",
+      "sha256": "35703af27a7d15d53c6f54468775fd55a1d0780ae763491f9f9a37a158555448",
+      "bytes": 298,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "9f27c13a04463c6caedaa004c04a4fa89de406849be2986043bca5cd7b6c8481",
+      "publication_bytes": 295,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/reports/s6/regression-release/pip-check.log",
+      "sha256": "672aec65a45bed50e70229c70934a7eebf0462595c459b83023027645d57cccf",
+      "bytes": 31,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "9261363b733079a641c2e4cc9bc46ffa1d8336945a87f807b6cf68847dbc9b09",
+      "publication_bytes": 30,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/reports/s6/regression-release/regression.json",
+      "sha256": "3fd2776e3904093c91aa00d05dda9aead187d106f0f8386897f753b6be88d656",
+      "bytes": 2378,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "2974ed9a3227cc0e0bd87fdcc911c1880d2ab9811875280a97646360e6f52511",
+      "publication_bytes": 2055,
+      "publication_transforms": [
+        "normalize_text_to_lf",
+        "redact_local_profile_and_project_paths",
+        "redact_private_database_fingerprint"
+      ]
+    },
+    {
+      "path": "evaluation/reports/s6/regression/backend.log",
+      "sha256": "5e942899bdeccf528449fc560b65c7b70add7dfbfdfe694b2c4fbc6c933b7ffb",
+      "bytes": 3680,
+      "decision": "omit_intermediate",
+      "reason": "Retain final regression-release evidence; original preserved locally"
+    },
+    {
+      "path": "evaluation/reports/s6/regression/frontend_admin.log",
+      "sha256": "fa209bda3c6abd42fde8caa6bb499dd51f8deb5c92b9be062fe3ce524bcbaf40",
+      "bytes": 377,
+      "decision": "omit_intermediate",
+      "reason": "Retain final regression-release evidence; original preserved locally"
+    },
+    {
+      "path": "evaluation/reports/s6/regression/frontend_coach.log",
+      "sha256": "4b081087e5cba4f10be54d8c5fee7801336829721f18e18ebf4bc51594b8f01c",
+      "bytes": 504,
+      "decision": "omit_intermediate",
+      "reason": "Retain final regression-release evidence; original preserved locally"
+    },
+    {
+      "path": "evaluation/reports/s6/regression/frontend_practice.log",
+      "sha256": "e5d4e7492ec1eb8a2d4bf85879b4161d91c143d31578312b2dc704a2ceca8ee4",
+      "bytes": 383,
+      "decision": "omit_intermediate",
+      "reason": "Retain final regression-release evidence; original preserved locally"
+    },
+    {
+      "path": "evaluation/reports/s6/regression/frontend_recommendation.log",
+      "sha256": "74e8099e8753f80c75c5068766f7a9a7856919d6ee737caa60d035a3993c4d65",
+      "bytes": 410,
+      "decision": "omit_intermediate",
+      "reason": "Retain final regression-release evidence; original preserved locally"
+    },
+    {
+      "path": "evaluation/reports/s6/regression/frontend_study.log",
+      "sha256": "9a37dd0eee26570bd9ace68f5d8b6cd0dc2daa5ebc6b5f89af953d32d7bfc241",
+      "bytes": 298,
+      "decision": "omit_intermediate",
+      "reason": "Retain final regression-release evidence; original preserved locally"
+    },
+    {
+      "path": "evaluation/reports/s6/regression/pip-check.log",
+      "sha256": "672aec65a45bed50e70229c70934a7eebf0462595c459b83023027645d57cccf",
+      "bytes": 31,
+      "decision": "omit_intermediate",
+      "reason": "Retain final regression-release evidence; original preserved locally"
+    },
+    {
+      "path": "evaluation/reports/s6/regression/regression.json",
+      "sha256": "dfe4462111864ccaf2c540a20875635b71c76487db3e7bc8d56fa86a62031a4e",
+      "bytes": 2378,
+      "decision": "omit_intermediate",
+      "reason": "Retain final regression-release evidence; original preserved locally"
+    },
+    {
+      "path": "evaluation/reports/s6/ruff.log",
+      "sha256": "a4443afdcfb6d7363adb285762515ccf7cf50473b1a05c20c1a50f6bed4d26b0",
+      "bytes": 20,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18",
+      "publication_bytes": 19,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/reports/s6/security-audit.json",
+      "sha256": "d484a2199852b8cf2e5e1ea02d1afe99e79c6299fee14974561fa50e7e91bb6b",
+      "bytes": 4510,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "85959556de05fd0ad4c81e93a20fcddecb29ab2c38b60343860a4beb670f71d4",
+      "publication_bytes": 4378,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/reports/s6/source-and-replay-final.json",
+      "sha256": "88e1b87c1dd78b5e567f090a3ba25031fa0fbb23d90943b65ba10d83c20a1d0f",
+      "bytes": 11010,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "bbfa5a98853c808eebaaea8a404f8ec8c03c3a55ab06a8fbf43d5951fe9f8502",
+      "publication_bytes": 10886,
+      "publication_transforms": [
+        "normalize_text_to_lf"
+      ]
+    },
+    {
+      "path": "evaluation/reports/s6/source-and-replay.json",
+      "sha256": "c2f7a9a4f85cdbbf4be384fd21aca13beb21b5323dbc15ffefc40a9eb4c799e3",
+      "bytes": 14796,
+      "decision": "omit_intermediate",
+      "reason": "Final counterpart retained; S6 narrative still discloses earlier failures"
+    },
+    {
+      "path": "evaluation/requirements.lock",
+      "sha256": "59e4a269c2baa13dbfe8f924469c9c27e4c6cf9d12e94fb50e911778866afecb",
+      "bytes": 264,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "59e4a269c2baa13dbfe8f924469c9c27e4c6cf9d12e94fb50e911778866afecb",
+      "publication_bytes": 264,
+      "publication_transforms": []
+    },
+    {
+      "path": "evaluation/requirements.txt",
+      "sha256": "30e6518bc04451162ae838bfbe262522d405b3e84a35306fd6b4ce9e606e2dc3",
+      "bytes": 94,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "30e6518bc04451162ae838bfbe262522d405b3e84a35306fd6b4ce9e606e2dc3",
+      "publication_bytes": 94,
+      "publication_transforms": []
+    },
+    {
+      "path": "frontend/README.md",
+      "sha256": "82356af5aed82ad5ef9f1379f34b4d8624fc27e0392004a38927a6e3c59e06bd",
+      "bytes": 9462,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "6b2a944d346af37ae03a33b6d381e86d39799776713b392a23fdbd0568633a96",
+      "publication_bytes": 9479,
+      "publication_transforms": [
+        "repair_private_or_withheld_documentation_link"
+      ]
+    },
+    {
+      "path": "frontend/admin.css",
+      "sha256": "25aca38ae28d89b95c84aa03a0181e9290e68dbb85d43b76351851826a2f9e44",
+      "bytes": 3445,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "25aca38ae28d89b95c84aa03a0181e9290e68dbb85d43b76351851826a2f9e44",
+      "publication_bytes": 3445,
+      "publication_transforms": []
+    },
+    {
+      "path": "frontend/admin.js",
+      "sha256": "e37a9f0292d992b3ca092d33c09e25197f4b36bc37a97a171e3eb7958b49b404",
+      "bytes": 11377,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "93b160c0bcb27a4e80bb0e0bb4684dd20f65f3993a627c33f3b064150e26956a",
+      "publication_bytes": 11375,
+      "publication_transforms": [
+        "2026-10-27_publish_whitespace_only_or_scoped_git_whitespace_attributes"
+      ]
+    },
+    {
+      "path": "frontend/app.js",
+      "sha256": "0f876c45a5486101ea91cfeda1766054b6da9873f8719b4fbbd84277a08986dd",
+      "bytes": 5562,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "0f876c45a5486101ea91cfeda1766054b6da9873f8719b4fbbd84277a08986dd",
+      "publication_bytes": 5562,
+      "publication_transforms": []
+    },
+    {
+      "path": "frontend/chat.js",
+      "sha256": "c02e8ac4e34eeb2a9fe81a167ef777453060f31139ed24fc761328729b8ef288",
+      "bytes": 10534,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "c02e8ac4e34eeb2a9fe81a167ef777453060f31139ed24fc761328729b8ef288",
+      "publication_bytes": 10534,
+      "publication_transforms": []
+    },
+    {
+      "path": "frontend/coach.css",
+      "sha256": "b7478b58728278f450a8d23a92611ac6ff3cb02a541c98ccd9453063f1098d03",
+      "bytes": 1573,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "b7478b58728278f450a8d23a92611ac6ff3cb02a541c98ccd9453063f1098d03",
+      "publication_bytes": 1573,
+      "publication_transforms": []
+    },
+    {
+      "path": "frontend/coach.js",
+      "sha256": "ba3c6bfd050e0779fe5a81c114455f00cbe6c86fd22600ceb8e250b05fe483f0",
+      "bytes": 9550,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "ba3c6bfd050e0779fe5a81c114455f00cbe6c86fd22600ceb8e250b05fe483f0",
+      "publication_bytes": 9550,
+      "publication_transforms": []
+    },
+    {
+      "path": "frontend/core.js",
+      "sha256": "871abb9c46f278bd8c10c1e69e2e7ef7b92e4cc3de2d76c9bd5159d0238d8061",
+      "bytes": 4503,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "871abb9c46f278bd8c10c1e69e2e7ef7b92e4cc3de2d76c9bd5159d0238d8061",
+      "publication_bytes": 4503,
+      "publication_transforms": []
+    },
+    {
+      "path": "frontend/fonts/OFL.txt",
+      "sha256": "9e27a72ed30eb49a08678f6a5d6ed98ec7ba5368f541637ee0683ec9134ef966",
+      "bytes": 4403,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "9e27a72ed30eb49a08678f6a5d6ed98ec7ba5368f541637ee0683ec9134ef966",
+      "publication_bytes": 4403,
+      "publication_transforms": []
+    },
+    {
+      "path": "frontend/fonts/instrument-sans-medium.ttf",
+      "sha256": "a7bcb84cb01f6e33eecdd2cbff3f97ff1674c0e8e37c6921b6cd717b8c854d98",
+      "bytes": 48732,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "a7bcb84cb01f6e33eecdd2cbff3f97ff1674c0e8e37c6921b6cd717b8c854d98",
+      "publication_bytes": 48732,
+      "publication_transforms": []
+    },
+    {
+      "path": "frontend/fonts/instrument-sans-regular.ttf",
+      "sha256": "01689ad055025ff1891607b077513c9389f73360d471dcffa036e326af179b00",
+      "bytes": 48616,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "01689ad055025ff1891607b077513c9389f73360d471dcffa036e326af179b00",
+      "publication_bytes": 48616,
+      "publication_transforms": []
+    },
+    {
+      "path": "frontend/fonts/instrument-sans-semibold.ttf",
+      "sha256": "5e39a358a65a72b6b74b56b384bbe17a61d8899d33cc255d49112e6522e3df0d",
+      "bytes": 48732,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "5e39a358a65a72b6b74b56b384bbe17a61d8899d33cc255d49112e6522e3df0d",
+      "publication_bytes": 48732,
+      "publication_transforms": []
+    },
+    {
+      "path": "frontend/home.js",
+      "sha256": "7ad7d4a36ad65b0efeb53da48dc0cc075a6f827d31260ca3a8d95fd4f8b12db2",
+      "bytes": 6687,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "7ad7d4a36ad65b0efeb53da48dc0cc075a6f827d31260ca3a8d95fd4f8b12db2",
+      "publication_bytes": 6687,
+      "publication_transforms": []
+    },
+    {
+      "path": "frontend/icons.svg",
+      "sha256": "f60518a9cea83ab69eedbce91f011fdd279adb35385580b65ab02ee73f93229e",
+      "bytes": 1516,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "f60518a9cea83ab69eedbce91f011fdd279adb35385580b65ab02ee73f93229e",
+      "publication_bytes": 1516,
+      "publication_transforms": []
+    },
+    {
+      "path": "frontend/index.html",
+      "sha256": "8da9cc6e49ce1f9961a98229e89a487213c1a7c268bbd2ad897797f49abe0d0b",
+      "bytes": 26816,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "8da9cc6e49ce1f9961a98229e89a487213c1a7c268bbd2ad897797f49abe0d0b",
+      "publication_bytes": 26816,
+      "publication_transforms": []
+    },
+    {
+      "path": "frontend/materials.js",
+      "sha256": "93d8003b7518042a19e8c44d5ca539d9b6c3be83db25f97249a28bf8aba095b3",
+      "bytes": 11227,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "93d8003b7518042a19e8c44d5ca539d9b6c3be83db25f97249a28bf8aba095b3",
+      "publication_bytes": 11227,
+      "publication_transforms": []
+    },
+    {
+      "path": "frontend/practice.js",
+      "sha256": "3394c4a4eef9850cc65b7e40ae1dae49ccf4c73040ec0b2afbab2e57104a8394",
+      "bytes": 16641,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "3394c4a4eef9850cc65b7e40ae1dae49ccf4c73040ec0b2afbab2e57104a8394",
+      "publication_bytes": 16641,
+      "publication_transforms": []
+    },
+    {
+      "path": "frontend/progress.js",
+      "sha256": "a5fdc59aa72ba59fee6ab1ebd51401edd94b5d61162621b97a596e9ee355dbc5",
+      "bytes": 7184,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "a5fdc59aa72ba59fee6ab1ebd51401edd94b5d61162621b97a596e9ee355dbc5",
+      "publication_bytes": 7184,
+      "publication_transforms": []
+    },
+    {
+      "path": "frontend/recommendation.js",
+      "sha256": "36901f4901159987e21e7c24e5ffef2613a39af2e71ea05a9d7efd9d8de7f6d6",
+      "bytes": 5731,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "36901f4901159987e21e7c24e5ffef2613a39af2e71ea05a9d7efd9d8de7f6d6",
+      "publication_bytes": 5731,
+      "publication_transforms": []
+    },
+    {
+      "path": "frontend/study.js",
+      "sha256": "2f907954a43c6d4aaa0b8a1680cf6e7ad7b9ca9ca2d933ba4bc5d353064184e8",
+      "bytes": 20346,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "2f907954a43c6d4aaa0b8a1680cf6e7ad7b9ca9ca2d933ba4bc5d353064184e8",
+      "publication_bytes": 20346,
+      "publication_transforms": []
+    },
+    {
+      "path": "frontend/styles.css",
+      "sha256": "584f7fffce3d07dee9f44efa194a4e6fceec8acf4f99be0147630603b922f8bb",
+      "bytes": 36697,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "584f7fffce3d07dee9f44efa194a4e6fceec8acf4f99be0147630603b922f8bb",
+      "publication_bytes": 36697,
+      "publication_transforms": []
+    },
+    {
+      "path": "frontend/upload.js",
+      "sha256": "74b4ea2cadccc43546ff47788fc3df2dba1e1a44ce319c13caf4a9edf437dbc1",
+      "bytes": 8563,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "74b4ea2cadccc43546ff47788fc3df2dba1e1a44ce319c13caf4a9edf437dbc1",
+      "publication_bytes": 8563,
+      "publication_transforms": []
+    },
+    {
+      "path": "frontend/workspace.css",
+      "sha256": "0ea4413476b51daf34447f0e7a270809bf5d0d47dff7302f33a8e02733ab24ae",
+      "bytes": 33928,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "0ea4413476b51daf34447f0e7a270809bf5d0d47dff7302f33a8e02733ab24ae",
+      "publication_bytes": 33928,
+      "publication_transforms": []
+    },
+    {
+      "path": "frontend/workspace.js",
+      "sha256": "4ec0fea533ec4f055c027d0a3ea2a6f7116eb2ba190401a2521398c23944388c",
+      "bytes": 2434,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "4ec0fea533ec4f055c027d0a3ea2a6f7116eb2ba190401a2521398c23944388c",
+      "publication_bytes": 2434,
+      "publication_transforms": []
+    },
+    {
+      "path": "migrations/README",
+      "sha256": "31595cf53626af9ed16e15c44fa43183209cc163fbc3ebcb904b22ac436a8884",
+      "bytes": 38,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "31595cf53626af9ed16e15c44fa43183209cc163fbc3ebcb904b22ac436a8884",
+      "publication_bytes": 38,
+      "publication_transforms": []
+    },
+    {
+      "path": "migrations/env.py",
+      "sha256": "c0ac212adf0bdc636e6c0e307c1e12e9049fdca56ddd5e24f6e4b71fc161efcf",
+      "bytes": 1393,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "c0ac212adf0bdc636e6c0e307c1e12e9049fdca56ddd5e24f6e4b71fc161efcf",
+      "publication_bytes": 1393,
+      "publication_transforms": []
+    },
+    {
+      "path": "migrations/script.py.mako",
+      "sha256": "d38920781b4d31ae1c0a71bc09f41c2ade8feab9e5a087e3f30cb4bbf0c1c9d3",
+      "bytes": 704,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "d38920781b4d31ae1c0a71bc09f41c2ade8feab9e5a087e3f30cb4bbf0c1c9d3",
+      "publication_bytes": 704,
+      "publication_transforms": []
+    },
+    {
+      "path": "migrations/versions/0001_initial_schema.py",
+      "sha256": "aee20e3ea35160c957a1a72bcbc047693fa763e5e564276bf990529de6eaf944",
+      "bytes": 14510,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "cea67b260852d6968c0b7f9867a26df2b40bff896ecd3f4b6ad5e5c715595d67",
+      "publication_bytes": 14509,
+      "publication_transforms": [
+        "2026-10-27_publish_whitespace_only_or_scoped_git_whitespace_attributes"
+      ]
+    },
+    {
+      "path": "migrations/versions/0002_align_existing_schema.py",
+      "sha256": "7060eeabd36a5f348ffeb5c982de83240578fa29ff918a0b257e9b0475aceeff",
+      "bytes": 2442,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "7060eeabd36a5f348ffeb5c982de83240578fa29ff918a0b257e9b0475aceeff",
+      "publication_bytes": 2442,
+      "publication_transforms": []
+    },
+    {
+      "path": "migrations/versions/0003_answer_feedback.py",
+      "sha256": "d33ea1bd9cd125f738d943999c90b017de50ecb82d55c99e24a1817dd38a1ea3",
+      "bytes": 487,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "d33ea1bd9cd125f738d943999c90b017de50ecb82d55c99e24a1817dd38a1ea3",
+      "publication_bytes": 487,
+      "publication_transforms": []
+    },
+    {
+      "path": "migrations/versions/0004_coach_sessions.py",
+      "sha256": "aa9741214b6e803f5b00c97fa7f173d6661cce727624636a74f8e511e641c36a",
+      "bytes": 1567,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "aa9741214b6e803f5b00c97fa7f173d6661cce727624636a74f8e511e641c36a",
+      "publication_bytes": 1567,
+      "publication_transforms": []
+    },
+    {
+      "path": "migrations/versions/0005_admin_rbac.py",
+      "sha256": "bbaa3e7f32a4b3849f06fb01fcfad9e4383ef08b44d92ef3cb98a0c87a65a76d",
+      "bytes": 2032,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "bbaa3e7f32a4b3849f06fb01fcfad9e4383ef08b44d92ef3cb98a0c87a65a76d",
+      "publication_bytes": 2032,
+      "publication_transforms": []
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "0053b28b093f45c1f594d59f96e6a94e07d5e7c835fd946c22f4604462c4a4b2",
+      "bytes": 76,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "0053b28b093f45c1f594d59f96e6a94e07d5e7c835fd946c22f4604462c4a4b2",
+      "publication_bytes": 76,
+      "publication_transforms": []
+    },
+    {
+      "path": "rebuild_embeddings.py",
+      "sha256": "4e813e6b5b9607070f32ea6bc489008d230aabfcef735915f4e0a3aa6f4ede5a",
+      "bytes": 1894,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "4e813e6b5b9607070f32ea6bc489008d230aabfcef735915f4e0a3aa6f4ede5a",
+      "publication_bytes": 1894,
+      "publication_transforms": []
+    },
+    {
+      "path": "requirements.lock",
+      "sha256": "d3acb7ba5a257b51af6aaa5da4263208ea33ccf90193e4d6a03da85efddfe298",
+      "bytes": 779,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "d3acb7ba5a257b51af6aaa5da4263208ea33ccf90193e4d6a03da85efddfe298",
+      "publication_bytes": 779,
+      "publication_transforms": []
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "ad0c3d289e8afd66c26e09c0f154891a62eb522a9c20b62e475b8e3507144dbf",
+      "bytes": 392,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "ad0c3d289e8afd66c26e09c0f154891a62eb522a9c20b62e475b8e3507144dbf",
+      "publication_bytes": 392,
+      "publication_transforms": []
+    },
+    {
+      "path": "scripts/audit_learning_links.py",
+      "sha256": "a2a4fb77b76e0ea9f7e7fa1940e24cb8568cb9516499cdb1a8b231e6fd8427bd",
+      "bytes": 3321,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "a2a4fb77b76e0ea9f7e7fa1940e24cb8568cb9516499cdb1a8b231e6fd8427bd",
+      "publication_bytes": 3321,
+      "publication_transforms": []
+    },
+    {
+      "path": "scripts/audit_portfolio.py",
+      "sha256": "339ee4e5206c56de3e809a52a1962773d749f87d445f6a471e9f55e4bfb35be1",
+      "bytes": 10077,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "339ee4e5206c56de3e809a52a1962773d749f87d445f6a471e9f55e4bfb35be1",
+      "publication_bytes": 10077,
+      "publication_transforms": []
+    },
+    {
+      "path": "scripts/compare_retrieval.py",
+      "sha256": "ae5e127f1e9176ef8f4f9c5065865944e8eb7132938ed66580f37eddb66b42d2",
+      "bytes": 9370,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "ae5e127f1e9176ef8f4f9c5065865944e8eb7132938ed66580f37eddb66b42d2",
+      "publication_bytes": 9370,
+      "publication_transforms": []
+    },
+    {
+      "path": "scripts/container_start.py",
+      "sha256": "b0a9e6dc27316dffd16acfedee37c27aaa5a69cd97fa09dfdc6bc6017d78a423",
+      "bytes": 1318,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "b0a9e6dc27316dffd16acfedee37c27aaa5a69cd97fa09dfdc6bc6017d78a423",
+      "publication_bytes": 1318,
+      "publication_transforms": []
+    },
+    {
+      "path": "scripts/create_experiment_example.py",
+      "sha256": "6b06fa81a88a1f8490933630abc0328506d69765caa3e6acab94b5680287f5a3",
+      "bytes": 1893,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "6b06fa81a88a1f8490933630abc0328506d69765caa3e6acab94b5680287f5a3",
+      "publication_bytes": 1893,
+      "publication_transforms": []
+    },
+    {
+      "path": "scripts/create_review_bank.py",
+      "sha256": "565904a78f9944224aead116b141f0e0da4bf2c8e77e4a129a8e9f944a0d90c5",
+      "bytes": 7924,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "565904a78f9944224aead116b141f0e0da4bf2c8e77e4a129a8e9f944a0d90c5",
+      "publication_bytes": 7924,
+      "publication_transforms": []
+    },
+    {
+      "path": "scripts/data_backup.py",
+      "sha256": "8b81e07641bb33fae435fad6500f771153f28af0de4f107d560f0a3fee121c3e",
+      "bytes": 4851,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "8b81e07641bb33fae435fad6500f771153f28af0de4f107d560f0a3fee121c3e",
+      "publication_bytes": 4851,
+      "publication_transforms": []
+    },
+    {
+      "path": "scripts/evaluate_adaptive.py",
+      "sha256": "f87f9730b25f7afec1c413a3f6252f106a5a40c7c350ec50f007ffb0e860701c",
+      "bytes": 6444,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "f87f9730b25f7afec1c413a3f6252f106a5a40c7c350ec50f007ffb0e860701c",
+      "publication_bytes": 6444,
+      "publication_transforms": []
+    },
+    {
+      "path": "scripts/evaluate_mastery.py",
+      "sha256": "e8446389e1bba1bf170838fdca281d9aa43bb7d748144e58510cbeba82614d57",
+      "bytes": 6636,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "e8446389e1bba1bf170838fdca281d9aa43bb7d748144e58510cbeba82614d57",
+      "publication_bytes": 6636,
+      "publication_transforms": []
+    },
+    {
+      "path": "scripts/evaluate_rag.py",
+      "sha256": "0c2a040c2b12e1c11a080cc24dbcb3867221a8fadac3fa086aa6b131644270c4",
+      "bytes": 8604,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "0c2a040c2b12e1c11a080cc24dbcb3867221a8fadac3fa086aa6b131644270c4",
+      "publication_bytes": 8604,
+      "publication_transforms": []
+    },
+    {
+      "path": "scripts/experiment_bank.py",
+      "sha256": "3d11d02ccf3b548aab91de73d6c611853171f73eb4affad214128de224259b3e",
+      "bytes": 2339,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "3d11d02ccf3b548aab91de73d6c611853171f73eb4affad214128de224259b3e",
+      "publication_bytes": 2339,
+      "publication_transforms": []
+    },
+    {
+      "path": "scripts/export_learning_history.py",
+      "sha256": "176915858003ae2ac4aa9603bebc44f807dae8309aed37ca10bba6049ee5d173",
+      "bytes": 6152,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "176915858003ae2ac4aa9603bebc44f807dae8309aed37ca10bba6049ee5d173",
+      "publication_bytes": 6152,
+      "publication_transforms": []
+    },
+    {
+      "path": "scripts/generate_adaptive_fixture.py",
+      "sha256": "1456714cb97bdcd15c7ca73aa6d70b880fb34110909a14fdf11831c5107630a8",
+      "bytes": 2510,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "1456714cb97bdcd15c7ca73aa6d70b880fb34110909a14fdf11831c5107630a8",
+      "publication_bytes": 2510,
+      "publication_transforms": []
+    },
+    {
+      "path": "scripts/init_admin.py",
+      "sha256": "f48c18ba44e5f07f97b4540760aa512838176d353b3da82d0123ba8a069bebb1",
+      "bytes": 2368,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "f48c18ba44e5f07f97b4540760aa512838176d353b3da82d0123ba8a069bebb1",
+      "publication_bytes": 2368,
+      "publication_transforms": []
+    },
+    {
+      "path": "scripts/learning_experiment.py",
+      "sha256": "cde120fc6a189745f03d22fe54eae70590c79e989ee9fa7d496c7fe138870d53",
+      "bytes": 4141,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "cde120fc6a189745f03d22fe54eae70590c79e989ee9fa7d496c7fe138870d53",
+      "publication_bytes": 4141,
+      "publication_transforms": []
+    },
+    {
+      "path": "scripts/list_rag_chunks.py",
+      "sha256": "2eb2ec84a475b2f22943980fb6fb306984148d47a0630bd2153676bc561ccd62",
+      "bytes": 1976,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "0befb063a453bec9e8d0cafe5d3df485aba053967bcf60ff6a7aef3ba8bb1d86",
+      "publication_bytes": 1975,
+      "publication_transforms": [
+        "2026-10-27_publish_whitespace_only_or_scoped_git_whitespace_attributes"
+      ]
+    },
+    {
+      "path": "scripts/manual/README.md",
+      "sha256": "ada639b63d8de3a714a0428fa188062585dcdaa65766e226092675cbc212b023",
+      "bytes": 277,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "ada639b63d8de3a714a0428fa188062585dcdaa65766e226092675cbc212b023",
+      "publication_bytes": 277,
+      "publication_transforms": []
+    },
+    {
+      "path": "scripts/manual/demo_adaptive.py",
+      "sha256": "d379b0f6ac5f1cad2c96c4b2f78a2502c90eaec2a6d9ebd85d597f2c7de1d32f",
+      "bytes": 568,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "d379b0f6ac5f1cad2c96c4b2f78a2502c90eaec2a6d9ebd85d597f2c7de1d32f",
+      "publication_bytes": 568,
+      "publication_transforms": []
+    },
+    {
+      "path": "scripts/manual/demo_adaptive_question.py",
+      "sha256": "6c104f0b41a0c7aa617d28fae354a7e53c92c9b4ae2ebb6a101bf386323064fc",
+      "bytes": 1032,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "6c104f0b41a0c7aa617d28fae354a7e53c92c9b4ae2ebb6a101bf386323064fc",
+      "publication_bytes": 1032,
+      "publication_transforms": []
+    },
+    {
+      "path": "scripts/manual/demo_chunker.py",
+      "sha256": "e40f7f7c59993fd7c7c215b0778cf466c05c3d7b6e0ee5eefe4f489f069c4a18",
+      "bytes": 1109,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "e40f7f7c59993fd7c7c215b0778cf466c05c3d7b6e0ee5eefe4f489f069c4a18",
+      "publication_bytes": 1109,
+      "publication_transforms": []
+    },
+    {
+      "path": "scripts/manual/demo_coach_ui.py",
+      "sha256": "47837d930fba35dbd1835de7208e18d7bd0a1b366877aa6c530bf66d5e0c0c6b",
+      "bytes": 4057,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "47837d930fba35dbd1835de7208e18d7bd0a1b366877aa6c530bf66d5e0c0c6b",
+      "publication_bytes": 4057,
+      "publication_transforms": []
+    },
+    {
+      "path": "scripts/manual/demo_embedding.py",
+      "sha256": "81bbac7e75a2d7033953c32be1129fdcc6647036c76d168ab4576c56d197b39b",
+      "bytes": 465,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "81bbac7e75a2d7033953c32be1129fdcc6647036c76d168ab4576c56d197b39b",
+      "publication_bytes": 465,
+      "publication_transforms": []
+    },
+    {
+      "path": "scripts/manual/demo_question_generator.py",
+      "sha256": "5dadd1b6c05f335b6daf30366e13569b5a1a46fc3223176a76ba1bb957cf954e",
+      "bytes": 706,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "5dadd1b6c05f335b6daf30366e13569b5a1a46fc3223176a76ba1bb957cf954e",
+      "publication_bytes": 706,
+      "publication_transforms": []
+    },
+    {
+      "path": "scripts/manual/demo_rag.py",
+      "sha256": "ffc7a012061d5a088668e8c3504786101093cb64ae0b43ec0c38a2dc8ff2a117",
+      "bytes": 253,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "ffc7a012061d5a088668e8c3504786101093cb64ae0b43ec0c38a2dc8ff2a117",
+      "publication_bytes": 253,
+      "publication_transforms": []
+    },
+    {
+      "path": "scripts/manual/demo_retriever.py",
+      "sha256": "dc896a700b43b82202989838b775221b9e036a71236e1a27713016bb034aa8e6",
+      "bytes": 841,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "dc896a700b43b82202989838b775221b9e036a71236e1a27713016bb034aa8e6",
+      "publication_bytes": 841,
+      "publication_transforms": []
+    },
+    {
+      "path": "scripts/manual/demo_topic_chunk.py",
+      "sha256": "45a55840faab69ef2847f2ed0534fa717a0cccad131dfe85ebc6996d88fc8906",
+      "bytes": 433,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "45a55840faab69ef2847f2ed0534fa717a0cccad131dfe85ebc6996d88fc8906",
+      "publication_bytes": 433,
+      "publication_transforms": []
+    },
+    {
+      "path": "scripts/manual/demo_topic_extractor.py",
+      "sha256": "fe565bd5f041ac7ee3cf45054e59cf2b6ec1ed734f576bff8af8fdfecd80b358",
+      "bytes": 776,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "fe565bd5f041ac7ee3cf45054e59cf2b6ec1ed734f576bff8af8fdfecd80b358",
+      "publication_bytes": 776,
+      "publication_transforms": []
+    },
+    {
+      "path": "scripts/manual/demo_topic_mastery.py",
+      "sha256": "628e6ff9a0e326b20efe98e452f5824048303daf7572f67f92084759049c8967",
+      "bytes": 637,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "628e6ff9a0e326b20efe98e452f5824048303daf7572f67f92084759049c8967",
+      "publication_bytes": 637,
+      "publication_transforms": []
+    },
+    {
+      "path": "scripts/manual/demo_weak_topics.py",
+      "sha256": "feacf5bbc34733cc78f5a771d0092d09b1dced72a6689af7be3e0b1286eb4844",
+      "bytes": 835,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "feacf5bbc34733cc78f5a771d0092d09b1dced72a6689af7be3e0b1286eb4844",
+      "publication_bytes": 835,
+      "publication_transforms": []
+    },
+    {
+      "path": "scripts/manual/demo_weakest_topic.py",
+      "sha256": "be74d7ee131a0d48a5c1982087c7ea2316ccbc98007dbafd012e6d6644378336",
+      "bytes": 611,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "be74d7ee131a0d48a5c1982087c7ea2316ccbc98007dbafd012e6d6644378336",
+      "publication_bytes": 611,
+      "publication_transforms": []
+    },
+    {
+      "path": "scripts/manual/demo_xp.py",
+      "sha256": "236322692a29db8eaf793f71535095c31890364be8896140b85189bdb5c3078d",
+      "bytes": 192,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "236322692a29db8eaf793f71535095c31890364be8896140b85189bdb5c3078d",
+      "publication_bytes": 192,
+      "publication_transforms": []
+    },
+    {
+      "path": "scripts/migrate_admin.py",
+      "sha256": "b37d8402e2a3953b6e8c88991a07681e010bf9a89a87df22cc22c9e3f7fb5d40",
+      "bytes": 2700,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "b37d8402e2a3953b6e8c88991a07681e010bf9a89a87df22cc22c9e3f7fb5d40",
+      "publication_bytes": 2700,
+      "publication_transforms": []
+    },
+    {
+      "path": "scripts/plot_adaptive_evaluation.py",
+      "sha256": "1b0505f68632298df3dcc733aeec6c4c3207dda9a6ad2988dfe2e0994bf0cf35",
+      "bytes": 8364,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "1b0505f68632298df3dcc733aeec6c4c3207dda9a6ad2988dfe2e0994bf0cf35",
+      "publication_bytes": 8364,
+      "publication_transforms": []
+    },
+    {
+      "path": "scripts/prepare_portfolio.py",
+      "sha256": "8db506956746b3c6e3e826891da34957566dfd0a49ae3a4306bf5d684b7d9b2c",
+      "bytes": 4165,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "8db506956746b3c6e3e826891da34957566dfd0a49ae3a4306bf5d684b7d9b2c",
+      "publication_bytes": 4165,
+      "publication_transforms": []
+    },
+    {
+      "path": "scripts/research_experiment.py",
+      "sha256": "ab4eb48af1941da2ec1b5a7e6ebbd88f02795ef71fbd9931856ded4514b5bcfe",
+      "bytes": 4369,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "ab4eb48af1941da2ec1b5a7e6ebbd88f02795ef71fbd9931856ded4514b5bcfe",
+      "publication_bytes": 4369,
+      "publication_transforms": []
+    },
+    {
+      "path": "scripts/run_s5_tests.py",
+      "sha256": "28fb401386312e083fb0825a7453abf7b9e5cb62bb9ff5b2ac804de623a0503b",
+      "bytes": 2121,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "28fb401386312e083fb0825a7453abf7b9e5cb62bb9ff5b2ac804de623a0503b",
+      "publication_bytes": 2121,
+      "publication_transforms": []
+    },
+    {
+      "path": "scripts/s5_acceptance.py",
+      "sha256": "394215f5940a8fe629974b3ac5fed1496f3032c6b15f22faa8617df593ae42dc",
+      "bytes": 13171,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "394215f5940a8fe629974b3ac5fed1496f3032c6b15f22faa8617df593ae42dc",
+      "publication_bytes": 13171,
+      "publication_transforms": []
+    },
+    {
+      "path": "scripts/s5_online_check.py",
+      "sha256": "68836e55ca792031e7bb78e86ada6ffee8e944c0c4b6ee4e3bbd47b9320be080",
+      "bytes": 5218,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "68836e55ca792031e7bb78e86ada6ffee8e944c0c4b6ee4e3bbd47b9320be080",
+      "publication_bytes": 5218,
+      "publication_transforms": []
+    },
+    {
+      "path": "scripts/seed_achievements.py",
+      "sha256": "48c5fc1dce0db11f1c47b98c3587bb09188831f694743cd93fa1ae7c24dbed6b",
+      "bytes": 960,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "48c5fc1dce0db11f1c47b98c3587bb09188831f694743cd93fa1ae7c24dbed6b",
+      "publication_bytes": 960,
+      "publication_transforms": []
+    },
+    {
+      "path": "scripts/verify_experiment_workflow.py",
+      "sha256": "3bab226803e79b021f25ec60b4552e16fef5a8c8b1cb56af3f3329741e8c383c",
+      "bytes": 3109,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "3bab226803e79b021f25ec60b4552e16fef5a8c8b1cb56af3f3329741e8c383c",
+      "publication_bytes": 3109,
+      "publication_transforms": []
+    },
+    {
+      "path": "tests/frontend_admin.mjs",
+      "sha256": "06409fdd80167ea1308b9123f1942e356be3ea7461955fbfaa63e9b5064eaafa",
+      "bytes": 10198,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "06409fdd80167ea1308b9123f1942e356be3ea7461955fbfaa63e9b5064eaafa",
+      "publication_bytes": 10198,
+      "publication_transforms": []
+    },
+    {
+      "path": "tests/frontend_coach.mjs",
+      "sha256": "2c1b172df8b5d972d0cc0163c8a692ccb1affcc2dde903049a114946b1d11f18",
+      "bytes": 9332,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "2c1b172df8b5d972d0cc0163c8a692ccb1affcc2dde903049a114946b1d11f18",
+      "publication_bytes": 9332,
+      "publication_transforms": []
+    },
+    {
+      "path": "tests/frontend_practice.mjs",
+      "sha256": "926e6503cde338f753218609e2f7a5a0f7d94c824fc928426cf91aced1e5c4d9",
+      "bytes": 12681,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "926e6503cde338f753218609e2f7a5a0f7d94c824fc928426cf91aced1e5c4d9",
+      "publication_bytes": 12681,
+      "publication_transforms": []
+    },
+    {
+      "path": "tests/frontend_recommendation.mjs",
+      "sha256": "74124a8c1cc7654b8662201235778b523c66f1be587bcab6676d09fcfdf1584b",
+      "bytes": 10455,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "74124a8c1cc7654b8662201235778b523c66f1be587bcab6676d09fcfdf1584b",
+      "publication_bytes": 10455,
+      "publication_transforms": []
+    },
+    {
+      "path": "tests/frontend_study.mjs",
+      "sha256": "0071739b0f58bbfc1238e73fb18b7489f899ff2247cfe075e63c1eb22c7bec7b",
+      "bytes": 10272,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "0071739b0f58bbfc1238e73fb18b7489f899ff2247cfe075e63c1eb22c7bec7b",
+      "publication_bytes": 10272,
+      "publication_transforms": []
+    },
+    {
+      "path": "tests/s5_bootstrap_fixture.py",
+      "sha256": "75ee47972d348226dee031d542559ea741be879deb087b9e9db8560ae2eb8f9a",
+      "bytes": 1601,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "75ee47972d348226dee031d542559ea741be879deb087b9e9db8560ae2eb8f9a",
+      "publication_bytes": 1601,
+      "publication_transforms": []
+    },
+    {
+      "path": "tests/s5_browser.mjs",
+      "sha256": "e8b51a1524b7d3663ea03dfefd0cc77844f5f61b6ad19148b01f95405d0144e9",
+      "bytes": 8894,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "e8b51a1524b7d3663ea03dfefd0cc77844f5f61b6ad19148b01f95405d0144e9",
+      "publication_bytes": 8894,
+      "publication_transforms": []
+    },
+    {
+      "path": "tests/s5_docker_verify.py",
+      "sha256": "9c131b2b898a9d2094cda0b63a0ae3b9d3b8aed879f5b69a9a8a538e3b9e6776",
+      "bytes": 7189,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "9c131b2b898a9d2094cda0b63a0ae3b9d3b8aed879f5b69a9a8a538e3b9e6776",
+      "publication_bytes": 7189,
+      "publication_transforms": []
+    },
+    {
+      "path": "tests/s5_model_stub.py",
+      "sha256": "898e2267d3d513ccc1b383170cb205059995277023ef696d5f6df505b8b985e8",
+      "bytes": 4739,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "898e2267d3d513ccc1b383170cb205059995277023ef696d5f6df505b8b985e8",
+      "publication_bytes": 4739,
+      "publication_transforms": []
+    },
+    {
+      "path": "tests/s5_prepare.py",
+      "sha256": "307bb2fbb30f24992c4b3fb6a13c231640ee7aa8a635c1fbc3cf630986ee382a",
+      "bytes": 1223,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "307bb2fbb30f24992c4b3fb6a13c231640ee7aa8a635c1fbc3cf630986ee382a",
+      "publication_bytes": 1223,
+      "publication_transforms": []
+    },
+    {
+      "path": "tests/s5_production_boot.py",
+      "sha256": "4650bf756573f0793140adf02ce4d41fdb3c692917a738b0ac524134ebeffe9c",
+      "bytes": 3212,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "4650bf756573f0793140adf02ce4d41fdb3c692917a738b0ac524134ebeffe9c",
+      "publication_bytes": 3212,
+      "publication_transforms": []
+    },
+    {
+      "path": "tests/test_adaptive_evaluation.py",
+      "sha256": "4f6ac965916be93478e5364d239d85068263e10c53c98bbe0659f32993c089c6",
+      "bytes": 11839,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "4f6ac965916be93478e5364d239d85068263e10c53c98bbe0659f32993c089c6",
+      "publication_bytes": 11839,
+      "publication_transforms": []
+    },
+    {
+      "path": "tests/test_adaptive_figures.py",
+      "sha256": "261228da1404f5df761679415f5b04b2f05a6e56925ba2c213db687aca462c08",
+      "bytes": 2545,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "261228da1404f5df761679415f5b04b2f05a6e56925ba2c213db687aca462c08",
+      "publication_bytes": 2545,
+      "publication_transforms": []
+    },
+    {
+      "path": "tests/test_adaptive_recommendation.py",
+      "sha256": "b84c488697cddde5f28fe7f0878a44b46dbc92041a114f2964aa9a6e98f44410",
+      "bytes": 14461,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "b84c488697cddde5f28fe7f0878a44b46dbc92041a114f2964aa9a6e98f44410",
+      "publication_bytes": 14461,
+      "publication_transforms": []
+    },
+    {
+      "path": "tests/test_admin.py",
+      "sha256": "d3b93d52851d935631a6ce4818a0f74f715f0ff6c0259514b2b6431113e7113f",
+      "bytes": 14443,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "d3b93d52851d935631a6ce4818a0f74f715f0ff6c0259514b2b6431113e7113f",
+      "publication_bytes": 14443,
+      "publication_transforms": []
+    },
+    {
+      "path": "tests/test_admin_concurrency.py",
+      "sha256": "28a6c47f59be65568a709bbda9ed7be7dea6e51f1777f87d725a7db8e0d7d61e",
+      "bytes": 3321,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "28a6c47f59be65568a709bbda9ed7be7dea6e51f1777f87d725a7db8e0d7d61e",
+      "publication_bytes": 3321,
+      "publication_transforms": []
+    },
+    {
+      "path": "tests/test_admin_migration.py",
+      "sha256": "01345127eaa7a51b091dc56e22085afc6273e41ab93cbdbc93215c012c6971dc",
+      "bytes": 3999,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "01345127eaa7a51b091dc56e22085afc6273e41ab93cbdbc93215c012c6971dc",
+      "publication_bytes": 3999,
+      "publication_transforms": []
+    },
+    {
+      "path": "tests/test_answer_feedback.py",
+      "sha256": "d7c4c8d3bdd18e0a0162843c088526fc1d699de547c74dc56a552ce6d8676e7f",
+      "bytes": 1959,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "d7c4c8d3bdd18e0a0162843c088526fc1d699de547c74dc56a552ce6d8676e7f",
+      "publication_bytes": 1959,
+      "publication_transforms": []
+    },
+    {
+      "path": "tests/test_auth_security.py",
+      "sha256": "5b84a5d22df1cc33391adbf4c7e696d9fe80f034ef4e1c9110d9afb5550f3156",
+      "bytes": 3028,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "5b84a5d22df1cc33391adbf4c7e696d9fe80f034ef4e1c9110d9afb5550f3156",
+      "publication_bytes": 3028,
+      "publication_transforms": []
+    },
+    {
+      "path": "tests/test_coach.py",
+      "sha256": "0587ba49ba6fb264881557a00028a8987ce8ba2c149f152a45cdb8e4eb497f21",
+      "bytes": 11613,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "0587ba49ba6fb264881557a00028a8987ce8ba2c149f152a45cdb8e4eb497f21",
+      "publication_bytes": 11613,
+      "publication_transforms": []
+    },
+    {
+      "path": "tests/test_embedding_index.py",
+      "sha256": "4339501bbcbc58e30fac5dd7df5e68a54b5e043adf447279e76c2d9d0551ea78",
+      "bytes": 12946,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "4339501bbcbc58e30fac5dd7df5e68a54b5e043adf447279e76c2d9d0551ea78",
+      "publication_bytes": 12946,
+      "publication_transforms": []
+    },
+    {
+      "path": "tests/test_experiment_s4.py",
+      "sha256": "354619b8a857a63efda7e1cebc5b97ea3ddb2073e6a813e81b9c6b8d3191d61c",
+      "bytes": 13282,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "354619b8a857a63efda7e1cebc5b97ea3ddb2073e6a813e81b9c6b8d3191d61c",
+      "publication_bytes": 13282,
+      "publication_transforms": []
+    },
+    {
+      "path": "tests/test_hybrid_evaluation.py",
+      "sha256": "4e8de1484834729e30b2f321a93f6d2203a375c2a6c8df5b2dab5118601ee005",
+      "bytes": 6880,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "4e8de1484834729e30b2f321a93f6d2203a375c2a6c8df5b2dab5118601ee005",
+      "publication_bytes": 6880,
+      "publication_transforms": []
+    },
+    {
+      "path": "tests/test_hybrid_rag.py",
+      "sha256": "543ef2ecf27e2dd8b665cea2b393f3e8825759ac8bad2233916309cfe5929681",
+      "bytes": 9048,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "543ef2ecf27e2dd8b665cea2b393f3e8825759ac8bad2233916309cfe5929681",
+      "publication_bytes": 9048,
+      "publication_transforms": []
+    },
+    {
+      "path": "tests/test_hybrid_retriever.py",
+      "sha256": "feabf4f70139f89960263be1d76f67877c27de28da36f1fb912ea963f789ae17",
+      "bytes": 10789,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "feabf4f70139f89960263be1d76f67877c27de28da36f1fb912ea963f789ae17",
+      "publication_bytes": 10789,
+      "publication_transforms": []
+    },
+    {
+      "path": "tests/test_learning_experiment.py",
+      "sha256": "76e8e2c70e86965c7121790c24ac6f5b818e153621828d98bc75857a6beb2765",
+      "bytes": 11422,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "76e8e2c70e86965c7121790c24ac6f5b818e153621828d98bc75857a6beb2765",
+      "publication_bytes": 11422,
+      "publication_transforms": []
+    },
+    {
+      "path": "tests/test_lexical_retriever.py",
+      "sha256": "2edec040320ded9765456dc68f4381ad3c6ead5212a19066a08cdb3769d04fd9",
+      "bytes": 5076,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "2edec040320ded9765456dc68f4381ad3c6ead5212a19066a08cdb3769d04fd9",
+      "publication_bytes": 5076,
+      "publication_transforms": []
+    },
+    {
+      "path": "tests/test_portfolio_audit.py",
+      "sha256": "cf4039533052e5a427bfca46576485bcc724f58b740b554be03dc84a4a04de96",
+      "bytes": 6437,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "cf4039533052e5a427bfca46576485bcc724f58b740b554be03dc84a4a04de96",
+      "publication_bytes": 6437,
+      "publication_transforms": []
+    },
+    {
+      "path": "tests/test_question_answer_flow.py",
+      "sha256": "1bbe70a8fdbb7a2e942df3db6bb822fe4cb71c65c1a6b83fb69ee7f35c0dbf35",
+      "bytes": 5157,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "1bbe70a8fdbb7a2e942df3db6bb822fe4cb71c65c1a6b83fb69ee7f35c0dbf35",
+      "publication_bytes": 5157,
+      "publication_transforms": []
+    },
+    {
+      "path": "tests/test_question_generation.py",
+      "sha256": "d6ed616fa850590d7c2aee33411db22c85cb76086dae08c033f0a76b11734785",
+      "bytes": 10786,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "d6ed616fa850590d7c2aee33411db22c85cb76086dae08c033f0a76b11734785",
+      "publication_bytes": 10786,
+      "publication_transforms": []
+    },
+    {
+      "path": "tests/test_rag_evaluation.py",
+      "sha256": "d38ed1aeda2e04952b1a524969dd6e482561539f0d2af301ed8a8baa43858d0c",
+      "bytes": 2037,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "d38ed1aeda2e04952b1a524969dd6e482561539f0d2af301ed8a8baa43858d0c",
+      "publication_bytes": 2037,
+      "publication_transforms": []
+    },
+    {
+      "path": "tests/test_reranker.py",
+      "sha256": "37b73e6db050e5a7f2ee21c21fc672f5bc6aec0a7b1cb44de5602ca442340bdd",
+      "bytes": 10839,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "37b73e6db050e5a7f2ee21c21fc672f5bc6aec0a7b1cb44de5602ca442340bdd",
+      "publication_bytes": 10839,
+      "publication_transforms": []
+    },
+    {
+      "path": "tests/test_retrieval_comparison.py",
+      "sha256": "a9d7e41ba91107bea5524089dc004c9df40fe0c0e58d58a49676e4e41eebbde1",
+      "bytes": 10551,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "a9d7e41ba91107bea5524089dc004c9df40fe0c0e58d58a49676e4e41eebbde1",
+      "publication_bytes": 10551,
+      "publication_transforms": []
+    },
+    {
+      "path": "tests/test_s5_delivery.py",
+      "sha256": "c7565195bd554a71fbce72941449fede3917686e2ebe94141b09005bc3b06c88",
+      "bytes": 11948,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "c7565195bd554a71fbce72941449fede3917686e2ebe94141b09005bc3b06c88",
+      "publication_bytes": 11948,
+      "publication_transforms": []
+    },
+    {
+      "path": "tests/test_study_workspace.py",
+      "sha256": "32a3a32099a111e7fcb3dcc64f376c0e2a08514807c5dd3e68187dd1384ebe5c",
+      "bytes": 7323,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "32a3a32099a111e7fcb3dcc64f376c0e2a08514807c5dd3e68187dd1384ebe5c",
+      "publication_bytes": 7323,
+      "publication_transforms": []
+    },
+    {
+      "path": "tests/test_topic_mastery_s2.py",
+      "sha256": "def5b097a7ba02132b1abceb085796c9f413c76dddfca2784c3e8bb1b5ca0a5b",
+      "bytes": 14968,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "def5b097a7ba02132b1abceb085796c9f413c76dddfca2784c3e8bb1b5ca0a5b",
+      "publication_bytes": 14968,
+      "publication_transforms": []
+    },
+    {
+      "path": "tests/test_topic_summary.py",
+      "sha256": "48950408a5fbebe7fe2d2cca461281f05433f539ed70ca8bcb5f493db81cbc6c",
+      "bytes": 13365,
+      "decision": "keep",
+      "reason": "Source, tests, deployment, synthetic fixtures or retained evidence",
+      "publication_sha256": "48950408a5fbebe7fe2d2cca461281f05433f539ed70ca8bcb5f493db81cbc6c",
+      "publication_bytes": 13365,
+      "publication_transforms": []
+    }
+  ],
+  "counts": {
+    "keep": 305,
+    "hold_rights": 13,
+    "omit_old_screenshot": 5,
+    "omit_duplicate": 7,
+    "omit_intermediate": 19
+  },
+  "original_files_deleted": false,
+  "original_candidate_modified": false,
+  "publication_followup": {
+    "date": "2026-10-27",
+    "source_code_whitespace_only": [
+      "app/schemas/question.py",
+      "frontend/admin.js",
+      "migrations/versions/0001_initial_schema.py",
+      "scripts/list_rag_chunks.py"
+    ],
+    "scoped_git_attribute_changes": [
+      "fingerprinted_csv_cr_at_eol",
+      "generated_svg_whitespace",
+      "verbatim_font_license_whitespace"
+    ],
+    "original_review_candidate_unchanged": true
+  }
+}

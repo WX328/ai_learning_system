@@ -1,0 +1,156 @@
+{
+  "review_date": "2026-10-26",
+  "source": "local_publication_review",
+  "published": false,
+  "original_candidate_file_count": 349,
+  "original_candidate_unchanged": true,
+  "hard_secret_findings": [],
+  "private_paths": [],
+  "local_account_name_matches": [],
+  "original_author_committer_email_matches": [],
+  "distinct_private_history_emails_checked_in_memory": 1,
+  "reviewed_literal_findings": [
+    {
+      "path": "frontend/app.js",
+      "type": "credential_literal_review"
+    },
+    {
+      "path": "tests/s5_prepare.py",
+      "type": "credential_literal_review"
+    },
+    {
+      "path": "tests/test_admin.py",
+      "type": "credential_literal_review"
+    },
+    {
+      "path": "tests/test_auth_security.py",
+      "type": "credential_literal_review"
+    },
+    {
+      "path": "tests/test_portfolio_audit.py",
+      "type": "credential_literal_review"
+    }
+  ],
+  "runtime_files_identical_to_s6_image": 100,
+  "runtime_documentation_only_changes": [
+    "frontend/README.md"
+  ],
+  "executable_production_code_changes": false,
+  "markdown_local_links_checked": 110,
+  "missing_local_links": [],
+  "fingerprinted_synthetic_decisions_csv_preserved": true,
+  "git_history_in_snapshot": false,
+  "original_git_diff_check": {
+    "working_diff": {
+      "exit_code": 0,
+      "diagnostics": [],
+      "line_ending_warning_count": 0
+    },
+    "staged_diff": {
+      "exit_code": 0,
+      "diagnostics": [],
+      "line_ending_warning_count": 0
+    }
+  },
+  "original_git_counts": {
+    "tracked_files": 119,
+    "untracked_candidates": 231,
+    "index_entries": 119,
+    "reachable_commits": 3,
+    "history_blob_path_versions": 167,
+    "history_paths": 134,
+    "annotated_tags": 0,
+    "remotes": 0,
+    "mixed_worktree_endings": 0
+  },
+  "new_paid_model_calls": 0,
+  "new_online_model_tests": false,
+  "new_browser_session": false,
+  "new_docker_deployment": false,
+  "regression_evidence": {
+    "backend": {
+      "tests": 264,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "unittest_seconds": 127.179
+    },
+    "commands": [
+      {
+        "name": "backend",
+        "exit_code": 0,
+        "seconds": 144.933
+      },
+      {
+        "name": "pip-check",
+        "exit_code": 0,
+        "seconds": 7.643
+      },
+      {
+        "name": "frontend_admin",
+        "exit_code": 0,
+        "seconds": 5.25
+      },
+      {
+        "name": "frontend_coach",
+        "exit_code": 0,
+        "seconds": 4.948
+      },
+      {
+        "name": "frontend_practice",
+        "exit_code": 0,
+        "seconds": 4.708
+      },
+      {
+        "name": "frontend_recommendation",
+        "exit_code": 0,
+        "seconds": 0.237
+      },
+      {
+        "name": "frontend_study",
+        "exit_code": 0,
+        "seconds": 0.217
+      }
+    ],
+    "formal_database_present_in_verification": false,
+    "runtime_env_present_in_verification": false,
+    "environment": "existing_python_3_13_venv_and_node_on_windows_disposable_source_copy",
+    "models": "mocked_test_fixtures",
+    "fresh_dependency_install": false,
+    "ruff_exit_code": 0,
+    "powershell_guide_syntax": {
+      "blocks": 3,
+      "parse_errors": 0
+    },
+    "synthetic_replay_matches_frozen": {
+      "samples": true,
+      "algorithms": true,
+      "config": true,
+      "dataset_sha256": true,
+      "decisions_csv_sha256": true
+    },
+    "paid_model_calls": 0
+  },
+  "limits": [
+    "Pattern scan and manual review are not a guarantee against unknown credentials or copyrighted code.",
+    "Font license metadata is consistent; local Instrument Sans bytes do not match current upstream masters.",
+    "Project license, code/icon ownership, aggregate history publication and pending study-bank rights need author confirmation."
+  ],
+  "publication_followup": {
+    "date": "2026-10-27",
+    "destination": "WX328/ai_learning_system",
+    "existing_repository_remains_private": true,
+    "original_2026_10_26_results_retained_as_historical_evidence": true,
+    "source_changes": "trailing_whitespace_only",
+    "python_executable_ast_unchanged_ignoring_docstring_trailing_whitespace": true,
+    "module_docstring_whitespace_only_paths": [
+      "migrations/versions/0001_initial_schema.py"
+    ],
+    "ruff_exit_code": 0,
+    "frontend_admin_syntax_exit_code": 0,
+    "frontend_admin_dom_exit_code": 0,
+    "paid_model_calls": 0,
+    "old_remote_backup_still_present_in_history": true,
+    "old_history_not_rewritten": true
+  }
+}

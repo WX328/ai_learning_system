@@ -1,0 +1,49 @@
+请在交互式终端运行；不接受命令行、管道或环境变量中的管理员凭据。
+INFO  [alembic.runtime.migration] Context impl SQLiteImpl.
+INFO  [alembic.runtime.migration] Will assume non-transactional DDL.
+INFO  [alembic.runtime.migration] Running upgrade  -> 0001, initial_schema
+INFO  [alembic.runtime.migration] Running upgrade 0001 -> 0002, Align the pre-Alembic learning.db with the mapped schema.
+INFO  [alembic.runtime.migration] Running upgrade 0002 -> 0003, Store generated answer feedback separately from answer submission.
+INFO  [alembic.runtime.migration] Running upgrade 0003 -> 0004, Add durable learning coach sessions and command receipts.
+INFO  [alembic.runtime.migration] Context impl SQLiteImpl.
+INFO  [alembic.runtime.migration] Will assume non-transactional DDL.
+INFO  [alembic.runtime.migration] Running upgrade 0004 -> 0005, Add account roles, revocation version and minimal admin audit trail.
+INFO  [alembic.runtime.migration] Context impl SQLiteImpl.
+INFO  [alembic.runtime.migration] Will assume non-transactional DDL.
+INFO  [alembic.runtime.migration] Context impl SQLiteImpl.
+INFO  [alembic.runtime.migration] Will assume non-transactional DDL.
+INFO  [alembic.runtime.migration] Running upgrade  -> 0001, initial_schema
+INFO  [alembic.runtime.migration] Running upgrade 0001 -> 0002, Align the pre-Alembic learning.db with the mapped schema.
+INFO  [alembic.runtime.migration] Running upgrade 0002 -> 0003, Store generated answer feedback separately from answer submission.
+INFO  [alembic.runtime.migration] Running upgrade 0003 -> 0004, Add durable learning coach sessions and command receipts.
+INFO  [alembic.runtime.migration] Context impl SQLiteImpl.
+INFO  [alembic.runtime.migration] Will assume non-transactional DDL.
+INFO  [alembic.runtime.migration] Running upgrade 0004 -> 0005, Add account roles, revocation version and minimal admin audit trail.
+INFO  [alembic.runtime.migration] Context impl SQLiteImpl.
+INFO  [alembic.runtime.migration] Will assume non-transactional DDL.
+INFO  [alembic.runtime.migration] Context impl SQLiteImpl.
+INFO  [alembic.runtime.migration] Will assume non-transactional DDL.
+INFO  [alembic.runtime.migration] Running downgrade 0005 -> 0004, Add account roles, revocation version and minimal admin audit trail.
+INFO  [alembic.runtime.migration] Context impl SQLiteImpl.
+INFO  [alembic.runtime.migration] Will assume non-transactional DDL.
+INFO  [alembic.runtime.migration] Running upgrade 0004 -> 0005, Add account roles, revocation version and minimal admin audit trail.
+WARNI [app.agents.coach] Coach unavailable: TimeoutError
+WARNI [app.agents.coach] Coach tool run_sql failed: ValueError
+WARNI [app.agents.coach] Coach tool run_sql failed: ValueError
+WARNI [app.agents.coach] Coach tool run_sql failed: ValueError
+WARNI [app.agents.coach] Coach tool run_sql failed: ValueError
+Building prefix dict from the default dictionary ...
+DEBUG [jieba] Building prefix dict from the default dictionary ...
+Loading model from cache <USER_PROFILE>\AppData\Local\Temp\jieba.cache
+DEBUG [jieba] Loading model from cache <USER_PROFILE>\AppData\Local\Temp\jieba.cache
+Loading model cost 1.496 seconds.
+DEBUG [jieba] Loading model cost 1.496 seconds.
+Prefix dict has been built successfully.
+DEBUG [jieba] Prefix dict has been built successfully.
+WARNI [app.routers.question] Answer feedback unavailable: TimeoutError
+WARNI [app.services.rag] RAG answer unavailable: RuntimeError
+WARNI [app.services.rag] Topic retrieval unavailable; using known topic sources
+----------------------------------------------------------------------
+Ran 264 tests in 117.643s
+
+OK

@@ -1,0 +1,45 @@
+{
+  "source": "synthetic_engineering_browser",
+  "models": "mocked_provider_http",
+  "browser": "Microsoft Edge / Playwright",
+  "real_participants": 0,
+  "steps": [
+    {
+      "name": "register and login in browser",
+      "passed": true
+    },
+    {
+      "name": "upload file, vectorize, extract topics",
+      "passed": true
+    },
+    {
+      "name": "RAG chat with saved evidence",
+      "passed": true
+    },
+    {
+      "name": "adaptive card and answer feedback",
+      "passed": true
+    },
+    {
+      "name": "mistake review persists and map refreshes",
+      "passed": true
+    },
+    {
+      "name": "coach create, retrieve evidence, finish",
+      "passed": true
+    },
+    {
+      "name": "admin search, detail, disable confirmation and audit",
+      "passed": true
+    },
+    {
+      "name": "390px admin and disabled login",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "passed": true,
+  "current_step": "390px admin and disabled login",
+  "created_at": "2026-10-26T02:08:18.164Z",
+  "browser_version": "156.0.4314.42"
+}

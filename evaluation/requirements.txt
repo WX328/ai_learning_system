@@ -1,0 +1,2 @@
+# Optional, local thesis figures only. Not imported by the production app.
+matplotlib>=3.9,<4

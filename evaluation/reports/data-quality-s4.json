@@ -1,0 +1,30 @@
+{
+  "source": "read_only_production_snapshot",
+  "database_sha256_before": "REDACTED_PRIVATE_DATABASE_SHA256",
+  "database_sha256_after": "REDACTED_PRIVATE_DATABASE_SHA256",
+  "counts": {
+    "questions": {
+      "total": 55,
+      "categories": {
+        "null_topic": 36,
+        "valid": 19
+      }
+    },
+    "first_answers": {
+      "total": 51,
+      "categories": {
+        "null_topic": 41,
+        "valid": 10
+      }
+    },
+    "reviews": {
+      "total": 5,
+      "categories": {
+        "null_topic": 5
+      }
+    },
+    "duplicate_topic_name_groups": 0
+  },
+  "classification": "exclusive first matching reason; NULL question topic is not inferred from text",
+  "limitations": "External concurrent writes may change file hashes; no historical entrypoint provenance is available."
+}

@@ -1,0 +1,685 @@
+{
+  "schema_version": "reviewed_question_bank_v1",
+  "bank_id": "python-container-pilot",
+  "version": "draft-1",
+  "data_kind": "demo",
+  "topics": {
+    "lists": "列表、索引、切片、可变对象与浅复制",
+    "dicts": "字典键值操作、缺失键与嵌套引用"
+  },
+  "instructions": "题目为 AI 编写的待审草案；难度仅为候选标注，A/B 等价性尚未经人验证。适用于四道学习题的流程演示，正式实验需扩充题库。",
+  "items": [
+    {
+      "item_id": "A-lists-length_after_pop",
+      "topic_id": "lists",
+      "pool": "A",
+      "difficulty": 2,
+      "family_id": "length_after_pop",
+      "stem": "执行 x=[2,4,6]; x.pop() 后，len(x) 是多少？",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "6",
+        "D": "0"
+      },
+      "answer": "A",
+      "explanation": "pop() 删除末项，列表剩下两项。",
+      "provenance": {
+        "kind": "ai_generated",
+        "reference": "Codex-authored draft; Python 3.7+ list/dict semantics; human verification required"
+      },
+      "review": {
+        "status": "pending_review"
+      },
+      "content_hash": "255f7410b45fc2c9caef262beb874742b9732ac032fd49fc7bb86cbeda5705df"
+    },
+    {
+      "item_id": "A-lists-slice_independent_container",
+      "topic_id": "lists",
+      "pool": "A",
+      "difficulty": 3,
+      "family_id": "slice_independent_container",
+      "stem": "执行 x=[1,2]; y=x[:]; y.append(3) 后，x 是什么？",
+      "options": {
+        "A": "[1,2,3]",
+        "B": "[1,2]",
+        "C": "[3]",
+        "D": "报错"
+      },
+      "answer": "B",
+      "explanation": "切片创建新的外层列表，向 y 追加元素不改变 x。",
+      "provenance": {
+        "kind": "ai_generated",
+        "reference": "Codex-authored draft; Python 3.7+ list/dict semantics; human verification required"
+      },
+      "review": {
+        "status": "pending_review"
+      },
+      "content_hash": "58a300fa587eb2114d0c7309a335246c4ea1315b3d608dfe09b19f7cba3ab1eb"
+    },
+    {
+      "item_id": "B-lists-nested_index",
+      "topic_id": "lists",
+      "pool": "B",
+      "difficulty": 2,
+      "family_id": "nested_index",
+      "stem": "x=[[4,5],[6,7]]，x[1][0] 的值是什么？",
+      "options": {
+        "A": "4",
+        "B": "5",
+        "C": "6",
+        "D": "7"
+      },
+      "answer": "C",
+      "explanation": "先取第二项 [6,7]，再取其第一项 6。",
+      "provenance": {
+        "kind": "ai_generated",
+        "reference": "Codex-authored draft; Python 3.7+ list/dict semantics; human verification required"
+      },
+      "review": {
+        "status": "pending_review"
+      },
+      "content_hash": "1e0b9f19968e741dce82e2979095a168feb60695ca1d9c819ea212724e4e6a8e"
+    },
+    {
+      "item_id": "B-lists-extend_versus_append",
+      "topic_id": "lists",
+      "pool": "B",
+      "difficulty": 3,
+      "family_id": "extend_versus_append",
+      "stem": "执行 x=[1]; x.extend([2,3]) 后，x 是什么？",
+      "options": {
+        "A": "[1,[2,3]]",
+        "B": "[[1],2,3]",
+        "C": "[2,3]",
+        "D": "[1,2,3]"
+      },
+      "answer": "D",
+      "explanation": "extend 逐项追加可迭代对象中的元素。",
+      "provenance": {
+        "kind": "ai_generated",
+        "reference": "Codex-authored draft; Python 3.7+ list/dict semantics; human verification required"
+      },
+      "review": {
+        "status": "pending_review"
+      },
+      "content_hash": "5d62d03882faaaa973be950a9bba5c3269354aa7a7ed4732f36af22e1531045b"
+    },
+    {
+      "item_id": "A-dicts-get_default",
+      "topic_id": "dicts",
+      "pool": "A",
+      "difficulty": 2,
+      "family_id": "get_default",
+      "stem": "d={'a':2}，d.get('b',0) 的结果是什么？",
+      "options": {
+        "A": "0",
+        "B": "2",
+        "C": "None",
+        "D": "KeyError"
+      },
+      "answer": "A",
+      "explanation": "get 对缺失键返回指定默认值，不插入键。",
+      "provenance": {
+        "kind": "ai_generated",
+        "reference": "Codex-authored draft; Python 3.7+ list/dict semantics; human verification required"
+      },
+      "review": {
+        "status": "pending_review"
+      },
+      "content_hash": "615b4f073fff366def83024de03de7f7c1d8a4c508394c5c20b13e9b2ea471e9"
+    },
+    {
+      "item_id": "A-dicts-dict_keys_membership",
+      "topic_id": "dicts",
+      "pool": "A",
+      "difficulty": 3,
+      "family_id": "dict_keys_membership",
+      "stem": "d={'a':2,'b':3}，表达式 2 in d 的结果是什么？",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "2",
+        "D": "TypeError"
+      },
+      "answer": "B",
+      "explanation": "in 对字典检查键；2 是值而不是键。",
+      "provenance": {
+        "kind": "ai_generated",
+        "reference": "Codex-authored draft; Python 3.7+ list/dict semantics; human verification required"
+      },
+      "review": {
+        "status": "pending_review"
+      },
+      "content_hash": "9c58f96cf325eabe5c7abe42e7179dec9eb9714d0f87c1e063ab3f7b3bbc734e"
+    },
+    {
+      "item_id": "B-dicts-existing_key_replacement",
+      "topic_id": "dicts",
+      "pool": "B",
+      "difficulty": 2,
+      "family_id": "existing_key_replacement",
+      "stem": "执行 d={'x':1,'y':2}; d['x']=9 后，len(d) 是多少？",
+      "options": {
+        "A": "1",
+        "B": "3",
+        "C": "2",
+        "D": "9"
+      },
+      "answer": "C",
+      "explanation": "已有键赋值覆盖值，不增加键数。",
+      "provenance": {
+        "kind": "ai_generated",
+        "reference": "Codex-authored draft; Python 3.7+ list/dict semantics; human verification required"
+      },
+      "review": {
+        "status": "pending_review"
+      },
+      "content_hash": "bcd66e08a66227e68a0864ebb36021b7710092f3759ad04e0ae975bc131a8518"
+    },
+    {
+      "item_id": "B-dicts-pop_return",
+      "topic_id": "dicts",
+      "pool": "B",
+      "difficulty": 3,
+      "family_id": "pop_return",
+      "stem": "执行 d={'x':4,'y':8}; v=d.pop('x') 后，(v,len(d)) 是什么？",
+      "options": {
+        "A": "(None,1)",
+        "B": "(4,2)",
+        "C": "(8,1)",
+        "D": "(4,1)"
+      },
+      "answer": "D",
+      "explanation": "pop 返回被删除键的值，字典剩一个键。",
+      "provenance": {
+        "kind": "ai_generated",
+        "reference": "Codex-authored draft; Python 3.7+ list/dict semantics; human verification required"
+      },
+      "review": {
+        "status": "pending_review"
+      },
+      "content_hash": "d8fa6cd8a49594ba6cc7eae60a765b711a5aa9d53ad6f0037a24153dfee8b31a"
+    },
+    {
+      "item_id": "learning-lists-list_literal",
+      "topic_id": "lists",
+      "pool": "learning",
+      "difficulty": 1,
+      "family_id": "list_literal",
+      "stem": "哪个表达式创建含两个整数的列表？",
+      "options": {
+        "A": "[1,2]",
+        "B": "(1,2)",
+        "C": "{1,2}",
+        "D": "'1,2'"
+      },
+      "answer": "A",
+      "explanation": "方括号创建列表，其他分别是元组、集合和字符串。",
+      "provenance": {
+        "kind": "ai_generated",
+        "reference": "Codex-authored draft; Python 3.7+ list/dict semantics; human verification required"
+      },
+      "review": {
+        "status": "pending_review"
+      },
+      "content_hash": "22af68ca1fef5fcf1f8314b30740776edb3c1da6280f273c9505c4296a308437"
+    },
+    {
+      "item_id": "learning-lists-list_zero_index",
+      "topic_id": "lists",
+      "pool": "learning",
+      "difficulty": 1,
+      "family_id": "list_zero_index",
+      "stem": "列表的第一个有效非负索引是什么？",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "-1",
+        "D": "len(x)"
+      },
+      "answer": "B",
+      "explanation": "Python 序列使用从零开始的非负索引。",
+      "provenance": {
+        "kind": "ai_generated",
+        "reference": "Codex-authored draft; Python 3.7+ list/dict semantics; human verification required"
+      },
+      "review": {
+        "status": "pending_review"
+      },
+      "content_hash": "15fbfa4037e6840a2fef3290a478a2a54522b96b13d5938ca567f3761e38bf38"
+    },
+    {
+      "item_id": "learning-lists-delete_index",
+      "topic_id": "lists",
+      "pool": "learning",
+      "difficulty": 2,
+      "family_id": "delete_index",
+      "stem": "执行 x=['a','b','c']; del x[1] 后，x 是什么？",
+      "options": {
+        "A": "['b','c']",
+        "B": "['a','b']",
+        "C": "['a','c']",
+        "D": "[]"
+      },
+      "answer": "C",
+      "explanation": "索引 1 对应 'b'，删除后剩 'a' 和 'c'。",
+      "provenance": {
+        "kind": "ai_generated",
+        "reference": "Codex-authored draft; Python 3.7+ list/dict semantics; human verification required"
+      },
+      "review": {
+        "status": "pending_review"
+      },
+      "content_hash": "67d15e40500944a99d3b11540c9643e1af715beffc7439437efba0e473ed6953"
+    },
+    {
+      "item_id": "learning-lists-negative_index",
+      "topic_id": "lists",
+      "pool": "learning",
+      "difficulty": 2,
+      "family_id": "negative_index",
+      "stem": "x=[10,20,30]，x[-1] 是什么？",
+      "options": {
+        "A": "10",
+        "B": "20",
+        "C": "-1",
+        "D": "30"
+      },
+      "answer": "D",
+      "explanation": "负索引 -1 表示最后一项。",
+      "provenance": {
+        "kind": "ai_generated",
+        "reference": "Codex-authored draft; Python 3.7+ list/dict semantics; human verification required"
+      },
+      "review": {
+        "status": "pending_review"
+      },
+      "content_hash": "1a931d2277d8d151b050134c203586fe32c5d0b6d5ab58d9d65a092be709c0ec"
+    },
+    {
+      "item_id": "learning-lists-reverse_slice",
+      "topic_id": "lists",
+      "pool": "learning",
+      "difficulty": 3,
+      "family_id": "reverse_slice",
+      "stem": "x=[0,1,2]，x[::-1] 是什么？",
+      "options": {
+        "A": "[2,1,0]",
+        "B": "[0,1,2]",
+        "C": "[0,2]",
+        "D": "[]"
+      },
+      "answer": "A",
+      "explanation": "步长 -1 使切片按反向顺序取元素。",
+      "provenance": {
+        "kind": "ai_generated",
+        "reference": "Codex-authored draft; Python 3.7+ list/dict semantics; human verification required"
+      },
+      "review": {
+        "status": "pending_review"
+      },
+      "content_hash": "6cdb48fe9206188987bb5906e02d9991f811df452223ef4514e8c374a7376535"
+    },
+    {
+      "item_id": "learning-lists-slice_stop_exclusive",
+      "topic_id": "lists",
+      "pool": "learning",
+      "difficulty": 3,
+      "family_id": "slice_stop_exclusive",
+      "stem": "x=[0,1,2,3,4]，x[1:4] 是什么？",
+      "options": {
+        "A": "[1,2,3,4]",
+        "B": "[1,2,3]",
+        "C": "[0,1,2,3]",
+        "D": "[4]"
+      },
+      "answer": "B",
+      "explanation": "切片包含起点索引 1，不含终点索引 4。",
+      "provenance": {
+        "kind": "ai_generated",
+        "reference": "Codex-authored draft; Python 3.7+ list/dict semantics; human verification required"
+      },
+      "review": {
+        "status": "pending_review"
+      },
+      "content_hash": "1bd4aebc766da732888ee838aad64c8aa5f4548af5f7dc8a0d7369a05f9938cf"
+    },
+    {
+      "item_id": "learning-lists-list_alias",
+      "topic_id": "lists",
+      "pool": "learning",
+      "difficulty": 4,
+      "family_id": "list_alias",
+      "stem": "执行 x=[1]; y=x; y[0]=7 后，x[0] 是多少？",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "7",
+        "D": "报错"
+      },
+      "answer": "C",
+      "explanation": "赋值没有复制列表；两个变量引用同一对象。",
+      "provenance": {
+        "kind": "ai_generated",
+        "reference": "Codex-authored draft; Python 3.7+ list/dict semantics; human verification required"
+      },
+      "review": {
+        "status": "pending_review"
+      },
+      "content_hash": "4071be9fe778b7f26c3aae5c096642886f8587e141f07c31a1bfe67ad589af77"
+    },
+    {
+      "item_id": "learning-lists-sort_returns_none",
+      "topic_id": "lists",
+      "pool": "learning",
+      "difficulty": 4,
+      "family_id": "sort_returns_none",
+      "stem": "执行 x=[3,1]; y=x.sort() 后，y 是什么？",
+      "options": {
+        "A": "[1,3]",
+        "B": "[3,1]",
+        "C": "True",
+        "D": "None"
+      },
+      "answer": "D",
+      "explanation": "sort 原地排序并返回 None。",
+      "provenance": {
+        "kind": "ai_generated",
+        "reference": "Codex-authored draft; Python 3.7+ list/dict semantics; human verification required"
+      },
+      "review": {
+        "status": "pending_review"
+      },
+      "content_hash": "9de7d6994a3876005474d7f258c4c115f499b4fcde4097d1c21bed7c58980af0"
+    },
+    {
+      "item_id": "learning-lists-nested_shallow_copy",
+      "topic_id": "lists",
+      "pool": "learning",
+      "difficulty": 5,
+      "family_id": "nested_shallow_copy",
+      "stem": "执行 x=[[1]]; y=x.copy(); y[0].append(2) 后，x 是什么？",
+      "options": {
+        "A": "[[1,2]]",
+        "B": "[[1]]",
+        "C": "[1,2]",
+        "D": "[[2]]"
+      },
+      "answer": "A",
+      "explanation": "浅复制只复制外层；内层列表仍被共享。",
+      "provenance": {
+        "kind": "ai_generated",
+        "reference": "Codex-authored draft; Python 3.7+ list/dict semantics; human verification required"
+      },
+      "review": {
+        "status": "pending_review"
+      },
+      "content_hash": "4a15cedb95f87719e8690ed9ea784ff6fa6e86e8a2053089fc5073fcf9a59ea2"
+    },
+    {
+      "item_id": "learning-lists-repeated_inner_alias",
+      "topic_id": "lists",
+      "pool": "learning",
+      "difficulty": 5,
+      "family_id": "repeated_inner_alias",
+      "stem": "执行 x=[[]]*2; x[0].append(9) 后，x 是什么？",
+      "options": {
+        "A": "[[9],[]]",
+        "B": "[[9],[9]]",
+        "C": "[[],[9]]",
+        "D": "[[9]]"
+      },
+      "answer": "B",
+      "explanation": "重复操作复制内层引用，两项指向同一个内层列表。",
+      "provenance": {
+        "kind": "ai_generated",
+        "reference": "Codex-authored draft; Python 3.7+ list/dict semantics; human verification required"
+      },
+      "review": {
+        "status": "pending_review"
+      },
+      "content_hash": "1232cfb88f85f6cc654dc11df16421b0b4acfff1ac9c90ab1b22a1db4e31922e"
+    },
+    {
+      "item_id": "learning-dicts-dict_literal",
+      "topic_id": "dicts",
+      "pool": "learning",
+      "difficulty": 1,
+      "family_id": "dict_literal",
+      "stem": "哪个表达式创建字典？",
+      "options": {
+        "A": "['a',1]",
+        "B": "('a',1)",
+        "C": "{'a':1}",
+        "D": "{'a',1}"
+      },
+      "answer": "C",
+      "explanation": "大括号中的键冒号值构成字典项。",
+      "provenance": {
+        "kind": "ai_generated",
+        "reference": "Codex-authored draft; Python 3.7+ list/dict semantics; human verification required"
+      },
+      "review": {
+        "status": "pending_review"
+      },
+      "content_hash": "fb17d7f3eca03af9d990ebb0b80729cb25f5db57f29924a0536c15a5589fba0c"
+    },
+    {
+      "item_id": "learning-dicts-dict_value_lookup",
+      "topic_id": "dicts",
+      "pool": "learning",
+      "difficulty": 1,
+      "family_id": "dict_value_lookup",
+      "stem": "d={'name':'Li'}，d['name'] 的值是什么？",
+      "options": {
+        "A": "name",
+        "B": "['Li']",
+        "C": "None",
+        "D": "Li"
+      },
+      "answer": "D",
+      "explanation": "用已有键索引字典得到其关联值。",
+      "provenance": {
+        "kind": "ai_generated",
+        "reference": "Codex-authored draft; Python 3.7+ list/dict semantics; human verification required"
+      },
+      "review": {
+        "status": "pending_review"
+      },
+      "content_hash": "1d64a1cba9ff636c84e63c93e7b41c2f1d333a69dc786841dcac6c6f689079b1"
+    },
+    {
+      "item_id": "learning-dicts-dict_insert",
+      "topic_id": "dicts",
+      "pool": "learning",
+      "difficulty": 2,
+      "family_id": "dict_insert",
+      "stem": "执行 d={}; d['a']=1 后，d 是什么？",
+      "options": {
+        "A": "{'a':1}",
+        "B": "['a',1]",
+        "C": "{}",
+        "D": "{1:'a'}"
+      },
+      "answer": "A",
+      "explanation": "给新键赋值将该键值对插入字典。",
+      "provenance": {
+        "kind": "ai_generated",
+        "reference": "Codex-authored draft; Python 3.7+ list/dict semantics; human verification required"
+      },
+      "review": {
+        "status": "pending_review"
+      },
+      "content_hash": "3c259b644a785dcb13161706e6d8dde04eae596a058b7f8169fd3529a0a9a991"
+    },
+    {
+      "item_id": "learning-dicts-dict_delete",
+      "topic_id": "dicts",
+      "pool": "learning",
+      "difficulty": 2,
+      "family_id": "dict_delete",
+      "stem": "执行 d={'a':1,'b':2}; del d['a'] 后，d 是什么？",
+      "options": {
+        "A": "{'a':1}",
+        "B": "{'b':2}",
+        "C": "{}",
+        "D": "{'a':None,'b':2}"
+      },
+      "answer": "B",
+      "explanation": "del 删除指定的键值对。",
+      "provenance": {
+        "kind": "ai_generated",
+        "reference": "Codex-authored draft; Python 3.7+ list/dict semantics; human verification required"
+      },
+      "review": {
+        "status": "pending_review"
+      },
+      "content_hash": "9892c17e293b87a7e83d564026e46f84639d51c60f4dc25b322ca666da16fc3b"
+    },
+    {
+      "item_id": "learning-dicts-dict_values_list",
+      "topic_id": "dicts",
+      "pool": "learning",
+      "difficulty": 3,
+      "family_id": "dict_values_list",
+      "stem": "d={'a':1,'b':2}，list(d.values()) 是什么？",
+      "options": {
+        "A": "['a','b']",
+        "B": "[('a',1),('b',2)]",
+        "C": "[1,2]",
+        "D": "[2,1]"
+      },
+      "answer": "C",
+      "explanation": "values 按插入顺序提供值。此题约定 Python 3.7 及以上。",
+      "provenance": {
+        "kind": "ai_generated",
+        "reference": "Codex-authored draft; Python 3.7+ list/dict semantics; human verification required"
+      },
+      "review": {
+        "status": "pending_review"
+      },
+      "content_hash": "fc7bb4c2226e02fe036ffdd3e0118eda2923cd3a81afe7b3d76848a8d054d318"
+    },
+    {
+      "item_id": "learning-dicts-missing_index_error",
+      "topic_id": "dicts",
+      "pool": "learning",
+      "difficulty": 3,
+      "family_id": "missing_index_error",
+      "stem": "d={}，求值 d['missing'] 会怎样？",
+      "options": {
+        "A": "返回 None",
+        "B": "返回 0",
+        "C": "自动插入空值",
+        "D": "引发 KeyError"
+      },
+      "answer": "D",
+      "explanation": "直接索引不存在的键引发 KeyError。",
+      "provenance": {
+        "kind": "ai_generated",
+        "reference": "Codex-authored draft; Python 3.7+ list/dict semantics; human verification required"
+      },
+      "review": {
+        "status": "pending_review"
+      },
+      "content_hash": "80baff6587ee934c22afd73390fd05f817e352624d1eeb6cbd46c54808685355"
+    },
+    {
+      "item_id": "learning-dicts-setdefault_insert",
+      "topic_id": "dicts",
+      "pool": "learning",
+      "difficulty": 4,
+      "family_id": "setdefault_insert",
+      "stem": "执行 d={}; v=d.setdefault('a',[]) ; v.append(1) 后，d 是什么？",
+      "options": {
+        "A": "{'a':[1]}",
+        "B": "{'a':[]}",
+        "C": "{}",
+        "D": "{'a':1}"
+      },
+      "answer": "A",
+      "explanation": "缺失键时 setdefault 插入默认对象并返回同一对象。",
+      "provenance": {
+        "kind": "ai_generated",
+        "reference": "Codex-authored draft; Python 3.7+ list/dict semantics; human verification required"
+      },
+      "review": {
+        "status": "pending_review"
+      },
+      "content_hash": "5f65e9eb0902f14968cf0576ea78a0b6bad52a1b800398747063899cac36e0cb"
+    },
+    {
+      "item_id": "learning-dicts-update_overwrite",
+      "topic_id": "dicts",
+      "pool": "learning",
+      "difficulty": 4,
+      "family_id": "update_overwrite",
+      "stem": "执行 d={'a':1}; d.update({'a':3,'b':2}) 后，d 是什么？",
+      "options": {
+        "A": "{'a':1,'b':2}",
+        "B": "{'a':3,'b':2}",
+        "C": "{'a':[1,3],'b':2}",
+        "D": "{'b':2}"
+      },
+      "answer": "B",
+      "explanation": "update 覆盖已有键并插入新键。",
+      "provenance": {
+        "kind": "ai_generated",
+        "reference": "Codex-authored draft; Python 3.7+ list/dict semantics; human verification required"
+      },
+      "review": {
+        "status": "pending_review"
+      },
+      "content_hash": "3a4dfe8e05670eb2f0f9656e9b569f280e21938a5cfe46c3b391c502e06fd72b"
+    },
+    {
+      "item_id": "learning-dicts-dict_shallow_copy",
+      "topic_id": "dicts",
+      "pool": "learning",
+      "difficulty": 5,
+      "family_id": "dict_shallow_copy",
+      "stem": "执行 d={'x':[1]}; e=dict(d); e['x'].append(2) 后，d['x'] 是什么？",
+      "options": {
+        "A": "[1]",
+        "B": "[2]",
+        "C": "[1,2]",
+        "D": "KeyError"
+      },
+      "answer": "C",
+      "explanation": "dict(d) 是浅复制，嵌套列表仍被共享。",
+      "provenance": {
+        "kind": "ai_generated",
+        "reference": "Codex-authored draft; Python 3.7+ list/dict semantics; human verification required"
+      },
+      "review": {
+        "status": "pending_review"
+      },
+      "content_hash": "66a7a64a0d52d1430357614c71c90299952dec6179ab77c767d2dec1a37cbdc2"
+    },
+    {
+      "item_id": "learning-dicts-fromkeys_shared_value",
+      "topic_id": "dicts",
+      "pool": "learning",
+      "difficulty": 5,
+      "family_id": "fromkeys_shared_value",
+      "stem": "执行 d=dict.fromkeys(['a','b'],[]); d['a'].append(1) 后，d['b'] 是什么？",
+      "options": {
+        "A": "[]",
+        "B": "None",
+        "C": "KeyError",
+        "D": "[1]"
+      },
+      "answer": "D",
+      "explanation": "fromkeys 将同一个默认值对象关联到所有键。",
+      "provenance": {
+        "kind": "ai_generated",
+        "reference": "Codex-authored draft; Python 3.7+ list/dict semantics; human verification required"
+      },
+      "review": {
+        "status": "pending_review"
+      },
+      "content_hash": "435fd07aea83c3bb25f8994cd218bb04e5093fba6a71489e300a0d0ee27ff15a"
+    }
+  ]
+}

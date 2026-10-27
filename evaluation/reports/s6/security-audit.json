@@ -1,0 +1,132 @@
+{
+  "schema_version": "portfolio_audit_v1",
+  "created_at": "2026-10-26T02:29:52.389103+00:00",
+  "read_only": true,
+  "paid_model_calls": 0,
+  "counts": {
+    "tracked_files": 119,
+    "untracked_candidates": 231,
+    "index_entries": 119,
+    "reachable_commits": 3,
+    "history_blob_path_versions": 167,
+    "history_paths": 134,
+    "annotated_tags": 0,
+    "remotes": 0,
+    "mixed_worktree_endings": 0
+  },
+  "head": "3284353d397f34f6cfeb4d52d45626991990e2a4",
+  "git_configuration": {
+    "core.autocrlf": "file:D:/git/Git/etc/gitconfig\ttrue",
+    "core.eol": null,
+    "core.safecrlf": null,
+    "core.bare": "file:.git/config\tfalse",
+    "core.worktree": null
+  },
+  "remote_has_embedded_credential": false,
+  "diff_checks": {
+    "working_diff": {
+      "exit_code": 0,
+      "diagnostics": [],
+      "line_ending_warning_count": 0
+    },
+    "staged_diff": {
+      "exit_code": 0,
+      "diagnostics": [],
+      "line_ending_warning_count": 0
+    }
+  },
+  "limits": [
+    "Only local refs, index and non-ignored working candidates; no remote request or credential validation.",
+    "No reflog-only/unreachable objects, binary OCR, encrypted archives or semantic privacy guarantee.",
+    "Credential-shaped literals need human classification; test fixtures are not automatically trusted.",
+    "Ignored local runtime env is read in memory only to match known credentials, never exported."
+  ],
+  "source": "redacted_local_git_release_audit",
+  "confirmed_runtime_credential_matches": 0,
+  "confirmed_credential_leaks": 0,
+  "database_or_private_file_findings": 0,
+  "reviewed_literal_findings": [
+    {
+      "scope": "working_tree",
+      "path": "frontend/app.js",
+      "type": "credential_literal_review",
+      "review_result": "HTML autocomplete field value; not an authentication credential"
+    },
+    {
+      "scope": "working_tree",
+      "path": "tests/s5_prepare.py",
+      "type": "credential_literal_review",
+      "review_result": "Concatenated random credential generation and explicit model stub settings"
+    },
+    {
+      "scope": "working_tree",
+      "path": "tests/test_admin.py",
+      "type": "credential_literal_review",
+      "review_result": "Disposable in-memory authentication fixture"
+    },
+    {
+      "scope": "working_tree",
+      "path": "tests/test_auth_security.py",
+      "type": "credential_literal_review",
+      "review_result": "Password validation fixture"
+    },
+    {
+      "scope": "working_tree",
+      "path": "tests/test_portfolio_audit.py",
+      "type": "credential_literal_review",
+      "review_result": "Temporary Git/credential generation used to test redaction"
+    },
+    {
+      "scope": "index",
+      "path": "frontend/app.js",
+      "type": "credential_literal_review",
+      "review_result": "HTML autocomplete field value; not an authentication credential"
+    },
+    {
+      "scope": "index",
+      "path": "tests/test_auth_security.py",
+      "type": "credential_literal_review",
+      "review_result": "Password validation fixture"
+    },
+    {
+      "scope": "reachable_history",
+      "commit": "3284353d397f34f6cfeb4d52d45626991990e2a4",
+      "path": "frontend/app.js",
+      "type": "credential_literal_review",
+      "review_result": "HTML autocomplete field value; not an authentication credential"
+    },
+    {
+      "scope": "reachable_history",
+      "commit": "3284353d397f34f6cfeb4d52d45626991990e2a4",
+      "path": "tests/test_auth_security.py",
+      "type": "credential_literal_review",
+      "review_result": "Password validation fixture"
+    },
+    {
+      "scope": "reachable_history",
+      "commit": "b0b6d0e9ade884574b9aaad467eba64bfef32fff",
+      "path": "frontend/app.js",
+      "type": "credential_literal_review",
+      "review_result": "HTML autocomplete field value; not an authentication credential"
+    },
+    {
+      "scope": "reachable_history",
+      "commit": "ecf570b35fcfe9820af9aa06942233e113b1d50e",
+      "path": "frontend/app.js",
+      "type": "credential_literal_review",
+      "review_result": "HTML autocomplete field value; not an authentication credential"
+    }
+  ],
+  "author_metadata": {
+    "distinct_author_emails": 1,
+    "only_github_noreply": false,
+    "actual_values_not_exported": true
+  },
+  "status_counts": {
+    "staged": 0,
+    "modified": 89,
+    "untracked": 231
+  },
+  "git_config_or_history_changed": false,
+  "published": false
+}

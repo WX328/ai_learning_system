@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-10-26T02:27:46.507873+00:00",
+  "source": "portfolio_engineering_delivery",
+  "published": false,
+  "git_staged_or_committed_or_pushed": false,
+  "business_logic_changed": false,
+  "physical_line_ending_normalization_only": true,
+  "paid_model_calls": 0,
+  "real_participants": 0,
+  "backend_tests": 264,
+  "backend_passed": true,
+  "frontend_dom_scripts": 5,
+  "ruff_exit_code": 0,
+  "api_checks": 78,
+  "api_passed": true,
+  "browser_groups": 8,
+  "browser_passed": true,
+  "deployment_checks": 12,
+  "deployment_passed": true,
+  "container_and_replay_passed": true,
+  "test_containers": [
+    {
+      "service": "app",
+      "state": "exited"
+    },
+    {
+      "service": "migrate",
+      "state": "exited"
+    },
+    {
+      "service": "model-stub",
+      "state": "exited"
+    },
+    {
+      "service": "proxy",
+      "state": "exited"
+    }
+  ],
+  "test_volumes_retained": true,
+  "formal_db_sha256_before": "REDACTED_PRIVATE_DATABASE_SHA256",
+  "formal_db_sha256_after": "REDACTED_PRIVATE_DATABASE_SHA256",
+  "formal_db_unchanged": true,
+  "production_deployment_modified": false,
+  "environment": {
+    "docker_server": "29.8.0",
+    "compose": "5.5.1",
+    "runtime": {
+      "python": "3.13.17",
+      "system": "Linux",
+      "machine": "x86_64"
+    }
+  },
+  "limits": [
+    "S6 HTTP/browser models were local substitutes; no live supplier call in this phase.",
+    "No real learning-effect study, penetration test or dependency CVE audit."
+  ],
+  "passed": true,
+  "git_diff_check_exit": 0,
+  "git_cached_diff_check_exit": 0,
+  "mixed_tracked_endings": 0,
+  "public_candidate_files": 349,
+  "credential_hash_literal_findings": [],
+  "documentation_links_valid": true
+}

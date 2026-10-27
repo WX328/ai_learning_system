@@ -1,0 +1,223 @@
+{
+  "evaluation_version": "adaptive_eval_v1",
+  "production_model": "rules_v2",
+  "dataset_sha256": "7340e20d369ceee2482502c38be6b3fd7f1dd37e497933570d613423c191170e",
+  "source": {
+    "kind": "real_history",
+    "description": "Read-only scoped SQLite snapshot; pseudonymous observational records",
+    "catalog_policy": "topic becomes available at first observed first-answer timestamp",
+    "topic_tie_break": "opaque topic ID; original numeric ID ordering is not exported",
+    "privacy": "HMAC pseudonyms; no question text, answer text or account credentials",
+    "coverage": {
+      "read_rows": {
+        "first": 51,
+        "review": 5
+      },
+      "exported_events": 10,
+      "skipped": {
+        "missing_topic_or_invalid_ownership_or_link": 46
+      }
+    }
+  },
+  "implementation_sha256": {
+    "replay": "6c59ed0776a3dbe21830f6b3f19a2fbfa5c908faea55eb13ff74485df091990f",
+    "mastery": "ea6c8b868c0137593fc1ea96cc521ff10030838881acfd05a6a71f3effc1d9f6",
+    "adaptive": "97177becf4b486df5231fd797bc526e1d21711acc05597e9b3c425ff96cb876e"
+  },
+  "config": {
+    "min_predictions": 20,
+    "min_learners": 2,
+    "min_history": 3,
+    "ranking_horizon": 10,
+    "min_future_per_topic": 2,
+    "same_timestamp": "all decisions before all outcomes"
+  },
+  "samples": {
+    "input_events": 10,
+    "first_answers": 10,
+    "review_events": 0,
+    "learners": 2,
+    "observed_topics": 5,
+    "catalog_topics": 5,
+    "ignored": {}
+  },
+  "algorithms": {
+    "raw_accuracy_v1": {
+      "score_proxy_brier": {
+        "value": null,
+        "n": 2,
+        "learners": 1,
+        "status": "not_evaluable",
+        "reason": "requires n>=20 and learners>=2"
+      },
+      "score_auc": {
+        "value": null,
+        "n": 2,
+        "learners": 1,
+        "status": "not_evaluable",
+        "reason": "requires both correct and incorrect outcomes"
+      },
+      "ranking_pairwise_concordance": {
+        "value": null,
+        "n": 0,
+        "learners": 0,
+        "status": "not_evaluable",
+        "reason": "requires n>=20 and learners>=2"
+      },
+      "trend_direction_response": {
+        "value": null,
+        "n": 0,
+        "learners": 0,
+        "status": "not_evaluable",
+        "reason": "requires n>=20 and learners>=2"
+      },
+      "trend_score_change": {
+        "improving": {
+          "n": 0,
+          "mean": null
+        },
+        "declining": {
+          "n": 0,
+          "mean": null
+        }
+      },
+      "small_sample": {
+        "n": 8,
+        "extreme_score_fraction": 0.5,
+        "jump_pairs": 3,
+        "mean_absolute_score_jump": 25.0,
+        "promotion_decisions_n": 2,
+        "early_promotions": 1,
+        "early_promotion_fraction": 0.5
+      },
+      "difficulty": {
+        "n": 10,
+        "up": 1,
+        "down": 0,
+        "out_of_bounds": 0
+      },
+      "cold_start_decisions": 6
+    },
+    "recent5_accuracy_v1": {
+      "score_proxy_brier": {
+        "value": null,
+        "n": 2,
+        "learners": 1,
+        "status": "not_evaluable",
+        "reason": "requires n>=20 and learners>=2"
+      },
+      "score_auc": {
+        "value": null,
+        "n": 2,
+        "learners": 1,
+        "status": "not_evaluable",
+        "reason": "requires both correct and incorrect outcomes"
+      },
+      "ranking_pairwise_concordance": {
+        "value": null,
+        "n": 0,
+        "learners": 0,
+        "status": "not_evaluable",
+        "reason": "requires n>=20 and learners>=2"
+      },
+      "trend_direction_response": {
+        "value": null,
+        "n": 0,
+        "learners": 0,
+        "status": "not_evaluable",
+        "reason": "requires n>=20 and learners>=2"
+      },
+      "trend_score_change": {
+        "improving": {
+          "n": 0,
+          "mean": null
+        },
+        "declining": {
+          "n": 0,
+          "mean": null
+        }
+      },
+      "small_sample": {
+        "n": 8,
+        "extreme_score_fraction": 0.5,
+        "jump_pairs": 3,
+        "mean_absolute_score_jump": 25.0,
+        "promotion_decisions_n": 2,
+        "early_promotions": 1,
+        "early_promotion_fraction": 0.5
+      },
+      "difficulty": {
+        "n": 10,
+        "up": 1,
+        "down": 0,
+        "out_of_bounds": 0
+      },
+      "cold_start_decisions": 6
+    },
+    "rules_v2": {
+      "score_proxy_brier": {
+        "value": null,
+        "n": 2,
+        "learners": 1,
+        "status": "not_evaluable",
+        "reason": "requires n>=20 and learners>=2"
+      },
+      "score_auc": {
+        "value": null,
+        "n": 2,
+        "learners": 1,
+        "status": "not_evaluable",
+        "reason": "requires both correct and incorrect outcomes"
+      },
+      "ranking_pairwise_concordance": {
+        "value": null,
+        "n": 0,
+        "learners": 0,
+        "status": "not_evaluable",
+        "reason": "requires n>=20 and learners>=2"
+      },
+      "trend_direction_response": {
+        "value": null,
+        "n": 0,
+        "learners": 0,
+        "status": "not_evaluable",
+        "reason": "requires n>=20 and learners>=2"
+      },
+      "trend_score_change": {
+        "improving": {
+          "n": 0,
+          "mean": null
+        },
+        "declining": {
+          "n": 0,
+          "mean": null
+        }
+      },
+      "small_sample": {
+        "n": 8,
+        "extreme_score_fraction": 0,
+        "jump_pairs": 3,
+        "mean_absolute_score_jump": 12,
+        "promotion_decisions_n": 2,
+        "early_promotions": 0,
+        "early_promotion_fraction": 0.0
+      },
+      "difficulty": {
+        "n": 10,
+        "up": 0,
+        "down": 0,
+        "out_of_bounds": 0
+      },
+      "cold_start_decisions": 6
+    }
+  },
+  "limitations": [
+    "Fixed logged actions: counterfactual learning gains are not identifiable.",
+    "rules_v2 score/100 is an uncalibrated score proxy, not an estimated ability probability.",
+    "Overlapping checkpoints and answers within a learner are correlated.",
+    "Future failure rates are observed proxies affected by item difficulty and selection.",
+    "No historical pending-question/recommendation logs; evaluate fresh decisions only.",
+    "Synthetic results validate rules only; real_history is observational, not a randomized trial."
+  ],
+  "decisions_csv_sha256": "5be35b44611c48ef9bf34edc35abb5fdae726b1b163af8cee763bfbaedd059df"
+}

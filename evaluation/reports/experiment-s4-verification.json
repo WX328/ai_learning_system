@@ -1,0 +1,19 @@
+{
+  "source": "demo_experiment",
+  "purpose": "software_e2e_verification_only",
+  "real_human_participants": 0,
+  "scripted_research_codes": 4,
+  "scripted_answers": 48,
+  "question_items": 28,
+  "model_calls": 0,
+  "production_database_access": false,
+  "checks": {
+    "pre_post_feedback_hidden": true,
+    "learning_feedback_present": true,
+    "s3_roundtrip_identical": true,
+    "all_phases_complete": true,
+    "both_arms_present": true
+  },
+  "inference_status": "not_evaluable",
+  "limitations": "Scripted A/B/C/D input and artificial clock. Neither real experimental scores nor evidence of learning improvement."
+}

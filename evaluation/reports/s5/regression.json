@@ -1,0 +1,89 @@
+{
+  "created_at": "2026-10-26T01:15:21.292578+00:00",
+  "source": "isolated_automated_regression",
+  "models": "mocked_by_test_fixtures",
+  "real_online_models": false,
+  "formal_db_sha256_before": "REDACTED_PRIVATE_DATABASE_SHA256",
+  "formal_db_sha256_after": "REDACTED_PRIVATE_DATABASE_SHA256",
+  "results": [
+    {
+      "name": "backend",
+      "exit_code": 0,
+      "seconds": 81.763,
+      "log": "backend.log",
+      "command": [
+        "-X",
+        "utf8",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_*.py",
+        "-q"
+      ]
+    },
+    {
+      "name": "pip-check",
+      "exit_code": 0,
+      "seconds": 3.253,
+      "log": "pip-check.log",
+      "command": [
+        "-m",
+        "pip",
+        "check"
+      ]
+    },
+    {
+      "name": "frontend_admin",
+      "exit_code": 0,
+      "seconds": 4.729,
+      "log": "frontend_admin.log",
+      "command": [
+        "--experimental-vm-modules",
+        "<PROJECT_ROOT>\\tests\\frontend_admin.mjs"
+      ]
+    },
+    {
+      "name": "frontend_coach",
+      "exit_code": 0,
+      "seconds": 4.831,
+      "log": "frontend_coach.log",
+      "command": [
+        "--experimental-vm-modules",
+        "<PROJECT_ROOT>\\tests\\frontend_coach.mjs"
+      ]
+    },
+    {
+      "name": "frontend_practice",
+      "exit_code": 0,
+      "seconds": 4.726,
+      "log": "frontend_practice.log",
+      "command": [
+        "--experimental-vm-modules",
+        "<PROJECT_ROOT>\\tests\\frontend_practice.mjs"
+      ]
+    },
+    {
+      "name": "frontend_recommendation",
+      "exit_code": 0,
+      "seconds": 0.257,
+      "log": "frontend_recommendation.log",
+      "command": [
+        "--experimental-vm-modules",
+        "<PROJECT_ROOT>\\tests\\frontend_recommendation.mjs"
+      ]
+    },
+    {
+      "name": "frontend_study",
+      "exit_code": 0,
+      "seconds": 0.205,
+      "log": "frontend_study.log",
+      "command": [
+        "--experimental-vm-modules",
+        "<PROJECT_ROOT>\\tests\\frontend_study.mjs"
+      ]
+    }
+  ]
+}

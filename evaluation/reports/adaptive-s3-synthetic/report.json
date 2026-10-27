@@ -1,0 +1,211 @@
+{
+  "evaluation_version": "adaptive_eval_v1",
+  "production_model": "rules_v2",
+  "dataset_sha256": "9a4aae1808dd88015cd55341488b2163fb94b5ce44703dda359076f19c2901da",
+  "source": {
+    "kind": "synthetic",
+    "description": "Eight scripted learners, improving/declining tracks with later reversal and mixed sequences; outcomes independent of recommendations",
+    "generator": "generate_adaptive_fixture_v1; no randomness"
+  },
+  "implementation_sha256": {
+    "replay": "6c59ed0776a3dbe21830f6b3f19a2fbfa5c908faea55eb13ff74485df091990f",
+    "mastery": "ea6c8b868c0137593fc1ea96cc521ff10030838881acfd05a6a71f3effc1d9f6",
+    "adaptive": "97177becf4b486df5231fd797bc526e1d21711acc05597e9b3c425ff96cb876e"
+  },
+  "config": {
+    "min_predictions": 20,
+    "min_learners": 2,
+    "min_history": 3,
+    "ranking_horizon": 10,
+    "min_future_per_topic": 2,
+    "same_timestamp": "all decisions before all outcomes"
+  },
+  "samples": {
+    "input_events": 512,
+    "first_answers": 480,
+    "review_events": 32,
+    "learners": 8,
+    "observed_topics": 24,
+    "catalog_topics": 24,
+    "ignored": {}
+  },
+  "algorithms": {
+    "raw_accuracy_v1": {
+      "score_proxy_brier": {
+        "value": 0.309712,
+        "n": 408,
+        "learners": 8,
+        "status": "descriptive",
+        "reason": null
+      },
+      "score_auc": {
+        "value": 0.361111,
+        "n": 408,
+        "learners": 8,
+        "status": "descriptive",
+        "reason": null
+      },
+      "ranking_pairwise_concordance": {
+        "value": 0.291391,
+        "n": 1208,
+        "learners": 8,
+        "status": "descriptive",
+        "reason": null
+      },
+      "trend_direction_response": {
+        "value": 1,
+        "n": 32,
+        "learners": 8,
+        "status": "descriptive",
+        "reason": null
+      },
+      "trend_score_change": {
+        "improving": {
+          "n": 16,
+          "mean": 33.333333
+        },
+        "declining": {
+          "n": 16,
+          "mean": -33.333333
+        }
+      },
+      "small_sample": {
+        "n": 96,
+        "extreme_score_fraction": 0.75,
+        "jump_pairs": 72,
+        "mean_absolute_score_jump": 9.259259259259258,
+        "promotion_decisions_n": 48,
+        "early_promotions": 21,
+        "early_promotion_fraction": 0.4375
+      },
+      "difficulty": {
+        "n": 480,
+        "up": 49,
+        "down": 108,
+        "out_of_bounds": 0
+      },
+      "cold_start_decisions": 24
+    },
+    "recent5_accuracy_v1": {
+      "score_proxy_brier": {
+        "value": 0.256754,
+        "n": 408,
+        "learners": 8,
+        "status": "descriptive",
+        "reason": null
+      },
+      "score_auc": {
+        "value": 0.651235,
+        "n": 408,
+        "learners": 8,
+        "status": "descriptive",
+        "reason": null
+      },
+      "ranking_pairwise_concordance": {
+        "value": 0.456954,
+        "n": 1208,
+        "learners": 8,
+        "status": "descriptive",
+        "reason": null
+      },
+      "trend_direction_response": {
+        "value": 1,
+        "n": 32,
+        "learners": 8,
+        "status": "descriptive",
+        "reason": null
+      },
+      "trend_score_change": {
+        "improving": {
+          "n": 16,
+          "mean": 100
+        },
+        "declining": {
+          "n": 16,
+          "mean": -100
+        }
+      },
+      "small_sample": {
+        "n": 96,
+        "extreme_score_fraction": 0.75,
+        "jump_pairs": 72,
+        "mean_absolute_score_jump": 9.259259259259258,
+        "promotion_decisions_n": 48,
+        "early_promotions": 21,
+        "early_promotion_fraction": 0.4375
+      },
+      "difficulty": {
+        "n": 480,
+        "up": 112,
+        "down": 114,
+        "out_of_bounds": 0
+      },
+      "cold_start_decisions": 24
+    },
+    "rules_v2": {
+      "score_proxy_brier": {
+        "value": 0.273012,
+        "n": 408,
+        "learners": 8,
+        "status": "descriptive",
+        "reason": null
+      },
+      "score_auc": {
+        "value": 0.521906,
+        "n": 408,
+        "learners": 8,
+        "status": "descriptive",
+        "reason": null
+      },
+      "ranking_pairwise_concordance": {
+        "value": 0.383278,
+        "n": 1208,
+        "learners": 8,
+        "status": "descriptive",
+        "reason": null
+      },
+      "trend_direction_response": {
+        "value": 1,
+        "n": 32,
+        "learners": 8,
+        "status": "descriptive",
+        "reason": null
+      },
+      "trend_score_change": {
+        "improving": {
+          "n": 16,
+          "mean": 39.625
+        },
+        "declining": {
+          "n": 16,
+          "mean": -39.3125
+        }
+      },
+      "small_sample": {
+        "n": 96,
+        "extreme_score_fraction": 0,
+        "jump_pairs": 72,
+        "mean_absolute_score_jump": 7.722222222222222,
+        "promotion_decisions_n": 48,
+        "early_promotions": 0,
+        "early_promotion_fraction": 0.0
+      },
+      "difficulty": {
+        "n": 480,
+        "up": 91,
+        "down": 114,
+        "out_of_bounds": 0
+      },
+      "cold_start_decisions": 24
+    }
+  },
+  "limitations": [
+    "Fixed logged actions: counterfactual learning gains are not identifiable.",
+    "rules_v2 score/100 is an uncalibrated score proxy, not an estimated ability probability.",
+    "Overlapping checkpoints and answers within a learner are correlated.",
+    "Future failure rates are observed proxies affected by item difficulty and selection.",
+    "No historical pending-question/recommendation logs; evaluate fresh decisions only.",
+    "Synthetic results validate rules only; real_history is observational, not a randomized trial."
+  ],
+  "decisions_csv_sha256": "0f43ab372d08140745cf45a7ab610c4e21df0174bac322287a56f0d97c26f9a7"
+}

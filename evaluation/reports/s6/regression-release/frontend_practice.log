@@ -1,0 +1,3 @@
+PASS: wrong-answer retry, hidden solution, cancel, repeated errors, idempotent save/reload, first-score preservation, no repeat XP, next question, last question, legacy state, account switch, async feedback
+(node:86904) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)

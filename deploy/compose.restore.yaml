@@ -1,0 +1,15 @@
+# Restore into a separate empty volume; original learning-data remains intact.
+# Include this overlay for ALL subsequent commands using the restored instance.
+services:
+  migrate:
+    volumes:
+      - restored-data:/data
+  app:
+    volumes:
+      - restored-data:/data
+  maintenance:
+    volumes:
+      - restored-data:/data
+volumes:
+  restored-data:
+    name: ${RESTORE_VOLUME_NAME:-zhixing-v2-restored-data}

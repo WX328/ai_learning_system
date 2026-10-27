@@ -1,0 +1,609 @@
+{
+  "protocol": "learning_experiment_v1",
+  "source": "synthetic_experiment",
+  "seed": 20261023,
+  "production_model": "rules_v2",
+  "fixed_difficulty": 2,
+  "learning_steps": 12,
+  "bank": {
+    "description": "SYNTHETIC metadata placeholders. No actual questions; replace with independently reviewed forms before real testing.",
+    "items": [
+      {
+        "item_id": "DEMO-A-demo-topic-1-2-0",
+        "topic_id": "demo-topic-1",
+        "difficulty": 2,
+        "pool": "A",
+        "content_hash": "29fe7afa8507fabd06599fd27dc3bdeaca92fe55e437279a62be535c3f666cb3",
+        "family_id": "DEMO-A-demo-topic-1-2-0"
+      },
+      {
+        "item_id": "DEMO-A-demo-topic-1-3-0",
+        "topic_id": "demo-topic-1",
+        "difficulty": 3,
+        "pool": "A",
+        "content_hash": "da0dab6de5b6512a8821e875d93a8de17131eda0de5383af2c438958c1da4095",
+        "family_id": "DEMO-A-demo-topic-1-3-0"
+      },
+      {
+        "item_id": "DEMO-A-demo-topic-2-2-0",
+        "topic_id": "demo-topic-2",
+        "difficulty": 2,
+        "pool": "A",
+        "content_hash": "e4168a6ce15694a26e5e3367f1cc50221e8616656a057161514d3243d6213814",
+        "family_id": "DEMO-A-demo-topic-2-2-0"
+      },
+      {
+        "item_id": "DEMO-A-demo-topic-2-3-0",
+        "topic_id": "demo-topic-2",
+        "difficulty": 3,
+        "pool": "A",
+        "content_hash": "aedaecbb662ae44d6411288773ac7ab63026b7e19f4e57d932a2ef89e52a79ef",
+        "family_id": "DEMO-A-demo-topic-2-3-0"
+      },
+      {
+        "item_id": "DEMO-B-demo-topic-1-2-0",
+        "topic_id": "demo-topic-1",
+        "difficulty": 2,
+        "pool": "B",
+        "content_hash": "571cb64362218bb82aa48497a6d4f4b1e140a0ac8990bafb8de7bf5d7711b43c",
+        "family_id": "DEMO-B-demo-topic-1-2-0"
+      },
+      {
+        "item_id": "DEMO-B-demo-topic-1-3-0",
+        "topic_id": "demo-topic-1",
+        "difficulty": 3,
+        "pool": "B",
+        "content_hash": "129788e2b52557975ccba84063b7327c0866e193b35af74bbecfbe1966666527",
+        "family_id": "DEMO-B-demo-topic-1-3-0"
+      },
+      {
+        "item_id": "DEMO-B-demo-topic-2-2-0",
+        "topic_id": "demo-topic-2",
+        "difficulty": 2,
+        "pool": "B",
+        "content_hash": "6b193a33729c000ce9fb8e073eb469bb6b7cc52b5ce2adf2348ac50aa41e2182",
+        "family_id": "DEMO-B-demo-topic-2-2-0"
+      },
+      {
+        "item_id": "DEMO-B-demo-topic-2-3-0",
+        "topic_id": "demo-topic-2",
+        "difficulty": 3,
+        "pool": "B",
+        "content_hash": "71cdd432823cf3698b46597f5984d5e023492ad6a63d2d8d32e57d89b389d020",
+        "family_id": "DEMO-B-demo-topic-2-3-0"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-1-1-0",
+        "topic_id": "demo-topic-1",
+        "difficulty": 1,
+        "pool": "learning",
+        "content_hash": "047f6048fbbf0e7d50c7402ecafaf403383eb81b53ff37160a5c523888e676b2",
+        "family_id": "DEMO-learning-demo-topic-1-1-0"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-1-1-1",
+        "topic_id": "demo-topic-1",
+        "difficulty": 1,
+        "pool": "learning",
+        "content_hash": "61086b334d0835d7a924daa20214024e615bf128ee2b2954d6651d026a07ab14",
+        "family_id": "DEMO-learning-demo-topic-1-1-1"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-1-1-2",
+        "topic_id": "demo-topic-1",
+        "difficulty": 1,
+        "pool": "learning",
+        "content_hash": "faa20c9d12509ff32b0127106b661a7611b5e22f44507162967c167a2b2d7c53",
+        "family_id": "DEMO-learning-demo-topic-1-1-2"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-1-1-3",
+        "topic_id": "demo-topic-1",
+        "difficulty": 1,
+        "pool": "learning",
+        "content_hash": "5fe47902544fc81160863bc3513164ab4624afa9912b191973f4844f2e6a4261",
+        "family_id": "DEMO-learning-demo-topic-1-1-3"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-1-1-4",
+        "topic_id": "demo-topic-1",
+        "difficulty": 1,
+        "pool": "learning",
+        "content_hash": "a3bdeaaecb08c2b92177fd211690c96bc1f605465ce53ba858a53072d87d8ca5",
+        "family_id": "DEMO-learning-demo-topic-1-1-4"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-1-1-5",
+        "topic_id": "demo-topic-1",
+        "difficulty": 1,
+        "pool": "learning",
+        "content_hash": "eb5fcaa99900d2d583e873dd1e4ad0786a88392079b78578233d976a69ce6957",
+        "family_id": "DEMO-learning-demo-topic-1-1-5"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-1-2-0",
+        "topic_id": "demo-topic-1",
+        "difficulty": 2,
+        "pool": "learning",
+        "content_hash": "4c0ee8d0c5b75446e7648ce29c85164bd2dd38102a485de935a1c918fd5fd9f2",
+        "family_id": "DEMO-learning-demo-topic-1-2-0"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-1-2-1",
+        "topic_id": "demo-topic-1",
+        "difficulty": 2,
+        "pool": "learning",
+        "content_hash": "d88c73160b7b2fa04545c80bcc4a1f5aa42776aa68f5908509826fb2e511189f",
+        "family_id": "DEMO-learning-demo-topic-1-2-1"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-1-2-2",
+        "topic_id": "demo-topic-1",
+        "difficulty": 2,
+        "pool": "learning",
+        "content_hash": "fe590c8eaf8420c6abc947506472f8d10b8e06475d476186b488093d06dac5d4",
+        "family_id": "DEMO-learning-demo-topic-1-2-2"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-1-2-3",
+        "topic_id": "demo-topic-1",
+        "difficulty": 2,
+        "pool": "learning",
+        "content_hash": "e4849ff180749f3551fe385ae2c98a1ba48d6ae652fe87373afac223c9f6ae51",
+        "family_id": "DEMO-learning-demo-topic-1-2-3"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-1-2-4",
+        "topic_id": "demo-topic-1",
+        "difficulty": 2,
+        "pool": "learning",
+        "content_hash": "a8102daf91a4251dfccc081e6ba13c17f2a3d5ac3c538417aa4687f2a8b25ede",
+        "family_id": "DEMO-learning-demo-topic-1-2-4"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-1-2-5",
+        "topic_id": "demo-topic-1",
+        "difficulty": 2,
+        "pool": "learning",
+        "content_hash": "e9cfe7077c1857aea1b91badd4790d40209a646815dbc1dfce53118e674c821f",
+        "family_id": "DEMO-learning-demo-topic-1-2-5"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-1-3-0",
+        "topic_id": "demo-topic-1",
+        "difficulty": 3,
+        "pool": "learning",
+        "content_hash": "8052d65f0d59b25a4396eb39c1df36eaa1d74747e6edb5eef6847ae41aeadb71",
+        "family_id": "DEMO-learning-demo-topic-1-3-0"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-1-3-1",
+        "topic_id": "demo-topic-1",
+        "difficulty": 3,
+        "pool": "learning",
+        "content_hash": "587e94b67819b419120ae817b3917c8880aed957ef5e2adb699889343bff1c14",
+        "family_id": "DEMO-learning-demo-topic-1-3-1"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-1-3-2",
+        "topic_id": "demo-topic-1",
+        "difficulty": 3,
+        "pool": "learning",
+        "content_hash": "9d11f6afd37c010de86d209a3229c2de401ff1b374932f497eaa49843474ca4d",
+        "family_id": "DEMO-learning-demo-topic-1-3-2"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-1-3-3",
+        "topic_id": "demo-topic-1",
+        "difficulty": 3,
+        "pool": "learning",
+        "content_hash": "626776a1e7a438f594fe7d8811ff687a54ef775f26ff390283b1e7a6e71df1cb",
+        "family_id": "DEMO-learning-demo-topic-1-3-3"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-1-3-4",
+        "topic_id": "demo-topic-1",
+        "difficulty": 3,
+        "pool": "learning",
+        "content_hash": "e17e7348c7f9754edfef7eb1153528564a094a2fb97c8adbefc94c2763ee0519",
+        "family_id": "DEMO-learning-demo-topic-1-3-4"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-1-3-5",
+        "topic_id": "demo-topic-1",
+        "difficulty": 3,
+        "pool": "learning",
+        "content_hash": "b458b139006092e9efb4c76b33b1381f1d5f2e25d5f34470e168c42a0a49b4fe",
+        "family_id": "DEMO-learning-demo-topic-1-3-5"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-1-4-0",
+        "topic_id": "demo-topic-1",
+        "difficulty": 4,
+        "pool": "learning",
+        "content_hash": "65934bd5535747fe766dad3f34aaedd36672940dc84ab404fc469157ff8d0f45",
+        "family_id": "DEMO-learning-demo-topic-1-4-0"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-1-4-1",
+        "topic_id": "demo-topic-1",
+        "difficulty": 4,
+        "pool": "learning",
+        "content_hash": "23dc8807f4b4bc176d412991868a1c0d0771cf872fd85d77c43d702a364d09dc",
+        "family_id": "DEMO-learning-demo-topic-1-4-1"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-1-4-2",
+        "topic_id": "demo-topic-1",
+        "difficulty": 4,
+        "pool": "learning",
+        "content_hash": "1a1e21498b6e9d43b19534d64da24ac130338fd194b14e77c8c3b4042d75296e",
+        "family_id": "DEMO-learning-demo-topic-1-4-2"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-1-4-3",
+        "topic_id": "demo-topic-1",
+        "difficulty": 4,
+        "pool": "learning",
+        "content_hash": "cde841941ff15809d04f9ea1c17d5da1d789f139acbeeeaa01da5b4a25eb33e1",
+        "family_id": "DEMO-learning-demo-topic-1-4-3"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-1-4-4",
+        "topic_id": "demo-topic-1",
+        "difficulty": 4,
+        "pool": "learning",
+        "content_hash": "4542938961465f552e9448f82647caf794c7c766eedd90c0f67ee78830f99efe",
+        "family_id": "DEMO-learning-demo-topic-1-4-4"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-1-4-5",
+        "topic_id": "demo-topic-1",
+        "difficulty": 4,
+        "pool": "learning",
+        "content_hash": "390bb80d3a93e1219a63cdef12fa1b153a6db716f6ef5dc031db561f964091aa",
+        "family_id": "DEMO-learning-demo-topic-1-4-5"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-1-5-0",
+        "topic_id": "demo-topic-1",
+        "difficulty": 5,
+        "pool": "learning",
+        "content_hash": "329a25599029ba28348fcea76ff9046afcdbf6ec2cb4b277a615d21e7a95d6dc",
+        "family_id": "DEMO-learning-demo-topic-1-5-0"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-1-5-1",
+        "topic_id": "demo-topic-1",
+        "difficulty": 5,
+        "pool": "learning",
+        "content_hash": "ef68062c9900f836b3c10549cf8a9e04280d91094033e3cda2e4df14b12e78ef",
+        "family_id": "DEMO-learning-demo-topic-1-5-1"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-1-5-2",
+        "topic_id": "demo-topic-1",
+        "difficulty": 5,
+        "pool": "learning",
+        "content_hash": "0e761974cb8d528fbc8454def925b92a508764f7b9a68b695a5d52bbb7d653bd",
+        "family_id": "DEMO-learning-demo-topic-1-5-2"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-1-5-3",
+        "topic_id": "demo-topic-1",
+        "difficulty": 5,
+        "pool": "learning",
+        "content_hash": "d9368836232ae423c24ef3f23a69b465629a1f5700a174691c406377d4a5728f",
+        "family_id": "DEMO-learning-demo-topic-1-5-3"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-1-5-4",
+        "topic_id": "demo-topic-1",
+        "difficulty": 5,
+        "pool": "learning",
+        "content_hash": "f01294a293ed6a8c395c794266c9f9ce24cbf092e9fc21219cd5290325162dbe",
+        "family_id": "DEMO-learning-demo-topic-1-5-4"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-1-5-5",
+        "topic_id": "demo-topic-1",
+        "difficulty": 5,
+        "pool": "learning",
+        "content_hash": "0169bd50826cb30e86a7b3b5504b6599d6cba5058706bbe36168ccfcd05a11f1",
+        "family_id": "DEMO-learning-demo-topic-1-5-5"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-2-1-0",
+        "topic_id": "demo-topic-2",
+        "difficulty": 1,
+        "pool": "learning",
+        "content_hash": "25ed8153ed745a7658a57f5fb54eb8f9f28f6c22eb4949b4c4a60354bc65f9fc",
+        "family_id": "DEMO-learning-demo-topic-2-1-0"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-2-1-1",
+        "topic_id": "demo-topic-2",
+        "difficulty": 1,
+        "pool": "learning",
+        "content_hash": "8da6d50e82e215ffacfc03506cdd9ffc34b5bd4b7305da5988dd0671074b6c67",
+        "family_id": "DEMO-learning-demo-topic-2-1-1"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-2-1-2",
+        "topic_id": "demo-topic-2",
+        "difficulty": 1,
+        "pool": "learning",
+        "content_hash": "ee70d10a9f0cbb9b90c38a5e8f1476bfff3cae7119a3dbde235e475abd618ace",
+        "family_id": "DEMO-learning-demo-topic-2-1-2"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-2-1-3",
+        "topic_id": "demo-topic-2",
+        "difficulty": 1,
+        "pool": "learning",
+        "content_hash": "7d7d4af1b29a535c27741954a9a8505b3b46d3da4be2b1287a3ba0fdb2d80745",
+        "family_id": "DEMO-learning-demo-topic-2-1-3"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-2-1-4",
+        "topic_id": "demo-topic-2",
+        "difficulty": 1,
+        "pool": "learning",
+        "content_hash": "4f103dbb73c800109e9edf2e3973999ed5899129581ca0a290e2bc3d07cc543b",
+        "family_id": "DEMO-learning-demo-topic-2-1-4"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-2-1-5",
+        "topic_id": "demo-topic-2",
+        "difficulty": 1,
+        "pool": "learning",
+        "content_hash": "2e675b7469e5fc227652a85ccd4c524b11fc519cf1f2bf65a85ccfc12e8f0dda",
+        "family_id": "DEMO-learning-demo-topic-2-1-5"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-2-2-0",
+        "topic_id": "demo-topic-2",
+        "difficulty": 2,
+        "pool": "learning",
+        "content_hash": "a39c12af6061a8c246000542211173d4860ae335a3218facf2d64091e3a0267e",
+        "family_id": "DEMO-learning-demo-topic-2-2-0"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-2-2-1",
+        "topic_id": "demo-topic-2",
+        "difficulty": 2,
+        "pool": "learning",
+        "content_hash": "0556ffb59646e032c952fcdf15a24b1d10d81c44b8a0f5beaf1b1d1b20ada5ff",
+        "family_id": "DEMO-learning-demo-topic-2-2-1"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-2-2-2",
+        "topic_id": "demo-topic-2",
+        "difficulty": 2,
+        "pool": "learning",
+        "content_hash": "e70d5dec509241edae6b064105dee041619cf8e86bfd24ad1823fb8e32cc9e47",
+        "family_id": "DEMO-learning-demo-topic-2-2-2"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-2-2-3",
+        "topic_id": "demo-topic-2",
+        "difficulty": 2,
+        "pool": "learning",
+        "content_hash": "d33a84a0cefa862505b529ebc8e5da714d40acc4990e22b04bee4e54d111a87f",
+        "family_id": "DEMO-learning-demo-topic-2-2-3"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-2-2-4",
+        "topic_id": "demo-topic-2",
+        "difficulty": 2,
+        "pool": "learning",
+        "content_hash": "5b445c9f86a1aa0b916ad4ffcb43f19e525904f12d37fab041545a606073ebe5",
+        "family_id": "DEMO-learning-demo-topic-2-2-4"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-2-2-5",
+        "topic_id": "demo-topic-2",
+        "difficulty": 2,
+        "pool": "learning",
+        "content_hash": "f23de98e9609620f0175c9f3579eb96640338b7804cd638b85cef6286a7cca45",
+        "family_id": "DEMO-learning-demo-topic-2-2-5"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-2-3-0",
+        "topic_id": "demo-topic-2",
+        "difficulty": 3,
+        "pool": "learning",
+        "content_hash": "686fc4aecf643c634a1e3c1ee232ae74dfd262bffe150d5cd46140942d3cd102",
+        "family_id": "DEMO-learning-demo-topic-2-3-0"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-2-3-1",
+        "topic_id": "demo-topic-2",
+        "difficulty": 3,
+        "pool": "learning",
+        "content_hash": "1b8a852e3f035d77096f4c79fa612cac1a8ce10913ba270707e9d211c17894ce",
+        "family_id": "DEMO-learning-demo-topic-2-3-1"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-2-3-2",
+        "topic_id": "demo-topic-2",
+        "difficulty": 3,
+        "pool": "learning",
+        "content_hash": "27d60b9170327936a0c18884ac5f6f32197c0bc078bb8b4eaf6546fc3bf6ed75",
+        "family_id": "DEMO-learning-demo-topic-2-3-2"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-2-3-3",
+        "topic_id": "demo-topic-2",
+        "difficulty": 3,
+        "pool": "learning",
+        "content_hash": "e3d492639ad0003f3ee91e34ad7d6892ec7f423afe1f5b9b51794a0ff9a8bee4",
+        "family_id": "DEMO-learning-demo-topic-2-3-3"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-2-3-4",
+        "topic_id": "demo-topic-2",
+        "difficulty": 3,
+        "pool": "learning",
+        "content_hash": "25788c94fe9f6fb8eb03de1542ae5601f288128af4b115477f0d39b96216ce62",
+        "family_id": "DEMO-learning-demo-topic-2-3-4"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-2-3-5",
+        "topic_id": "demo-topic-2",
+        "difficulty": 3,
+        "pool": "learning",
+        "content_hash": "31211e1dec761983959b4068ad4c9746da66eb3d10645e8a1b62a41c4e5e18f8",
+        "family_id": "DEMO-learning-demo-topic-2-3-5"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-2-4-0",
+        "topic_id": "demo-topic-2",
+        "difficulty": 4,
+        "pool": "learning",
+        "content_hash": "4abae72de8f91da285133faaa76fada887f99dcb287e99602690824388ce276c",
+        "family_id": "DEMO-learning-demo-topic-2-4-0"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-2-4-1",
+        "topic_id": "demo-topic-2",
+        "difficulty": 4,
+        "pool": "learning",
+        "content_hash": "f4d8664f205eda3b983367da71b1edf38d22aa425389ec929c1c0592cee6ffa0",
+        "family_id": "DEMO-learning-demo-topic-2-4-1"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-2-4-2",
+        "topic_id": "demo-topic-2",
+        "difficulty": 4,
+        "pool": "learning",
+        "content_hash": "cdd5290b05d5c615a924c924906ba2e016aed85ee6d964bda1da144c53833cce",
+        "family_id": "DEMO-learning-demo-topic-2-4-2"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-2-4-3",
+        "topic_id": "demo-topic-2",
+        "difficulty": 4,
+        "pool": "learning",
+        "content_hash": "e42479349f95d2794ba25a3d0ea891191359a24c4c5fcd3c60d019aabff36c85",
+        "family_id": "DEMO-learning-demo-topic-2-4-3"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-2-4-4",
+        "topic_id": "demo-topic-2",
+        "difficulty": 4,
+        "pool": "learning",
+        "content_hash": "5a3870ae30140c8940857e6bed65b409831510891f3251bedc9c06588bc27660",
+        "family_id": "DEMO-learning-demo-topic-2-4-4"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-2-4-5",
+        "topic_id": "demo-topic-2",
+        "difficulty": 4,
+        "pool": "learning",
+        "content_hash": "a7859d1e7b7db36a22aa1cef2eadb6484f59988eb42c2824a4501afc649617b2",
+        "family_id": "DEMO-learning-demo-topic-2-4-5"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-2-5-0",
+        "topic_id": "demo-topic-2",
+        "difficulty": 5,
+        "pool": "learning",
+        "content_hash": "012510bf0130b6c5d4430c1b3271a37bbe58f4917ee188cd2d48081237a69ff6",
+        "family_id": "DEMO-learning-demo-topic-2-5-0"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-2-5-1",
+        "topic_id": "demo-topic-2",
+        "difficulty": 5,
+        "pool": "learning",
+        "content_hash": "3e33d614396f7320542269b2d0dce2c681f942c04e32adf3c9ea82c14a0fa373",
+        "family_id": "DEMO-learning-demo-topic-2-5-1"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-2-5-2",
+        "topic_id": "demo-topic-2",
+        "difficulty": 5,
+        "pool": "learning",
+        "content_hash": "61e33b106de9c6d671c816338aabf5e77c33a8b65af7770a4550cd7a76609bbf",
+        "family_id": "DEMO-learning-demo-topic-2-5-2"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-2-5-3",
+        "topic_id": "demo-topic-2",
+        "difficulty": 5,
+        "pool": "learning",
+        "content_hash": "7beee26315de8806c7e343dd696cf96dd3d4b0478b0b0170ebe851c061ee708a",
+        "family_id": "DEMO-learning-demo-topic-2-5-3"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-2-5-4",
+        "topic_id": "demo-topic-2",
+        "difficulty": 5,
+        "pool": "learning",
+        "content_hash": "06e996249b74ae974673d629d21c32b9061e8376b70147089b9f806f74b47faf",
+        "family_id": "DEMO-learning-demo-topic-2-5-4"
+      },
+      {
+        "item_id": "DEMO-learning-demo-topic-2-5-5",
+        "topic_id": "demo-topic-2",
+        "difficulty": 5,
+        "pool": "learning",
+        "content_hash": "baf3bc99818f83d53ded4481d2253a5eec623b1f864c841bcdc673a7c864a097",
+        "family_id": "DEMO-learning-demo-topic-2-5-5"
+      }
+    ]
+  },
+  "bank_sha256": "ce0758db3d7bb287175f9fde29583fadae1b0c0a818d540b8da03f64718cbbea",
+  "assignments": [
+    {
+      "participant_id": "DEMO-P01",
+      "arm": "adaptive",
+      "pre_form": "B",
+      "post_form": "A"
+    },
+    {
+      "participant_id": "DEMO-P02",
+      "arm": "adaptive",
+      "pre_form": "B",
+      "post_form": "A"
+    },
+    {
+      "participant_id": "DEMO-P03",
+      "arm": "fixed",
+      "pre_form": "A",
+      "post_form": "B"
+    },
+    {
+      "participant_id": "DEMO-P04",
+      "arm": "adaptive",
+      "pre_form": "A",
+      "post_form": "B"
+    },
+    {
+      "participant_id": "DEMO-P05",
+      "arm": "fixed",
+      "pre_form": "B",
+      "post_form": "A"
+    },
+    {
+      "participant_id": "DEMO-P06",
+      "arm": "fixed",
+      "pre_form": "B",
+      "post_form": "A"
+    },
+    {
+      "participant_id": "DEMO-P07",
+      "arm": "fixed",
+      "pre_form": "A",
+      "post_form": "B"
+    },
+    {
+      "participant_id": "DEMO-P08",
+      "arm": "adaptive",
+      "pre_form": "A",
+      "post_form": "B"
+    }
+  ],
+  "instructions": "Same rules_v2 topic priority in both arms; only difficulty policy differs. Pre/post evidence is not fed into learning. No pre/post feedback until post-test completed."
+}

@@ -1,0 +1,65 @@
+{
+  "verified_on": "2026-10-23",
+  "backend": {
+    "tests": 210,
+    "seconds": 65.637,
+    "failures": 0,
+    "skipped": 0
+  },
+  "s3_added_tests": 35,
+  "final_plot_tests": {
+    "tests": 2,
+    "seconds": 22.677,
+    "failures": 0,
+    "skipped": 0
+  },
+  "frontend": {
+    "scripts": 5,
+    "status": "passed",
+    "names": [
+      "frontend_admin.mjs",
+      "frontend_coach.mjs",
+      "frontend_practice.mjs",
+      "frontend_recommendation.mjs",
+      "frontend_study.mjs"
+    ],
+    "warnings": [
+      "Existing experimental VM Modules warning",
+      "Existing coach test EventTarget listener count warning"
+    ]
+  },
+  "ruff": "passed",
+  "diff_check": "passed; existing LF/CRLF notices",
+  "database_export": {
+    "database_bytes_unchanged": true,
+    "source": "real_history",
+    "coverage": {
+      "read_rows": {
+        "first": 51,
+        "review": 5
+      },
+      "exported_events": 10,
+      "skipped": {
+        "missing_topic_or_invalid_ownership_or_link": 46
+      }
+    }
+  },
+  "replay_reports_reproduced": [
+    "synthetic",
+    "real_history"
+  ],
+  "figures": {
+    "unique_figures": 9,
+    "formats": [
+      "PDF",
+      "SVG",
+      "PNG 300dpi"
+    ],
+    "artifacts": 27,
+    "manually_inspected": "Synthetic comparison/mastery/difficulty/counts/experiment, real comparison/mastery; no clipped N/A labels after layout corrections"
+  },
+  "production_policy_changed": false,
+  "production_migrations": 0,
+  "paid_model_calls_in_s3_tools": 0,
+  "real_learning_effect": "not_evaluable; no completed real pre/learning/post experiment"
+}
